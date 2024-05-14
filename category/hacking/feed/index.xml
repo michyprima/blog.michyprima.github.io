@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Hacking &#8211; Michele Primavera</title>
+	<atom:link href="/category/hacking/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Tue, 20 Oct 2020 08:11:31 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>AMI Aptio BIOS DSDT Editing</title>
+		<link>/ami-aptio-bios-dsdt-editing/</link>
+					<comments>/ami-aptio-bios-dsdt-editing/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2015 14:09:19 +0000</pubDate>
+				<category><![CDATA[Hacking]]></category>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=148</guid>
+
+					<description><![CDATA[NOTA: Per questo post, verrà utilizzato un BIOS ASUS come esempio. Potrebbero esserci delle lievi differenze tra modelli e/o marche, ma il concetto di base dovrebbe rimanere invariato. Con lo spopolare dei bios AMI Aptio, è diventato molto più semplice fare piccole modifiche mirate, in quanto si è assistito ad una sorta di standardizzazione. Questi<p><a href="/ami-aptio-bios-dsdt-editing/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>NOTA: Per questo post, verrà utilizzato un BIOS ASUS come esempio. Potrebbero esserci delle lievi differenze tra modelli e/o marche, ma il concetto di base dovrebbe rimanere invariato.</p>
+<p>Con lo spopolare dei bios AMI Aptio, è diventato molto più semplice fare piccole modifiche mirate, in quanto si è assistito ad una sorta di standardizzazione. Questi BIOS sono organizzati in moduli, e questi moduli possono essere rimpiazzati senza grande sforzo.<br />
+<span id="more-148"></span><br />
+Ma se volessimo crearne noi uno, o modificarlo? L&#8217;esigenza è lecita, soprattutto se quelli creati dal costruttore fanno schifo (un esempio? <a href="/?p=95">qui</a>).</p>
+<p>Oggi ci occuperemo del DSDT. Ci servono: Aptio MMTool, IASL, e un hex editor.</p>
+<p>Individuiamo innanzitutto il modulo giusto: è riconoscibile perché, dopo l&#8217;header, a 0x25, troviamo la dicitura DSDT (0x44, 0x55, 0x44, 0x54). Nel caso di ASUS, questo modulo contiene due DSDT diversi. Non ho investigato, ma suppongo sia perché uno viene utilizzato quando l&#8217;optimus è attivo, e l&#8217;altro quando la GPU è disabilitata. Normalmente non si può disabilitare l&#8217;optimus, ma col bios unlock (maggiori informazioni <a href="/?p=10">qui</a>) è possibile. In questo bios il modulo giusto ha indice 0x30, e non ha nome.</p>
+<p>Dopo il magic &#8220;DSDT&#8221;, a 0x29, troviamo 4 byte che indicano la dimensione del listato, nel mio caso 69446 bytes (0x46, 0x0f, 0x01, 0x00). Nel nostro caso, quindi, estraiamo da 0x25 a 0x25+0x10f46. (L&#8217;altro listato inizia invece a 0x12475, stessa procedura)</p>
+<p>Il file ora estratto può essere modificato con IASL o con un editor apposito. Dopo averlo ricompilato, è molto probabile che la dimensione sia diversa dall&#8217;originale. L&#8217;importante è che non sia maggiore, perché quei famosi 4 byte fanno testo sulla dimensione. Andiamo quindi a sovrascrivere nel modulo il listato ricompilato, avendo cura di sostituire i byte, ma di lasciare li quelli che avanzano in modo che la dimensione del modulo rimanga uguale.</p>
+<p>Finito questo, bisogna correggere il checksum del modulo a 0x11. Potete farlo tramite questo algoritmo:</p>
+<pre class="brush: csharp; title: ; notranslate">public static uint Checksum(byte&#x5B;] module)
+{
+    uint num = 0;
+    for(int i = 0x18; i &lt; module.Length; i++)
+    {
+        num += module&#x5B;i];
+    }
+    return (uint)(-num &amp; 0xff);
+}</pre>
+<p>Ora reinserite il modulo con MMTool.</p>
+<p>Bene! Il nuovo BIOS col DSDT modificato è pronto!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/ami-aptio-bios-dsdt-editing/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hotkeys BIOS patch per notebook ASUS pre-W8</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/</link>
+					<comments>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Mon, 31 Aug 2015 14:47:08 +0000</pubDate>
+				<category><![CDATA[Hacking]]></category>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95</guid>
+
+					<description><![CDATA[EN: This post replaces the site on the altervista.org domain. Here you will find hotkeys-patched bioses for your notebook (if you are having issues with Windows 8 or later you are in the right place). To install, first update to the latest official bios and uninstall atkacpi. Then install the correct bios with easy flash<p><a href="/hotkeys-bios-patch-per-notebook-asus-pre-w8/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>EN: This post replaces the site on the altervista.org domain. Here you will find hotkeys-patched bioses for your notebook (if you are having issues with Windows 8 or later you are in the right place). To install, first update to the latest official bios and uninstall atkacpi. Then install the correct bios with easy flash and a pen drive. Last, install a W8 compatible ATKACPI.</p>
+<p>Scrivo questo post per rimpiazzare il sito creato diverso tempo fa su altervista e per in qualche modo reclamarne la &#8220;paternità&#8221;.</p>
+<p>La ragion d&#8217;essere del suddetto sito viene fuori dal fatto che ASUS per molti notebook usciti prima dell&#8217;avvento di Windows 8 ha creato una implementazione delle hotkeys che va in conflitto con quella nativa implementata in W8 e successivi. Questo rende di fatto molte delle hotkeys inutilizzabili.<span id="more-95"></span></p>
+<p>Il mio vecchio notebook, un N53SV, ricadeva in questa schiera di &#8220;sfigatelli&#8221;. Siccome non sono una persona che si rassegna, ho deciso di ovviare da me. Nel corso del tempo e a grande richiesta, sono riuscito a tirar fuori dalla lista anche altri modelli. Se siete fortunati, il vostro sarà uno di questi:</p>
+<p><a href="/wp-content/uploads/2015/08/N73SVAS_W8.zip" rel="attachment wp-att-96">N73SVAS_W8.zip</a><br />
+<a href="/wp-content/uploads/2015/08/N53SNAS_W8.zip" rel="attachment wp-att-99">N53SNAS_W8.zip</a><br />
+<a href="/wp-content/uploads/2015/08/U36SDAS_W8.zip" rel="attachment wp-att-101">U36SDAS_W8.zip</a><br />
+<a href="/wp-content/uploads/2015/08/N53SVAS_W8.zip" rel="attachment wp-att-100">N53SVAS_W8.zip</a><br />
+<a href="/wp-content/uploads/2015/08/U30SdAS_W8.zip">U30SdAS_W8.zip</a></p>
+<p>L&#8217;installazione è semplice:</p>
+<ol>
+<li>se non l&#8217;avete già fatto, aggiornate all&#8217;ultimo bios ufficiale</li>
+<li>disinstallate ATKACPI</li>
+<li>scaricate e mettete il bios decompresso in una penna formattata in fat32</li>
+<li>riavviate nel bios, scegliete &#8220;start easy flash&#8221;, cercate il file e date conferma</li>
+<li>installate <a href="http://dlcdnet.asus.com/pub/ASUS/nb/Apps_for_Win8/ATKPackage/ATKPackage_Win8_64_Z100023.zip">questa</a> versione di ATKACPI (va bene una qualsiasi, basta sia compatibile con windows 8)</li>
+</ol>
+<p>Tutto fatto. Semplice, no?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/hotkeys-bios-patch-per-notebook-asus-pre-w8/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>N550JV Bios Unlock</title>
+		<link>/n550jv-bios-unlock/</link>
+					<comments>/n550jv-bios-unlock/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 04 Jun 2014 11:28:00 +0000</pubDate>
+				<category><![CDATA[Guide]]></category>
+		<category><![CDATA[Hacking]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Non sto a spiegarvi cos&#8217;è il bios unlock, ne vi fornirò la pappa pronta. Chi mi conosce sa che amo aggirare i limiti dei miei aggeggi elettronici, soprattutto se per farlo c&#8217;è bisogno di un pizzico di coraggio. Siccome su internet non ho trovato nulla di specifico per questo modello ho deciso di spendere io<p><a href="/n550jv-bios-unlock/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Non sto a spiegarvi cos&#8217;è il bios unlock, ne vi fornirò la pappa pronta. Chi mi conosce sa che amo aggirare i limiti dei miei aggeggi elettronici, soprattutto se per farlo c&#8217;è bisogno di un pizzico di coraggio.<br />
+Siccome su internet non ho trovato nulla di specifico per questo modello ho deciso di spendere io qualche minuto a spiegare il come ci sia riuscito.</p>
+<p><span id="more-10"></span></p>
+<p>Il risultato finale sarà questo:</p>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/06/20140603_204540.jpg"><img fetchpriority="high" decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/20140603_204540.jpg" alt="" width="320" height="180" border="0" /></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Voci in Advanced aggiunte e tab Chipset sbloccato</td>
+</tr>
+</tbody>
+</table>
+<p><a name="more"></a><br />
+NOTA: Queste operazioni se fatte nel modo sbagliato possono causare la morte prematura (e probabilmente anche permanente) del notebook. Non mi assumo nessuna responsabilità per quello che le vostre manacce possono combinare.</p>
+<p>Ora passiamo all&#8217;Art Attack:</p>
+<p>Partiamo dal BIOS originale. Tutte le modifiche qui descritte sono state fatte sulla versione 208 originale, ma non quella disponibile dal sito. Mi spiego: quella che si può scaricare dal sito asus è incapsulata (ha 2KB in più di dati) che noi non vogliamo; quindi se non siete già sulla 208 prima aggiornate, e poi estraete dalla memoria flash il bios senza capsula.</p>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/06/1.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/1.png" alt="" width="234" height="320" border="0" /></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">afuwinx64 dump.rom /O</td>
+</tr>
+</tbody>
+</table>
+<p>Fatevi furbi e salvate questo file; semmai dovrete mandare in garanzia il notebook infatti vi conviene rimettercelo&#8230; <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Siccome far uscire il tab chipset è un discorso a parte, preoccupiamoci prima di sbloccare le voci mancanti in advanced e boot. Questa operazione è abbastanza semplice, basta aprire il dump in amibcp e cambiare il campo &#8220;Access/Use&#8221; in &#8220;USER&#8221;. Fatelo con tutti gli elementi sotto Advanced e sotto Boot.<br />
+Quando avete finito, salvate il file e chiudete amibcp.</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/06/Cattura.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/Cattura.png" alt="" width="320" height="234" border="0" /></a></div>
+<p>Ora tocca al tab chipset. Questo tab contiene impostazioni pericolose, quali overclock e impostazioni dello schermo, ma molto utili. Il tab chipset è nascosto nel codice, quindi dovremo modificare il modulo che contiene l&#8217;interfaccia di configurazione. Sembra infatti che vi sia un array di bool che indica quali tab sono sbloccati e quali no. nel nostro bios i valori sono: {true,true,false,true,true,true}.<br />
+Si, avete capito bene: il false qui sopra è proprio il tab chipset.</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/06/Cattura1.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/Cattura1.png" alt="" width="320" height="230" border="0" /></a></div>
+<p>Il modulo in questione si chiama &#8220;Setup&#8221;, e possiamo estrarlo con MMTool. Cerchiamo questo array con un hex editor e cambiamo il false con un true, poi rimpiazziamo il modulo modificato dentro l&#8217;immagine del bios.</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/06/Cattura2.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/Cattura2.png" alt="" width="320" height="284" border="0" /></a></div>
+<p>Salviamo il nuovo file e dopo aver preso coraggio, flashiamolo con <b>afuwinx64 new.rom /gun</b>.</p>
+<p>Il flash richiederà un paio di minuti. Sebbene io l&#8217;abbia rifatto una decina di volte durante i miei esperimenti e che sia andato sempre a buon fine, non me la sento di dirvi che questa è una procedura sicura.</p>
+<p>A buon intenditor.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/n550jv-bios-unlock/feed/</wfw:commentRss>
+			<slash:comments>19</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Limiti sulle Twitter App di terze parti</title>
+		<link>/limiti-sulle-twitter-app-di-terze-parti/</link>
+					<comments>/limiti-sulle-twitter-app-di-terze-parti/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Fri, 10 Jan 2014 17:10:00 +0000</pubDate>
+				<category><![CDATA[Hacking]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Ultimamente Twitter ha deciso di limitare quanti utenti un client di terze parti può avere contemporaneamente. Perché? Perché i suddetti client non mostrano le pubblicità che invece il client ufficiale ficca dappertutto, e quindi non fanno entrare soldi nelle loro casse. Oggi volevo provare Carbon For Twitter che ormai ha raggiunto il suo limite e, a<p><a href="/limiti-sulle-twitter-app-di-terze-parti/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Ultimamente Twitter ha deciso di limitare quanti utenti un client di terze parti può avere contemporaneamente.</p>
+<div></div>
+<div>Perché? Perché i suddetti client non mostrano le <i>pubblicità</i> che invece il client ufficiale ficca dappertutto, e quindi non fanno entrare soldi nelle loro casse.</div>
+<div></div>
+<div>Oggi volevo provare Carbon For Twitter che ormai ha raggiunto il suo limite e, a differenza di Falcon Pro, lo sviluppatore non farà <b>nulla</b>. Niente trucchetti, niente finestrelline nascoste.</div>
+<div></div>
+<div>Ciò però non vieta che voi, manualmente, potreste cambiare i codici di autenticazione nel codice.</div>
+<p><span id="more-13"></span></p>
+<div>Nella fattispecie, i suddetti si trovano tra il codice, nella classe <b>com.dotsandlines.carbon.core.Carbon</b>.</div>
+<div></div>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/01/Senza-titolo.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/01/Senza-titolo.png" alt="" width="400" height="243" border="0" /></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">La porzione di codice interessata</td>
+</tr>
+</tbody>
+</table>
+<div style="clear: both; text-align: left;"></div>
+<div style="clear: both; text-align: left;">Dopo aver sotituito questi con quelli richiesti da noi a Twitter, il risultato sarà questo:</div>
+<div style="clear: both; text-align: left;"></div>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/01/Screenshot_2014-01-09-19-07-23.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/01/Screenshot_2014-01-09-19-07-23.png" alt="" width="225" height="400" border="0" /></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Carbon con i miei codici applicazione</td>
+</tr>
+</tbody>
+</table>
+<div style="clear: both; text-align: left;"></div>
+<div style="clear: both; text-align: left;">Ho avuto quindi modo di autenticarmi ugualmente scavalcando i limiti imposti da Twitter.</div>
+<div style="clear: both; text-align: left;">Io comunque me ne torno a Plume, cavallo vincente non si cambia. <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/limiti-sulle-twitter-app-di-terze-parti/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Asus N53SV/SN: problema alle hotkey</title>
+		<link>/asus-n53svsn-problema-alle-hotkey/</link>
+					<comments>/asus-n53svsn-problema-alle-hotkey/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 21 Dec 2013 13:46:00 +0000</pubDate>
+				<category><![CDATA[Hacking]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Ora voglio parlare di un PC che mi ha dato tante soddisfazioni, sia per la qualità costruttiva, che per l&#8217;esperienza utente. Di una cosa però non riuscivo a capacitarmi: che le hotkey (i tasti fn, per capirci) non funzionassero a dovere con windows 8 (e successivi). il perché di questo è presto detto: queste sono<p><a href="/asus-n53svsn-problema-alle-hotkey/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Ora voglio parlare di un PC che mi ha dato tante soddisfazioni, sia per la qualità costruttiva, che per l&#8217;esperienza utente.</p>
+<p>Di una cosa però non riuscivo a capacitarmi: che le hotkey (i tasti fn, per capirci) non funzionassero a dovere con windows 8 (e successivi).<span id="more-18"></span></p>
+<p>il perché di questo è presto detto: queste sono state implementate coi piedi (non diciamo parolacce va) nel DSDT, non tenendo in considerazione che l&#8217;OS potesse volersele gestire da sé.</p>
+<p>questo ovviamente genera varie complicazioni che, alla pressione delle suddette hotkey. impediscono effettivamente di attuare il comando impartito.</p>
+<p>Ho pubblicato il bios patchato&nbsp;<a href="http://n53svwindows8.altervista.org/">qui</a>.</p>
+<p>Grazie asus per aver ignorato le richieste d&#8217;aiuto di chi possiede questo piccolo pezzo d&#8217;arte.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/asus-n53svsn-problema-alle-hotkey/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DVR Naway</title>
+		<link>/dvr-naway/</link>
+					<comments>/dvr-naway/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 21 Dec 2013 13:37:00 +0000</pubDate>
+				<category><![CDATA[Hacking]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Ho aperto questo blog perché credo possa essere utile a qualcuno. Sono una persona molto interessata alla tecnologia, a come funziona, e soprattutto a come aggiustarla&#160;quando si rompe. Il mio primo post riguarda un DVR, cinese, senza nome. Chi ne ha avuto a che fare riconoscerà il nome Naway. Bene, tutto ok, finché arrivò android<p><a href="/dvr-naway/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Ho aperto questo blog perché credo possa essere utile a qualcuno.</p>
+<p>Sono una persona molto interessata alla tecnologia, a come funziona, e soprattutto a <i>come aggiustarla</i>&nbsp;quando si rompe.</p>
+<p>Il mio primo post riguarda un DVR, cinese, senza nome. Chi ne ha avuto a che fare riconoscerà il nome <b>Naway</b>.<span id="more-19"></span></p>
+<p>Bene, tutto ok, finché arrivò android 4.2: questo nuovo major update di android porta, oltre alle migliorie, un cambiamento nella gestione dei <i>ByteBuffer</i>. Per farla breve, c&#8217;è molta probabilità che un programma che non abbia implementato correttamente i ByteBuffer ora crashi, perché android ora li avanza da solo, e quindi una applicazione che credeva che tale ByteBuffer fosse sempre in posizione 0 (tranne se modificato esplicitamente) ora se lo ritrova in posizione finale.</p>
+<p>Ciò porta al lancio di una RuntimeException, che può essere risolto semplicemente facendo il <i>rewind</i>&nbsp;del buffer prima di riutilizzarlo.</p>
+<p>Tada, tutto funziona di nuovo.</p>
+<p><a href="https://drive.google.com/file/d/0B5jGXzZa6QnMUHZqMUszeGRCV1E/edit?usp=sharing">Naway+</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/dvr-naway/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commenti per Michele Primavera	</title>
+	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Fri, 12 Jan 2024 13:55:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Carmelo		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-733</link>
+
+		<dc:creator><![CDATA[Carmelo]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2024 13:55:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-733</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-155&quot;&gt;michele&lt;/a&gt;.
+
+Ciao Michele anche io ho problemi a codificare ho messo il filo nel pin16 e pin 2 ho provato tantissime volte o pure comprato un altro sensore perché in quello che mi è arrivato con il cambio luci c&#039;è un occhio solo adesso e arrivato quello con due occhi ma mi da sempre errore luci e non mi fa fare la codifica nel byte 6 appare light sensor ma nel byte 7 e tutto vuoto solo nel bit 0 mi spunta una scritta per favore se mi dici cosa sbaglio cosa dovrei fare ? Ti mando in allegato una foto dell&#039;errore che mi da obdeleven grazie anticipatamente]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-155">michele</a>.</p>
+<p>Ciao Michele anche io ho problemi a codificare ho messo il filo nel pin16 e pin 2 ho provato tantissime volte o pure comprato un altro sensore perché in quello che mi è arrivato con il cambio luci c&#8217;è un occhio solo adesso e arrivato quello con due occhi ma mi da sempre errore luci e non mi fa fare la codifica nel byte 6 appare light sensor ma nel byte 7 e tutto vuoto solo nel bit 0 mi spunta una scritta per favore se mi dici cosa sbaglio cosa dovrei fare ? Ti mando in allegato una foto dell&#8217;errore che mi da obdeleven grazie anticipatamente</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Sebastiano		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-725</link>
+
+		<dc:creator><![CDATA[Sebastiano]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2022 17:56:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-725</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-114&quot;&gt;Rossano&lt;/a&gt;.
+
+Ciao a tutti,smontando il connettore c il posto 28 risulta occupato,cosa faccio?]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-114">Rossano</a>.</p>
+<p>Ciao a tutti,smontando il connettore c il posto 28 risulta occupato,cosa faccio?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Seedr porta i torrent nel cloud di Vitaly		</title>
+		<link>/seedr-porta-i-torrent-nel-cloud/#comment-677</link>
+
+		<dc:creator><![CDATA[Vitaly]]></dc:creator>
+		<pubDate>Wed, 30 Mar 2022 12:17:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=718#comment-677</guid>
+
+					<description><![CDATA[Ciao! Come posso contattarti? Non riesco a trovare i dettagli di contatto del proprietario del sito. Se possibile, scrivimi a nfgels@gmail.com. Domanda sull&#039;acquisto di un dominio primavera.pm]]></description>
+			<content:encoded><![CDATA[<p>Ciao! Come posso contattarti? Non riesco a trovare i dettagli di contatto del proprietario del sito. Se possibile, scrivimi a <a href="mailto:nfgels@gmail.com">nfgels@gmail.com</a>. Domanda sull&#8217;acquisto di un dominio primavera.pm</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Sergio		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-446</link>
+
+		<dc:creator><![CDATA[Sergio]]></dc:creator>
+		<pubDate>Thu, 25 Feb 2021 10:48:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-446</guid>
+
+					<description><![CDATA[Salve Michele, grazie mille per l’ottima guida che mi ha permesso di installare tutto senza troppi “intoppi” mi sono un pochino incagliato sulla programmazione del sensore 8U0 955 559 C perché, in posizione auto, si accendono troppo presto. La mia attuale codifica è 02A8DD ma non va bene ( gli anabbaglianti si accendono quando la luce del giorno è ancora troppo forte).......mi potresti gentilmente dirmi esattamente la tua codifica ?? ( ho provato a leggere nei vari forum ma ognuno ne ha una diversa e non saprei quale scegliere) Se può essere utile l’auto è del 2014 e sto utilizzando il VCDS 19.6.1
+Grazie mille]]></description>
+			<content:encoded><![CDATA[<p>Salve Michele, grazie mille per l’ottima guida che mi ha permesso di installare tutto senza troppi “intoppi” mi sono un pochino incagliato sulla programmazione del sensore 8U0 955 559 C perché, in posizione auto, si accendono troppo presto. La mia attuale codifica è 02A8DD ma non va bene ( gli anabbaglianti si accendono quando la luce del giorno è ancora troppo forte)&#8230;&#8230;.mi potresti gentilmente dirmi esattamente la tua codifica ?? ( ho provato a leggere nei vari forum ma ognuno ne ha una diversa e non saprei quale scegliere) Se può essere utile l’auto è del 2014 e sto utilizzando il VCDS 19.6.1<br />
+Grazie mille</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Luca		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-442</link>
+
+		<dc:creator><![CDATA[Luca]]></dc:creator>
+		<pubDate>Sun, 10 Jan 2021 13:45:03 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-442</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-97&quot;&gt;michele&lt;/a&gt;.
+
+Buongiorno scusa per far salire i finestrini in caso di pioggia in codifica del sensore vado in byte 0 poi spunto il bit1? Quando chiudo la macchina il selettore luci deve essere in auto? La leva del tergicristallo in posizione 1 oppure a zero? Grazie]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-97">michele</a>.</p>
+<p>Buongiorno scusa per far salire i finestrini in caso di pioggia in codifica del sensore vado in byte 0 poi spunto il bit1? Quando chiudo la macchina il selettore luci deve essere in auto? La leva del tergicristallo in posizione 1 oppure a zero? Grazie</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Luca		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-440</link>
+
+		<dc:creator><![CDATA[Luca]]></dc:creator>
+		<pubDate>Sun, 03 Jan 2021 21:12:43 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-440</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-415&quot;&gt;Luigi&lt;/a&gt;.
+
+Ciao  prova con l&#039;aiuto  di un cacciavite lungo io ho fatto così con pazienza poi tagli la fascetta e fai uscire i due porta connettori]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-415">Luigi</a>.</p>
+<p>Ciao  prova con l&#8217;aiuto  di un cacciavite lungo io ho fatto così con pazienza poi tagli la fascetta e fai uscire i due porta connettori</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Luca		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-439</link>
+
+		<dc:creator><![CDATA[Luca]]></dc:creator>
+		<pubDate>Sat, 02 Jan 2021 13:13:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-439</guid>
+
+					<description><![CDATA[Buongiorno posso gentilmente sapere come configurare esattamente il sensore? Io ho installato il 8U0955559C ma non mi esce per caso devo configurare RLS? Ho i fari xenon adattativi grazie]]></description>
+			<content:encoded><![CDATA[<p>Buongiorno posso gentilmente sapere come configurare esattamente il sensore? Io ho installato il 8U0955559C ma non mi esce per caso devo configurare RLS? Ho i fari xenon adattativi grazie</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Vi prego attivate la 2FA adesso di Lindsey		</title>
+		<link>/vi-prego-attivate-la-2fa-adesso/#comment-438</link>
+
+		<dc:creator><![CDATA[Lindsey]]></dc:creator>
+		<pubDate>Sat, 26 Dec 2020 04:10:13 +0000</pubDate>
+		<guid isPermaLink="false">/?p=672#comment-438</guid>
+
+					<description><![CDATA[Can I please speak to the manager, site owner?]]></description>
+			<content:encoded><![CDATA[<p>Can I please speak to the manager, site owner?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Luca		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-435</link>
+
+		<dc:creator><![CDATA[Luca]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2020 16:47:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-435</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-129&quot;&gt;michele&lt;/a&gt;.
+
+Buonasera  io ho una golf 7 1600 tdi sport edizione del aprile 2016 il devio luci auto originale ha il codice 5G0941431BD devo installare quello ho uno con il codice 5GG941431D? Grazie]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-129">michele</a>.</p>
+<p>Buonasera  io ho una golf 7 1600 tdi sport edizione del aprile 2016 il devio luci auto originale ha il codice 5G0941431BD devo installare quello ho uno con il codice 5GG941431D? Grazie</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Commenti su Installare luci e tergicristalli automatici su Golf MK7 di Luca		</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-434</link>
+
+		<dc:creator><![CDATA[Luca]]></dc:creator>
+		<pubDate>Sat, 12 Dec 2020 20:24:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=577#comment-434</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-90&quot;&gt;michele&lt;/a&gt;.
+
+Buonasera il.codice del deviatore luci auto è 5GG941431D?quello originale è 5G0941431BD cosa cambia?è  istalkato su una golf 7 con luci automatica..]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comment-90">michele</a>.</p>
+<p>Buonasera il.codice del deviatore luci auto è 5GG941431D?quello originale è 5G0941431BD cosa cambia?è  istalkato su una golf 7 con luci automatica..</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

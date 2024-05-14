@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commenti a: Aruba Cloud: La recensione completa	</title>
+	<atom:link href="/aruba-cloud-la-recensione-completa/feed/" rel="self" type="application/rss+xml" />
+	<link>/aruba-cloud-la-recensione-completa/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Fri, 20 Jan 2017 19:18:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>
+		Di: michele		</title>
+		<link>/aruba-cloud-la-recensione-completa/#comment-197</link>
+
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Fri, 20 Jan 2017 19:18:17 +0000</pubDate>
+		<guid isPermaLink="false">/?p=338#comment-197</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/aruba-cloud-la-recensione-completa/#comment-196&quot;&gt;Gianmarco&lt;/a&gt;.
+
+Sicuramente i tempi si accorcerebbero poiché avresti una cpu (seppur virtuale) tutta per te. Ti consiglio di provare con una S prima se ce la fai con ram e storage e di cercare un pochino di alleggerire il setup]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/aruba-cloud-la-recensione-completa/#comment-196">Gianmarco</a>.</p>
+<p>Sicuramente i tempi si accorcerebbero poiché avresti una cpu (seppur virtuale) tutta per te. Ti consiglio di provare con una S prima se ce la fai con ram e storage e di cercare un pochino di alleggerire il setup</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Gianmarco		</title>
+		<link>/aruba-cloud-la-recensione-completa/#comment-196</link>
+
+		<dc:creator><![CDATA[Gianmarco]]></dc:creator>
+		<pubDate>Fri, 20 Jan 2017 19:11:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=338#comment-196</guid>
+
+					<description><![CDATA[Ma una m ce la fa con un sito buddypress zeppo di plugin?
+In hosting condiviso ho un primo  byte a 5secondi.. poi la macchina manda tutto un 2 secondi..
+
+Credo che rimane a processare ... poi spara la pagina
+
+Un cloud m accorgerebbe quella attesa?]]></description>
+			<content:encoded><![CDATA[<p>Ma una m ce la fa con un sito buddypress zeppo di plugin?<br />
+In hosting condiviso ho un primo  byte a 5secondi.. poi la macchina manda tutto un 2 secondi..</p>
+<p>Credo che rimane a processare &#8230; poi spara la pagina</p>
+<p>Un cloud m accorgerebbe quella attesa?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Daniele		</title>
+		<link>/aruba-cloud-la-recensione-completa/#comment-38</link>
+
+		<dc:creator><![CDATA[Daniele]]></dc:creator>
+		<pubDate>Fri, 20 May 2016 11:00:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=338#comment-38</guid>
+
+					<description><![CDATA[fai un post si questo commentoooooooooooo!!!]]></description>
+			<content:encoded><![CDATA[<p>fai un post si questo commentoooooooooooo!!!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

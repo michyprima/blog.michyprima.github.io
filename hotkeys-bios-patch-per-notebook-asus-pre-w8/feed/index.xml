@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commenti a: Hotkeys BIOS patch per notebook ASUS pre-W8	</title>
+	<atom:link href="/hotkeys-bios-patch-per-notebook-asus-pre-w8/feed/" rel="self" type="application/rss+xml" />
+	<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Tue, 20 Oct 2020 14:38:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>
+		Di: Marcus Hilderbrand		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-427</link>
+
+		<dc:creator><![CDATA[Marcus Hilderbrand]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2020 14:38:15 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-427</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-426&quot;&gt;michele&lt;/a&gt;.
+
+Hello,
+
+Thanks for the information on what to fix.  If I am successful I&#039;ll see about getting the BIOS out for everyone here.
+
+Awesome work!  I really dislike Asus but you did fine work!]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-426">michele</a>.</p>
+<p>Hello,</p>
+<p>Thanks for the information on what to fix.  If I am successful I&#8217;ll see about getting the BIOS out for everyone here.</p>
+<p>Awesome work!  I really dislike Asus but you did fine work!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: michele		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-426</link>
+
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2020 07:56:37 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-426</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-425&quot;&gt;Marcus Hilderbrand&lt;/a&gt;.
+
+Hey! You need to fix the dsdt using &lt;a href=&quot;/?p=148&quot;&gt;this&lt;/a&gt; method. You may want to use one of the bios I published as a guideline.]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-425">Marcus Hilderbrand</a>.</p>
+<p>Hey! You need to fix the dsdt using <a href="/?p=148">this</a> method. You may want to use one of the bios I published as a guideline.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Marcus Hilderbrand		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-425</link>
+
+		<dc:creator><![CDATA[Marcus Hilderbrand]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2020 01:27:59 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-425</guid>
+
+					<description><![CDATA[I know this is an ancient thread.  How do I mod the BIOS of the U56E so the hotkeys also work?
+
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>I know this is an ancient thread.  How do I mod the BIOS of the U56E so the hotkeys also work?</p>
+<p>Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Hadi		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-424</link>
+
+		<dc:creator><![CDATA[Hadi]]></dc:creator>
+		<pubDate>Mon, 15 Jul 2019 22:41:57 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-424</guid>
+
+					<description><![CDATA[You saved my day. Thank you.]]></description>
+			<content:encoded><![CDATA[<p>You saved my day. Thank you.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: ripp2003		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-410</link>
+
+		<dc:creator><![CDATA[ripp2003]]></dc:creator>
+		<pubDate>Sun, 13 Jan 2019 16:58:17 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-410</guid>
+
+					<description><![CDATA[Thank you very much for the work, Now Brightness key work as expected for my N53sv with win10 !!!!! (Ok it&#039;s an old computer in 2019 but finally works very well)
+No lag, very responsiv.
+
+I have to say WOUHAAAAAAAAAOU]]></description>
+			<content:encoded><![CDATA[<p>Thank you very much for the work, Now Brightness key work as expected for my N53sv with win10 !!!!! (Ok it&#8217;s an old computer in 2019 but finally works very well)<br />
+No lag, very responsiv.</p>
+<p>I have to say WOUHAAAAAAAAAOU</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: michele		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-346</link>
+
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Thu, 21 Sep 2017 19:45:18 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-346</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-345&quot;&gt;Jr&lt;/a&gt;.
+
+I suggest resetting the bios to defaults then reinstalling windows in uefi mode. Disable secure boot just in case. I don&#039;t believe asus ever cared about that notebook after I did.]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-345">Jr</a>.</p>
+<p>I suggest resetting the bios to defaults then reinstalling windows in uefi mode. Disable secure boot just in case. I don&#8217;t believe asus ever cared about that notebook after I did.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Jr		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-345</link>
+
+		<dc:creator><![CDATA[Jr]]></dc:creator>
+		<pubDate>Thu, 21 Sep 2017 17:23:53 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-345</guid>
+
+					<description><![CDATA[Guys, sorry for resurrecting this topic, but I have a problem with n73sv. The notebook is from a friend. I updated the BIOS to version 306 and after that Windows did not start any more. Then the problems began. I could no longer start with UEFI mode. I installed Windows 10 again, and Windows Update no longer installed the Video drivers, Intel 3000, or Nvidia. All the drivers I try to install conflict. I tried to install the original Windows 7 and download the drivers direct from the Asus website. Not so installed. Is there anything I can do? Is there a &quot;307&quot; version of this BIOS? If you can help me, I&#039;ll be immensely grateful.]]></description>
+			<content:encoded><![CDATA[<p>Guys, sorry for resurrecting this topic, but I have a problem with n73sv. The notebook is from a friend. I updated the BIOS to version 306 and after that Windows did not start any more. Then the problems began. I could no longer start with UEFI mode. I installed Windows 10 again, and Windows Update no longer installed the Video drivers, Intel 3000, or Nvidia. All the drivers I try to install conflict. I tried to install the original Windows 7 and download the drivers direct from the Asus website. Not so installed. Is there anything I can do? Is there a &#8220;307&#8221; version of this BIOS? If you can help me, I&#8217;ll be immensely grateful.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: michele		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-341</link>
+
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Mon, 11 Sep 2017 16:25:26 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-341</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-340&quot;&gt;Max&lt;/a&gt;.
+
+Ciao!
+
+Mi dispiace ma ho già cambiato 3 portatili da quando ho pubblicato questa mod :)]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-340">Max</a>.</p>
+<p>Ciao!</p>
+<p>Mi dispiace ma ho già cambiato 3 portatili da quando ho pubblicato questa mod 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Max		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-340</link>
+
+		<dc:creator><![CDATA[Max]]></dc:creator>
+		<pubDate>Sun, 10 Sep 2017 14:32:22 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-340</guid>
+
+					<description><![CDATA[Ciao :)
+Potresti aggiungere il mod necessario a far andare l&#039;egpu sull&#039;n53SV? :D (bios N53SV.215 )
+https://egpu.io/forums/implementation-guides/2011-asus-n53sn-r9-390x4gbps-mpcie2-pe4c-v3-0-win10-doink/]]></description>
+			<content:encoded><![CDATA[<p>Ciao 🙂<br />
+Potresti aggiungere il mod necessario a far andare l&#8217;egpu sull&#8217;n53SV? 😀 (bios N53SV.215 )<br />
+<a href="https://egpu.io/forums/implementation-guides/2011-asus-n53sn-r9-390x4gbps-mpcie2-pe4c-v3-0-win10-doink/" rel="nofollow ugc">https://egpu.io/forums/implementation-guides/2011-asus-n53sn-r9-390x4gbps-mpcie2-pe4c-v3-0-win10-doink/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: AMI Aptio BIOS DSDT Editing &#124; Michele Primavera		</title>
+		<link>/hotkeys-bios-patch-per-notebook-asus-pre-w8/#comment-22</link>
+
+		<dc:creator><![CDATA[AMI Aptio BIOS DSDT Editing &#124; Michele Primavera]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2015 14:09:22 +0000</pubDate>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=95#comment-22</guid>
+
+					<description><![CDATA[[&#8230;] Ma se volessimo crearne noi uno, o modificarlo? L&#8217;esigenza è lecita, soprattutto se quelli creati dal costruttore fanno schifo (un esempio? qui). [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Ma se volessimo crearne noi uno, o modificarlo? L&#8217;esigenza è lecita, soprattutto se quelli creati dal costruttore fanno schifo (un esempio? qui). [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

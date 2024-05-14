@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Recensioni &#8211; Michele Primavera</title>
+	<atom:link href="/category/recensioni/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Sun, 16 Aug 2020 13:18:39 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>Seedr porta i torrent nel cloud</title>
+		<link>/seedr-porta-i-torrent-nel-cloud/</link>
+					<comments>/seedr-porta-i-torrent-nel-cloud/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Thu, 08 Jun 2017 17:07:09 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=718</guid>
+
+					<description><![CDATA[Se come me siete spesso e volentieri costretti a scendere a patti con una connessione mobile saprete sicuramente cosa questa comporti. Gli operatori cellulari implementano filtri, spesso pesantucci, per impedire ai propri utenti di saturare le proprie reti che, considerata la loro natura, sono particolarmente inclini ad &#8220;affondare&#8221;. Alle varie regole canoniche come il traffico<p><a href="/seedr-porta-i-torrent-nel-cloud/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Se come me siete spesso e volentieri costretti a scendere a patti con una connessione mobile saprete sicuramente cosa questa comporti. Gli operatori cellulari implementano filtri, spesso pesantucci, per impedire ai propri utenti di saturare le proprie reti che, considerata la loro natura, sono particolarmente inclini ad &#8220;affondare&#8221;.</p>
+<p>Alle varie regole canoniche come il traffico limitato a monte, si aggiunge praticamente sempre la questione dell&#8217;IP privato, che volente o nolente uccide praticamente ogni forma di P2P.<span id="more-718"></span></p>
+<p>Nota: P2P e pirateria, sebbene oggi giorno vadano quasi sempre a braccetto, NON sono la stessa cosa. Questo articolo infatti non vuole promuovere tale pratica, astenersi bacchettoni. <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Torniamo a <a href="https://www.seedr.cc/?r=650751">Seedr</a>. Cos&#8217;è? Immaginate di aver bisogno di recuperare un torrent. Immaginate di non volerlo o poterlo fare, magari per via del traffico limitato o dell&#8217;IP privato. Ora immaginate che esista un servizio che, dato un torrent, vi restituisce un link diretto al file completo. Questo è <a href="https://www.seedr.cc/?r=650751">Seedr</a>.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr3.png"><img fetchpriority="high" decoding="async" class="aligncenter wp-image-719" src="/wp-content/uploads/2017/06/seedr3-300x163.png" alt="" width="600" height="325" srcset="/wp-content/uploads/2017/06/seedr3-300x163.png 300w, /wp-content/uploads/2017/06/seedr3-768x416.png 768w, /wp-content/uploads/2017/06/seedr3-1024x555.png 1024w, /wp-content/uploads/2017/06/seedr3.png 1920w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>Il principio di funzionamento è molto semplice. Dopo essersi registrati (anche in maniera anonima fornendo solo un indirizzo email) il servizio ci fornirà 2GB (per il piano gratuito) di spazio per archiviare i nostri torrent. Ovviamente non sarà possibile scaricare torrent più grandi di 2GB, ma è possibile aumentare lo spazio a disposizione o pagando una quota mensile o facendo un po&#8217; di pubblicità al servizio.</p>
+<p>L&#8217;interfaccia utente è molto semplice e sarà sufficiente fornire a quest&#8217;ultima un riferimento al proprio torrent (magnet, http .torrent che sia) nella casellina apposita.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr1.png"><img decoding="async" class="aligncenter wp-image-721" src="/wp-content/uploads/2017/06/seedr1-300x163.png" alt="" width="600" height="325" srcset="/wp-content/uploads/2017/06/seedr1-300x163.png 300w, /wp-content/uploads/2017/06/seedr1-768x416.png 768w, /wp-content/uploads/2017/06/seedr1-1024x555.png 1024w, /wp-content/uploads/2017/06/seedr1.png 1920w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>Le linee su cui si appoggia <a href="https://www.seedr.cc/?r=650751">Seedr</a> sono decisamente di qualità. Il download del torrent di Ubuntu ha richiesto giusto una manciata di secondi e il download in locale non molti di più. La loro larghezza di banda è riuscita a saturare una 100 mega senza difficoltà.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr2.png"><img decoding="async" class="aligncenter wp-image-722 size-full" src="/wp-content/uploads/2017/06/seedr2.png" alt="" width="543" height="445" srcset="/wp-content/uploads/2017/06/seedr2.png 543w, /wp-content/uploads/2017/06/seedr2-300x246.png 300w" sizes="(max-width: 543px) 100vw, 543px" /></a></p>
+<p>Un&#8217;altra funzionalità interessante di <a href="https://www.seedr.cc/?r=650751">Seedr</a> è la possibilità di fare streaming del contenuto senza doverlo scaricare preventivamente. Se il nostro torrent contiene uno dei formati supportati (tra cui svariati formati video, immagini e testo) sarà possibile visionarlo direttamente dall&#8217;interfaccia utente.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr6.png"><img decoding="async" class="aligncenter wp-image-729" src="/wp-content/uploads/2017/06/seedr6-300x163.png" alt="" width="600" height="325" srcset="/wp-content/uploads/2017/06/seedr6-300x163.png 300w, /wp-content/uploads/2017/06/seedr6-768x416.png 768w, /wp-content/uploads/2017/06/seedr6-1024x555.png 1024w, /wp-content/uploads/2017/06/seedr6.png 1920w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>In definitiva: <a href="https://www.seedr.cc/?r=650751">Seedr</a> è un servizio che merita senz&#8217;altro di essere provato, soprattutto considerando la natura free del tier base, e che può fare davvero la differenza su connessioni limitanti o limitate.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/seedr-porta-i-torrent-nel-cloud/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Uncharted ha spodestato Mass Effect</title>
+		<link>/uncharted-ha-spodestato-mass-effect/</link>
+					<comments>/uncharted-ha-spodestato-mass-effect/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2017 19:54:21 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=703</guid>
+
+					<description><![CDATA[Ho sempre guardato a Mass Effect come il gioco. Ispirato, bello da vedere e con una storia longeva. L&#8217;unico titolo che è riuscito a farmi apprezzare gli RPG che fino alla sua scoperta ritenevo piuttosto noiosi. L&#8217;unico titolo che era davvero riuscito a commuovermi con alcune sequenze di un toccante veramente fuori dagli schemi. Ecco cosa<p><a href="/uncharted-ha-spodestato-mass-effect/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Ho sempre guardato a Mass Effect come <em>il</em> gioco. Ispirato, bello da vedere e con una storia longeva. L&#8217;unico titolo che è riuscito a farmi apprezzare gli RPG che fino alla sua scoperta ritenevo piuttosto noiosi. L&#8217;unico titolo che era davvero riuscito a commuovermi con alcune sequenze di un toccante veramente fuori dagli schemi.<span id="more-703"></span></p>
+<p>Ecco cosa è ME. Unico, inimitabile, bello. Ha solo un&#8217;unica cosa che manca all&#8217;appello: quella sottile linea d&#8217;ironia che rende memorabile una scena, magari con una battuta ad effetto ben pensata. In ME manca un protagonista cazzone al punto giusto. E si sente.</p>
+<p>Ovviamente il background di Shepard non permette il discostarsi troppo dalla sua linea caratteriale senza scadere nel ridicolo alla Saints Row, cosa che ovviamente non appartiene alla tipologia di gioco.</p>
+<p>Drake è invece il suo opposto: irresponsabile e scapestrato può permettersi uscite decisamente più imbecilli senza sembrare fuori posto, che se fatte nel modo giusto strappano un sorriso una volta si e l&#8217;altra pure rendendo tutta l&#8217;esperienza più coinvolgente e divertente.</p>
+<p>Unite questo a una trama avvincente e a un tempo di gioco più che sufficiente (ho finito la quadrilogia in circa 42 ore) e avrete uno dei giochi meglio pensati, scritti e realizzati di un&#8217;era.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/uncharted-ha-spodestato-mass-effect/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Il Pebble 2 è un&#8217;altro piccolo capolavoro</title>
+		<link>/il-pebble-2-e-unaltro-piccolo-capolavoro/</link>
+					<comments>/il-pebble-2-e-unaltro-piccolo-capolavoro/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Fri, 21 Oct 2016 19:12:26 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=659</guid>
+
+					<description><![CDATA[Venerdì finalmente UPS si è fatto vedere alla mia porta. Certo, un pochino in ritardo rispetto al preannunciato termine di settembre, ma non ci lamentiamo troppo: In fondo, anche se dietro c&#8217;era Pebble, parliamo comunque di Kickstarter. Quattro anni fa, quando Pebble si affacciò finalmente al mondo tramite Kickstarter, non mi sarei neanche sognato di dire<p><a href="/il-pebble-2-e-unaltro-piccolo-capolavoro/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Venerdì finalmente UPS si è fatto vedere alla mia porta. Certo, un pochino in ritardo rispetto al preannunciato termine di settembre, ma non ci lamentiamo troppo: In fondo, anche se dietro c&#8217;era Pebble, parliamo comunque di Kickstarter.</p>
+<p>Quattro anni fa, quando Pebble si affacciò finalmente al mondo tramite Kickstarter, non mi sarei neanche sognato di dire una cosa del genere considerato il modo in cui mi approccio alla piattaforma, ma ad oggi è inutile essere ciechi: parliamo ormai di una startup che pian pianino sta diventando un colosso, dando vita ad oggetti che sempre più escono dall&#8217;ottica del cliente di nicchia e si affacciano al grande e variegato mondo del mainstream.</p>
+<p><span id="more-659"></span></p>
+<p>Il mio approccio con gli Smartwatch è stato quello di molti che non hanno mai avuto al polso un Pebble per una settimana: &#8220;Meh, paccottiglia inutile&#8221;. Non fate questo errore. Non c&#8217;è nulla di inutile in qualcosa che vi semplifica la vita, considerato che comunque state sostituendo una patacca al polso con un&#8217;altra più intelligente, che costa in maniera simile a quella che già avete e che magari a differenza del vostro corrente orologio classico si può leggere anche al buio. Già se consideriamo questa piccolezza, ci rendiamo conto che non c&#8217;è nessun motivo per preferire un orologio tradizionale che il massimo che può offrire è un&#8217;accozzaglia di ingranaggi che magari alla prima botta iniziano a portare male il tempo.</p>
+<p>Non a caso ho parlato di &#8220;semplificare&#8221;, perché aggiungere un altro aggeggio da ricaricare ogni sera <strong>non</strong> è una semplificazione, assolutamente. Lo scopo di uno smartwatch non dovrebbe essere quello di sostituirsi allo smartphone, bensì di integrarlo. Non capisco più chi dice che sono inutili, e chi argomenta con un &#8220;faccio prima a prendere il telefono&#8221; non ha capito un cazzo della filosofia che c&#8217;è dietro. Forse farai anche prima, ma non sempre. Senza considerare che ci sono occasioni in cui non puoi o non vuoi prenderlo il telefono. Aprite gli occhi, lo smartwatch è una comodità. Se ne può fare a meno come tutte le comodità, in effetti: perché andare in macchina quando la maggior parte di noi ha delle gambe che funzionano benissimo?</p>
+<p>Molto carina la scatola, che rispetto al cartone del primo Pebble devo dire fa tutto un altro effetto:</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0638_1024.jpg"><img decoding="async" class="aligncenter wp-image-660" src="/wp-content/uploads/2016/10/IMG_0638_1024-300x215.jpg" alt="img_0638_1024" width="400" height="287" srcset="/wp-content/uploads/2016/10/IMG_0638_1024-300x215.jpg 300w, /wp-content/uploads/2016/10/IMG_0638_1024-768x551.jpg 768w, /wp-content/uploads/2016/10/IMG_0638_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Questo invece è il suo contenuto:</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0619_1024.jpg"><img decoding="async" class="aligncenter wp-image-663" src="/wp-content/uploads/2016/10/IMG_0619_1024-300x272.jpg" alt="img_0619_1024" width="400" height="362" srcset="/wp-content/uploads/2016/10/IMG_0619_1024-300x272.jpg 300w, /wp-content/uploads/2016/10/IMG_0619_1024-768x695.jpg 768w, /wp-content/uploads/2016/10/IMG_0619_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Rispetto al Pebble originale notiamo innanzitutto un miglioramento dell&#8217;estetica, che a questo giro punta più al &#8220;piccolo e carino&#8221; che a sembrare una patacca artigianale.</p>
+<p>Io avendo visto in foto il modello bianco ho subito pensato &#8220;è davvero bello&#8221;, ma dal vivo rende meno. A me piace ugualmente, ma se vi importa del giudizio altrui prendete il nero visto che tutti continuano a dirmi che sarebbe stato meglio di quel colore.</p>
+<p>A questo giro troviamo quindi dimensioni più contenute, più risorse di sistema, un sensore per il battito cardiaco oltre al resto della compartistica &#8220;fitness&#8221;, uno schermo e una batteria leggermente migliorate. L&#8217;orologio, infatti, si vede benissimo in ogni occasione e non fatica a superare i sei giorni di autonomia con un uso medio-intenso.</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0629_1024.jpg"><img decoding="async" class="aligncenter wp-image-665" src="/wp-content/uploads/2016/10/IMG_0629_1024-300x225.jpg" alt="img_0629_1024" width="400" height="300" srcset="/wp-content/uploads/2016/10/IMG_0629_1024-300x225.jpg 300w, /wp-content/uploads/2016/10/IMG_0629_1024-768x576.jpg 768w, /wp-content/uploads/2016/10/IMG_0629_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Ho particolarmente apprezzato il nuovo connettore per la ricarica, più stabile, ma onestamente lo avrei lasciato sul lato per questioni pratiche.</p>
+<p>Molto buone le funzioni volte al controllo della propria salute che mostrano una precisione più che sufficiente. I passi sono in linea con quelli contati da iPhone, il battito cardiaco è molto vicino a quello rilevato col &#8220;metodo del dito&#8221; (con uno scarto sotto i 5 bpm) e il sonno effettivamente corrisponde agli orari in cui credo di essermi addormentato e svegliato. Tutti i dati sono consultabili anche dall&#8217;orologio stesso, oltre che tramite app, in modo da sapere al volo quanto è durato il proprio pisolino, quanto/per quanto abbiamo camminato o il proprio battito durante o dopo una corsa (al momento, la schermata del cuore mostra solo il battito in tempo reale e non lo storico). Precisa anche la sveglia smart che becca davvero il momento più adeguato in cui rompervi la mattina.</p>
+<p><a href="/wp-content/uploads/2016/10/timeline.png"><img decoding="async" class="aligncenter wp-image-666" src="/wp-content/uploads/2016/10/timeline-300x233.png" alt="timeline" width="400" height="311" srcset="/wp-content/uploads/2016/10/timeline-300x233.png 300w, /wp-content/uploads/2016/10/timeline.png 432w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Questi sono alcuni esempi della timeline del pebble che mostrano il mio personale stato. Il tipico per venerdì è ovviamente vuoto perché ho l&#8217;orologio al polso da sabato scorso.</p>
+<p><a href="/wp-content/uploads/2016/10/salute.png"><img decoding="async" class="aligncenter wp-image-668" src="/wp-content/uploads/2016/10/salute-300x178.png" alt="salute" width="400" height="237" srcset="/wp-content/uploads/2016/10/salute-300x178.png 300w, /wp-content/uploads/2016/10/salute-768x455.png 768w, /wp-content/uploads/2016/10/salute.png 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Buone anche le notifiche che, come al solito, sono puntuali. Non ho provato la dettatura vocale perché su iPhone non è supportata.</p>
+<p>Concludendo: un ottimo giocattolino sul centinaio di euro. è bello, pieno di funzionalità, leggero, piccolo, ha una batteria di lunga durata, uno schermo e-ink e un&#8217;app di gestione fatta come si deve. E se siete sviluppatori adorerete CloudPebble, un esempio da seguire per tutti i &#8220;rivali&#8221;.</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0620_1024.jpg"><img decoding="async" class="aligncenter wp-image-669" src="/wp-content/uploads/2016/10/IMG_0620_1024-300x225.jpg" alt="img_0620_1024" width="400" height="300" srcset="/wp-content/uploads/2016/10/IMG_0620_1024-300x225.jpg 300w, /wp-content/uploads/2016/10/IMG_0620_1024-768x576.jpg 768w, /wp-content/uploads/2016/10/IMG_0620_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/il-pebble-2-e-unaltro-piccolo-capolavoro/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Aruba Cloud: La recensione completa</title>
+		<link>/aruba-cloud-la-recensione-completa/</link>
+					<comments>/aruba-cloud-la-recensione-completa/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 02 Apr 2016 16:03:22 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=338</guid>
+
+					<description><![CDATA[Le VPS sono la naturale evoluzione dello shared hosting. Non appena le esigenze personali vanno un tantino oltre, infatti, le limitazioni saltano subito fuori ricordandoti che la tua libertà finisce dove inizia quella dell&#8217;amministratore. Gestirne una ormai non è complicatissimo, basta un po&#8217; di pazienza. E se poi si possono anche avere 10 euro di<p><a href="/aruba-cloud-la-recensione-completa/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Le VPS sono la naturale evoluzione dello shared hosting. Non appena le esigenze personali vanno un tantino oltre, infatti, le limitazioni saltano subito fuori ricordandoti che la tua libertà finisce dove inizia quella dell&#8217;amministratore. Gestirne una ormai non è complicatissimo, basta un po&#8217; di pazienza. E se poi si possono anche avere <a href="https://www.cloud.it/prova-cloud-aruba.aspx">10 euro di credito gratuito</a>, perché non provare?</p>
+<p><span id="more-338"></span></p>
+<p>Aruba mette a disposizione diversi datacenter tra cui scegliere, a seconda delle nostre esigenze:</p>
+<p><a href="/wp-content/uploads/2016/02/a1-1.jpg" rel="attachment wp-att-339"><img decoding="async" class="aligncenter wp-image-446" src="/wp-content/uploads/2016/02/a1-1-300x128.jpg" alt="" width="500" height="213" srcset="/wp-content/uploads/2016/02/a1-1-300x128.jpg 300w, /wp-content/uploads/2016/02/a1-1-768x327.jpg 768w, /wp-content/uploads/2016/02/a1-1.jpg 945w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Il pannello principale è molto chiaro. Con un solo colpo d&#8217;occhio è possibile tenere sotto controllo ed accedere ad ognuno dei servizi acquistati:</p>
+<p><a href="/wp-content/uploads/2016/02/a2-1.jpg" rel="attachment wp-att-340"><img decoding="async" class="aligncenter wp-image-444" src="/wp-content/uploads/2016/02/a2-1-300x182.jpg" alt="" width="500" height="303" srcset="/wp-content/uploads/2016/02/a2-1-300x182.jpg 300w, /wp-content/uploads/2016/02/a2-1-768x465.jpg 768w, /wp-content/uploads/2016/02/a2-1.jpg 978w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Andiamo subito a creare una VPS:</p>
+<p><a href="/wp-content/uploads/2016/02/a3.jpg" rel="attachment wp-att-341"><img decoding="async" class="aligncenter wp-image-341" src="/wp-content/uploads/2016/02/a3-226x300.jpg" alt="a3" width="500" height="664" srcset="/wp-content/uploads/2016/02/a3-226x300.jpg 226w, /wp-content/uploads/2016/02/a3.jpg 670w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Ma qual è la differenza tra Cloud Server <span style="color: #00ff00;"><em>Smart</em></span> e <span style="color: #0000ff;"><em>Pro</em></span>?</p>
+<p>Ciò che subito salta all&#8217;occhio è la clientela a cui le diverse formule sono destinate. I Pro, infatti, nascono per soddisfare le esigenze professionali degli addetti ai lavori, con maggiori garanzie e possibilità di scelta in fase di configurazione. Alcuni dei vantaggi della versione &#8220;Pro&#8221; includono:</p>
+<ul>
+<li>Prestazione garantite (50%)</li>
+<li>SLA 99,95%</li>
+<li>Fino a 500GBx4 HD su SAN</li>
+<li>Fino a 32GB di RAM</li>
+<li>Hardware ridondato</li>
+<li>Possibilità di scegliere tra VMWare ed Hyper-V</li>
+<li>Fino a 5 IP pubblici aggiuntivi, con possibilità di creare reti private tra le proprie macchine</li>
+<li>Traffico illimitato</li>
+<li>Quantità di risorse completamente personalizzabile</li>
+</ul>
+<p>Il Cloud Server Smart, di cui parliamo oggi, viene fornito in quattro diverse taglie, e diversi template che spaziano da Windows Server, a Ubuntu, a CentOS. Trovate una piccola guida su come scegliere la taglia giusta <a href="/?p=332">qui</a>. Nel processo di attivazione avrete modo anche di preconfigurare la password di root. Il deploy della VPS, nel mio caso, ha richiesto poco più di 4 minuti, un tempo più che ragionevole. Durante la stesura del presente ho incontrato difficoltà nell&#8217;attivare Extra Control, che nonostante fosse installato e correttamente attivato, non veniva rilevato dal pannello di configurazione. Prontamente contattata l&#8217;assistenza tramite ticket online, ho ricevuto una <strong>telefonata</strong> dopo una trentina di minuti da un operatore che mi faceva notare che, lo stato del servizio in questione, cambia dopo 24 ore dall&#8217;installazione. (cosa che, comunque, avrei specificato da qualche parte per evitare fraintendimenti) Nel caso le cose non fossero andate per il verso giusto, poi, si è subito offerto di dare un&#8217;occhiata alla VPS e di sistemare lui le cose per me.</p>
+<p>Il pannello principale è completo e fornisce a colpo d&#8217;occhio tutto ciò di cui si può solitamente aver bisogno:</p>
+<p><a href="/wp-content/uploads/2016/02/a36.jpg" rel="attachment wp-att-440"><img decoding="async" class="aligncenter wp-image-440" src="/wp-content/uploads/2016/02/a36-268x300.jpg" alt="a36" width="500" height="560" srcset="/wp-content/uploads/2016/02/a36-268x300.jpg 268w, /wp-content/uploads/2016/02/a36.jpg 722w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Particolarmente degna di nota è la funzione snapshot disponibile pubblicamente (chi ha utilizzato VMWare o Hyper-V sa di cosa parlo) e gratuitamente; questa consente di salvare per 2 giorni una istantanea della macchina virtuale così, se qualcosa dovesse andare storto durante modifiche o esperimenti, è possibile ripristinarla con un click. Il tab statistiche, poi, è in grado di fornire informazioni sulle risorse della macchina: qui potremo trovare dei grafici che rispecchiano il reale uso su base oraria, giornaliera o settimanale.</p>
+<p>Ora direi che è il caso di passare ai numeri, attraverso ad una serie di test &#8220;classici&#8221; (che ricordo essere fatti su una taglia <strong>S</strong>: 1 CPU, 1 GB di RAM, 20 GB SSD).</p>
+<p><strong>Il test del kernel</strong></p>
+<p>Compilare Linux è sempre stata una operazione esosa e il tempo che richiede è significativo per valutare le VPS nel loro complesso. Scaricare il tar.xz di Linux 4.4.2 ha richiesto esattamente un secondo (ricordo che stiamo usufruendo di una linea a 1 Gbit), estrarlo 14 secondi e compilarlo con la config di default 2 ore e mezza. Ovviamente questa tempistica è sicuramente nella norma considerato che stiamo parlando di una macchina single core.</p>
+<p><a href="/wp-content/uploads/2016/02/a7.jpg" rel="attachment wp-att-345"><img decoding="async" class="aligncenter size-medium wp-image-345" src="/wp-content/uploads/2016/02/a7-271x300.jpg" alt="a7" width="271" height="300" srcset="/wp-content/uploads/2016/02/a7-271x300.jpg 271w, /wp-content/uploads/2016/02/a7.jpg 581w" sizes="(max-width: 271px) 100vw, 271px" /></a></p>
+<p><strong>Il dd test</strong></p>
+<p>Forse poco significativo, ma fa sicuramente impressione vedere che queste VPS sono capaci di scrivere 11GB a ben <strong>730 MB/s</strong></p>
+<p><a href="/wp-content/uploads/2016/02/a8.jpg" rel="attachment wp-att-347"><img decoding="async" class="aligncenter size-medium wp-image-347" src="/wp-content/uploads/2016/02/a8-300x166.jpg" alt="a8" width="300" height="166" srcset="/wp-content/uploads/2016/02/a8-300x166.jpg 300w, /wp-content/uploads/2016/02/a8.jpg 581w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><strong>Bonnie++</strong></p>
+<p>Confermiamo ancora una volta l&#8217;estrema efficienza dello storage che, a differenza di altri competitor, sembra proprio non sarà mai motivo di colli di bottiglia!</p>
+<p><a href="/wp-content/uploads/2016/02/a10.jpg" rel="attachment wp-att-351"><img decoding="async" class="aligncenter wp-image-351 size-large" src="/wp-content/uploads/2016/02/a10-1024x132.jpg" alt="a10" width="960" height="124" srcset="/wp-content/uploads/2016/02/a10-1024x132.jpg 1024w, /wp-content/uploads/2016/02/a10-300x39.jpg 300w, /wp-content/uploads/2016/02/a10-768x99.jpg 768w, /wp-content/uploads/2016/02/a10.jpg 1198w" sizes="(max-width: 960px) 100vw, 960px" /></a></p>
+<p><strong>Vpsbench</strong>:</p>
+<blockquote><p>CPU model:  Intel(R) Xeon(R) CPU E5-2650L v3 @ 1.80GHz<br />
+Number of cores: 1<br />
+CPU frequency:  1799.999 MHz<br />
+Total amount of RAM: 993 MB<br />
+Total amount of swap: 951 MB<br />
+System uptime:   1:31,<br />
+I/O speed:  721 MB/s<br />
+Bzip 25MB: 8.36s<br />
+Download 100MB file: 69.8MB/s</p></blockquote>
+<p><strong>Network speed tests<br />
+</strong></p>
+<p>Vediamo ora come si comporta il network a cui la VPS è collegata. Di seguito un po&#8217; di download tests, che possiamo riassumere così:</p>
+<ul>
+<li>Europa: 70MB/s</li>
+<li>USA: 30MB/s</li>
+<li>Asia: 10MB/s</li>
+</ul>
+<div id="attachment_353" style="width: 310px" class="wp-caption alignleft"><a href="/wp-content/uploads/2016/02/a11.jpg" rel="attachment wp-att-353"><img decoding="async" aria-describedby="caption-attachment-353" class="wp-image-353 size-medium" src="/wp-content/uploads/2016/02/a11-300x124.jpg" alt="a11" width="300" height="124" srcset="/wp-content/uploads/2016/02/a11-300x124.jpg 300w, /wp-content/uploads/2016/02/a11-768x319.jpg 768w, /wp-content/uploads/2016/02/a11.jpg 805w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-353" class="wp-caption-text">Speedtest di tele2.net (Svezia)</p></div>
+<div id="attachment_355" style="width: 310px" class="wp-caption alignleft"><a href="/wp-content/uploads/2016/02/a12.jpg" rel="attachment wp-att-355"><img decoding="async" aria-describedby="caption-attachment-355" class="wp-image-355 size-medium" src="/wp-content/uploads/2016/02/a12-300x124.jpg" alt="a12" width="300" height="124" srcset="/wp-content/uploads/2016/02/a12-300x124.jpg 300w, /wp-content/uploads/2016/02/a12-768x319.jpg 768w, /wp-content/uploads/2016/02/a12.jpg 805w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-355" class="wp-caption-text">Speedtest reliableservers.com (Stati uniti)</p></div>
+<div id="attachment_357" style="width: 310px" class="wp-caption alignleft"><a href="/wp-content/uploads/2016/02/a13.jpg" rel="attachment wp-att-357"><img decoding="async" aria-describedby="caption-attachment-357" class="size-medium wp-image-357" src="/wp-content/uploads/2016/02/a13-300x124.jpg" alt="Speedtest internode (AU)" width="300" height="124" srcset="/wp-content/uploads/2016/02/a13-300x124.jpg 300w, /wp-content/uploads/2016/02/a13-768x319.jpg 768w, /wp-content/uploads/2016/02/a13.jpg 805w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-357" class="wp-caption-text">Speedtest internode (Australia)</p></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="attachment_359" style="width: 310px" class="wp-caption alignleft"><a href="/wp-content/uploads/2016/02/a14.jpg" rel="attachment wp-att-359"><img decoding="async" aria-describedby="caption-attachment-359" class="size-medium wp-image-359" src="/wp-content/uploads/2016/02/a14-300x124.jpg" alt="Speedtest linhost.info (Giappone)" width="300" height="124" srcset="/wp-content/uploads/2016/02/a14-300x124.jpg 300w, /wp-content/uploads/2016/02/a14-768x319.jpg 768w, /wp-content/uploads/2016/02/a14.jpg 805w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-359" class="wp-caption-text">Speedtest linhost.info (Giappone)</p></div>
+<div id="attachment_360" style="width: 310px" class="wp-caption alignleft"><a href="/wp-content/uploads/2016/02/a15.jpg" rel="attachment wp-att-360"><img decoding="async" aria-describedby="caption-attachment-360" class="size-medium wp-image-360" src="/wp-content/uploads/2016/02/a15-300x124.jpg" alt="Speedtest Kpnqwest (Italia)" width="300" height="124" srcset="/wp-content/uploads/2016/02/a15-300x124.jpg 300w, /wp-content/uploads/2016/02/a15-768x319.jpg 768w, /wp-content/uploads/2016/02/a15.jpg 805w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-360" class="wp-caption-text">Speedtest Kpnqwest (Italia)</p></div>
+<div id="attachment_361" style="width: 310px" class="wp-caption alignleft"><a href="/wp-content/uploads/2016/02/a16.jpg" rel="attachment wp-att-361"><img decoding="async" aria-describedby="caption-attachment-361" class="size-medium wp-image-361" src="/wp-content/uploads/2016/02/a16-300x124.jpg" alt="Download da una macchina nello stesso datacenter (DC1)" width="300" height="124" srcset="/wp-content/uploads/2016/02/a16-300x124.jpg 300w, /wp-content/uploads/2016/02/a16-768x319.jpg 768w, /wp-content/uploads/2016/02/a16.jpg 805w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-361" class="wp-caption-text">Download da una macchina nello stesso datacenter (DC1)</p></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>E infine un upload test:</p>
+<div id="attachment_365" style="width: 310px" class="wp-caption aligncenter"><a href="/wp-content/uploads/2016/02/a17-1.jpg" rel="attachment wp-att-365"><img decoding="async" aria-describedby="caption-attachment-365" class="wp-image-365 size-medium" src="/wp-content/uploads/2016/02/a17-1-300x124.jpg" alt="a17" width="300" height="124" srcset="/wp-content/uploads/2016/02/a17-1-300x124.jpg 300w, /wp-content/uploads/2016/02/a17-1-768x319.jpg 768w, /wp-content/uploads/2016/02/a17-1.jpg 805w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-365" class="wp-caption-text">Speedtest di tele2.net (Svezia)</p></div>
+<p><strong>Network latency tests</strong></p>
+<p>Dedichiamoci un po&#8217; al classico ping ora, che ne dite? (valori medi)</p>
+<ul>
+<li>8.8.8.8: 7,774 ms</li>
+<li>DC1&lt;-&gt;DC1: 0,745 ms</li>
+<li>tim.it: 14,808 ms</li>
+<li>108.61.5.91 (USA): 100,448 ms</li>
+<li>150.101.135.3 (Australia): 324,774 ms</li>
+<li>106.187.96.148 (Giappone): 285,020 ms</li>
+<li>google.it: 17,327 ms</li>
+<li>nvidia.com: 172,901 ms</li>
+</ul>
+<p><strong>HTTP test</strong></p>
+<p>Torniamo ora a valutare la VPS nel suo complesso. Come si comporta in uno degli usi più classici, ovvero servire dei siti web? Iniziamo col noto test di pingdom.com:</p>
+<p><a href="/wp-content/uploads/2016/02/a18.jpg" rel="attachment wp-att-368"><img decoding="async" class="aligncenter wp-image-368 size-full" src="/wp-content/uploads/2016/02/a18.jpg" alt="a18" width="605" height="206" srcset="/wp-content/uploads/2016/02/a18.jpg 605w, /wp-content/uploads/2016/02/a18-300x102.jpg 300w" sizes="(max-width: 605px) 100vw, 605px" /></a></p>
+<p>Siege vs nginx (15 utenti):</p>
+<blockquote>
+<div>** SIEGE 3.0.5</div>
+<div>** Preparing 15 concurrent users for battle.</div>
+<div>The server is now under siege&#8230;</div>
+<div>Lifting the server siege&#8230;      done.</div>
+<div>Transactions:                  25823 hits</div>
+<div>Availability:                 100.00 %</div>
+<div>Elapsed time:                 599.20 secs</div>
+<div>Data transferred:              58.59 MB</div>
+<div>Response time:                  0.35 secs</div>
+<div>Transaction rate:              43.10 trans/sec</div>
+<div>Throughput:                     0.10 MB/sec</div>
+<div>Concurrency:                   14.99</div>
+<div>Successful transactions:       25823</div>
+<div>Failed transactions:               0</div>
+<div>Longest transaction:            1.35</div>
+<div>Shortest transaction:           0.33</div>
+</blockquote>
+<div>Siege vs nginx (50 utenti):</div>
+<blockquote>
+<div>
+<div>** SIEGE 3.0.5</div>
+<div>** Preparing 50 concurrent users for battle.</div>
+<div>The server is now under siege&#8230;</div>
+<div>Lifting the server siege&#8230;      done.</div>
+<div>Transactions:                  86066 hits</div>
+<div>Availability:                 100.00 %</div>
+<div>Elapsed time:                 599.87 secs</div>
+<div>Data transferred:             195.27 MB</div>
+<div>Response time:                  0.35 secs</div>
+<div>Transaction rate:             143.47 trans/sec</div>
+<div>Throughput:                     0.33 MB/sec</div>
+<div>Concurrency:                   49.98</div>
+<div>Successful transactions:       86066</div>
+<div>Failed transactions:               0</div>
+<div>Longest transaction:            1.35</div>
+<div>Shortest transaction:           0.33</div>
+</div>
+</blockquote>
+<div>Siege vs nginx (300 utenti):</div>
+<blockquote>
+<div>
+<div>** SIEGE 3.0.5</div>
+<div>** Preparing 300 concurrent users for battle.</div>
+<div>The server is now under siege&#8230;</div>
+<div>Lifting the server siege&#8230;      done.</div>
+<div>Transactions:                 177898 hits</div>
+<div>Availability:                 100.00 %</div>
+<div>Elapsed time:                 599.86 secs</div>
+<div>Data transferred:             403.61 MB</div>
+<div>Response time:                  1.01 secs</div>
+<div>Transaction rate:             296.57 trans/sec</div>
+<div>Throughput:                     0.67 MB/sec</div>
+<div>Concurrency:                  299.16</div>
+<div>Successful transactions:      177898</div>
+<div>Failed transactions:               0</div>
+<div>Longest transaction:           15.35</div>
+<div>Shortest transaction:           0.33</div>
+</div>
+</blockquote>
+<div>Siege vs nginx (500 utenti):</div>
+<blockquote>
+<div>
+<div>
+<div>** SIEGE 3.0.5</div>
+<div>** Preparing 500 concurrent users for battle.</div>
+<div>The server is now under siege&#8230;</div>
+</div>
+<div>Lifting the server siege&#8230;      done.</div>
+<div>Transactions:                 197955 hits</div>
+<div>Availability:                  99.98 %</div>
+<div>Elapsed time:                 599.75 secs</div>
+<div>Data transferred:             449.12 MB</div>
+<div>Response time:                  1.50 secs</div>
+<div>Transaction rate:             330.06 trans/sec</div>
+<div>Throughput:                     0.75 MB/sec</div>
+<div>Concurrency:                  493.83</div>
+<div>Successful transactions:      197955</div>
+<div>Failed transactions:              39</div>
+<div>Longest transaction:           31.54</div>
+<div>Shortest transaction:           0.33</div>
+</div>
+</blockquote>
+<p><strong>Qualità degli indirizzi IP</strong></p>
+<p>Dedico un piccolo paragrafo a chi come me ha voluto, o vuole, metter su un proprio mail server. Per quanto mi riguarda, entrambi gli indirizzi IP che mi sono stati forniti da Aruba sono risultati puliti. Nessuna blacklist li includeva tranne una, che come ragione dava un bel &#8220;spammy neighborhood&#8221;, che significa che in passato ci sono stati IP nella stessa subnet che consegnavano spam. Non è dato sapere se questi buontemponi siano ancora attivi oppure sia solo l&#8217;effetto di uno scarso controllo da parte di chi ha ceduto gli IP ad Aruba, fatto sta che se vorrete inviare le vostre mail direttamente potrete farlo, in quanto è molto probabile che gli indirizzi forniti non saranno in lista nera. Impostare poi il reverse DNS sarà semplicissimo (si può fare direttamente dal pannello) e senza costi aggiuntivi.</p>
+<p><strong>Servizi accessori<br />
+</strong></p>
+<p>In caso ne aveste bisogno, l&#8217;azienda offre anche un <a href="/?p=372">servizio di monitoraggio</a>, di <a href="/?p=383">memorizzazione e distribuzione dei contenuti</a> e di <a href="/?p=395">backup</a>.</p>
+<p><strong>Conclusioni</strong></p>
+<p>Questo è, semplicemente, uno dei migliori servizi Cloud disponibili. Offre ottime macchine ad un prezzo ragionevole, con taglie e possibilità di personalizzazione per tutti i gusti e tutte le tasche. Il fatto che siano supportate poi da un&#8217;ottima connettività e da una eccellente e veloce assistenza, fa si che io non possa non consigliarvi il servizio nostrano. Ricordo infine che toccare con mano l&#8217;impegno che Aruba ha messo e sta mettendo nel servizio è <a href="https://www.cloud.it/prova-cloud-aruba.aspx">gratuito e senza impegno</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/aruba-cloud-la-recensione-completa/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Yubikey NEO: quando l&#8217;NFC contiene un tesoro</title>
+		<link>/yubikey-neo-quando-lnfc-contiene-un-tesoro/</link>
+					<comments>/yubikey-neo-quando-lnfc-contiene-un-tesoro/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 14 Feb 2016 12:13:10 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=303</guid>
+
+					<description><![CDATA[Si sa, le password non sono superate se gestite adeguatamente. Eppure, assistiamo a continui furti d&#8217;identità, accessi non autorizzati, frodi e quant&#8217;altro. Perché? Il motivo sta nella loro volatilità: sono difficili da scoprire se impostate (e mantenute) con correttezza, ma molto facili da copiare una volta scoperte. Questo è il motivo per cui i governi,<p><a href="/yubikey-neo-quando-lnfc-contiene-un-tesoro/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Si sa, le password non sono superate se gestite adeguatamente. Eppure, assistiamo a continui furti d&#8217;identità, accessi non autorizzati, frodi e quant&#8217;altro. Perché?</p>
+<p>Il motivo sta nella loro volatilità: sono difficili da scoprire se impostate (e mantenute) con correttezza, ma molto facili da copiare una volta scoperte. Questo è il motivo per cui i governi, le società di sicurezza e così via le hanno integrate (o sostituite) con dei token fisici o biometrici, come le impronte digitali, le smartcard, lo scanner retinale o quant&#8217;altro.</p>
+<p>Fino a qualche anno fa queste tecnologie erano fuori dalla portata del cittadino poiché costose e poco pratiche. Man mano che la tecnologia invecchia, però, diventa sempre più accessibile e alla portata di tutti. è per questo che aziende come Yubico hanno iniziato a produrre e distribuire a prezzi modici degli strumenti che, se utilizzati adeguatamente, possono rendere qualsiasi account quasi inespugnabile.<br />
+<span id="more-303"></span><br />
+<a href="/wp-content/uploads/2016/02/20160214_134740-min.jpg" rel="attachment wp-att-314"><img decoding="async" class="aligncenter wp-image-323 size-medium" src="/wp-content/uploads/2016/02/20160214_134740-min-300x169.jpg" alt="" width="300" height="169" srcset="/wp-content/uploads/2016/02/20160214_134740-min-300x169.jpg 300w, /wp-content/uploads/2016/02/20160214_134740-min-768x432.jpg 768w, /wp-content/uploads/2016/02/20160214_134740-min.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I meccanismi 2FA (two-factor authentication) sono tanti, e la NEO ci viene incontro supportandone in gran numero. Questa piccola chiavetta porta con sé diverse funzionalità, quali:</p>
+<ul>
+<li>Generatore di codici OTP a 6 e 8 cifre, SHA1 o SHA256, basati sul tempo o su contatore (stesso algoritmo di Google Authenticator)</li>
+<li>Funzionalità di smartcard, che può contenere fino a tre chiavi diverse (massimo di 2048bit l&#8217;una), generate direttamente dalla chiavetta</li>
+<li>Generatore di entropia di alta qualità</li>
+<li>Funzionalità tastiera: basta inserire la chiavetta e premere il tasto per scrivere il codice</li>
+<li>Funzionalità FIDO U2F</li>
+<li>Funzionalità NFC: tutto quello di cui sopra è anche accessibile senza fili, ad esempio da uno smartphone</li>
+</ul>
+<p>Ed ora ecco alcuni esempi pratici di utilizzo di queste funzioni:</p>
+<ul>
+<li>Protezione degli account come Google, Dropbox e Lastpass con codici OTP</li>
+<li>Accesso SSH senza password (USB+PIN)</li>
+<li>Accesso 2FA a Windows, Linux o MacOS</li>
+<li>Accesso ai siti delle banche senza token (purtroppo ancora non supportato in Italia&#8230;)</li>
+<li>Crittografia di file e/o email tramite OpenPGP (via USB o NFC)</li>
+<li>Scrivere password statiche (cosa accade quando si preme il tasto sulla chiavetta è personalizzabile)</li>
+<li>Sbloccare gli hard disk crittografati senza password (USB+PIN)</li>
+</ul>
+<p>Il fulcro della sicurezza in questo tipo di applicazioni è che, a meno di attacchi estremamente costosi (di solito si parla di 1000 volte il costo dell&#8217;oggetto), è impossibile estrarre le chiavi crittografiche dalla smartcard, e quindi clonarla. Questo, unito al fatto che è possibile proteggere la chiavetta con una password, fa si che queste piccole barrette di plastica siano praticamente inviolabili.</p>
+<p>L&#8217;unica pecca di questo gioiellino sono le app, davvero brutte e poco curate. Per questo, ne ho creata una io in material design, perché anche l&#8217;occhio vuole la sua parte:</p>
+<p><a href="/wp-content/uploads/2016/02/unnamed.png" rel="attachment wp-att-305"><img decoding="async" class="aligncenter wp-image-305" src="/wp-content/uploads/2016/02/unnamed.png" alt="unnamed" width="253" height="450" srcset="/wp-content/uploads/2016/02/unnamed.png 506w, /wp-content/uploads/2016/02/unnamed-169x300.png 169w" sizes="(max-width: 253px) 100vw, 253px" /></a><a href="https://play.google.com/store/apps/details?id=it.dreamcode.neomanager&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img decoding="async" class="aligncenter" src="https://play.google.com/intl/en_us/badges/images/generic/it-play-badge.png" alt="Get it on Google Play" width="253" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/yubikey-neo-quando-lnfc-contiene-un-tesoro/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Talos Principle è bello</title>
+		<link>/the-talos-principle-e-bello/</link>
+					<comments>/the-talos-principle-e-bello/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2015 19:11:16 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=236</guid>
+
+					<description><![CDATA[Questo gioco non è esattamente uscito ieri, e sebbene mi abbia incuriosito fin dalla sua uscita circa un anno fa, sono i saldi autunnali di quest&#8217;anno che mi hanno dato la giusta spinta a prenderlo. Il mio dettame che mi vieta di spendere più di 15 euro per un gioco lo ritengo inviolabile, sicché&#8230; Appena<p><a href="/the-talos-principle-e-bello/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Questo gioco non è esattamente uscito ieri, e sebbene mi abbia incuriosito fin dalla sua uscita circa un anno fa, sono i saldi autunnali di quest&#8217;anno che mi hanno dato la giusta spinta a prenderlo. Il mio dettame che mi vieta di spendere più di 15 euro per un gioco lo ritengo inviolabile, sicché&#8230;</p>
+<p>Appena lanciato il gioco la prima cosa che vedremo è la somiglianza non indifferente col menu di Serious Sam 3, ma onestamente non è una cosa che disturba: il menu infondo è la cosa meno importante. Le somiglianze con SS3 non finiscono qui, troveremo infatti le torrette alle pareti con gli interruttori che sono identiche. Le meccaniche sono però simili a quelle di portal, ma molto più immediate, talmente immediate che anche senza tutorial avrete già chiaro cosa fare.<br />
+<span id="more-236"></span><br />
+Il vostro creatore è Elohim, che subito si premura di darvi una ragione di vita. Fin dal principio diventa chiaro che voi siete una entità meccanica, una intelligenza artificiale, il cui scopo è esplorare e conquistare il mondo che lui ha creato per voi. La vostra libertà è assoluta a parte un piccolo dettaglio:</p>
+<blockquote><p>Tranne alla grande torre. Li non potrai mai andare, perché il giorno in cui lo farai, morirai.</p></blockquote>
+<p>Sparsi per tale mondo poi vi sono dei terminali di accesso alla &#8220;biblioteca&#8221; che vi daranno vaghi indizi sul passato, talmente vaghi da lasciarvi più perplessi di prima. Tali indizi, infatti, seppure vaghi, vi fanno capire che, a differenza di quanto detto da Elohim, è possibile che voi siate nient&#8217;altro che un esperimento, un&#8217;entità fine a se stessa, col solo scopo di dimostrare cosa la mente umana può creare.</p>
+<p>Conquistare significa raccogliere i sigilli, dei pezzi simili a quelli di Tetris, che vi consentiranno di sbloccare le porte ed avanzare. Tra voi e tale raccolta, come già accennato, vi saranno i cattivoni come bombe e torrette. La loro presenza è spiegata come un modo di rafforzare la vostra fede in lui.</p>
+<p>Tutto è perfettamente orchestrato, ogni passo vi porta delle domande sul mondo, le quali risposte non tardano ad arrivare.</p>
+<p>Impersonandovi nella creatura a cui date i comandi, però, non potrete fare a meno di chiedervi se tali risposte portino in seno la verità, dove sono finiti i vostri predecessori (di cui abbiamo solo dei messaggi qua e la sulle pareti), perché Elohim vi ha creato, perché lascia che l&#8217;essere che anima la biblioteca vi faccia venire dubbi su di lui, perché il mondo in cui vagate è semidistrutto e decadente, ma soprattutto per quale cazzo di motivo creare un essere per fargli raccogliere le tessere del tetris?<br />
+Perversione?</p>
+<p>Insomma, alla fine della fiera, le domande che il gioco vi suscita sono le stesse di qualsiasi altra religione. E voi, futuri adepti della setta di Talos, non potrete fare a meno di lottare, enigma dopo enigma, per raggiungere la verità.</p>
+<blockquote><p>Sai, più ci penso, più credo che nessuno in realtà sia preoccupato della possibilità che le IA possano conquistare il mondo o simili, non imposta cosa dicono. Ciò di cui si preoccupano è che qualcuno potrebbe dimostrare, una volta per tutte, che la coscienza possa nascere dalla materia. E credo di capire perché lo trovano così terrificante. Se siamo in grado di creare un essere senziente, che ne è dell&#8217;anima? Senza il mistero, come possiamo vederci come qualcosa di diverso da macchine? E se siamo macchine, che speranza abbiamo che la morte non è la fine?</p>
+<p>Ciò che spaventa davvero la gente non è l&#8217;intelligenza artificiale del computer, ma l&#8217;intelligenza &#8220;naturale&#8221; che vede nello specchio.</p></blockquote>
+<p>Viaggio spirituale incluso nel prezzo.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/the-talos-principle-e-bello/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Un plauso a LastPass</title>
+		<link>/un-plauso-a-lastpass/</link>
+					<comments>/un-plauso-a-lastpass/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 06 Dec 2015 22:20:51 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=250</guid>
+
+					<description><![CDATA[Prima di scoprire questo piccolo grande servizio, ero una di quelle persone che conosceva 3-4 password che usava a rotazione sui vari siti. Un rischio enorme ed una grande dimostrazione di stupidità senza dubbio, dettato da una memoria corta e da una pigrizia spropositata. Come già ho detto in precendenza, il mio interesse verso la<p><a href="/un-plauso-a-lastpass/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Prima di scoprire questo piccolo grande servizio, ero una di quelle persone che conosceva 3-4 password che usava a rotazione sui vari siti. Un rischio enorme ed una grande dimostrazione di stupidità senza dubbio, dettato da una memoria corta e da una pigrizia spropositata.<br />
+<span id="more-250"></span><br />
+Come già ho detto in precendenza, il mio interesse verso la privacy e la sicurezza informatica è cresciuto esponenzialmente negli ultimi tempi, quindi il salto di qualità era diventato d&#8217;obbligo. Il servizio ha un costo contenuto (12$/anno) che comprende, oltre all&#8217;ovvia memorizzazione delle password online (crittografate. loro non vedono le password e sono decrittografate sempre e solo in locale), estensioni per i maggiori browser (autocompletamento, generazione password, autologin e per firefox anche riempimento automatico della basic auth http) desktop e mobile, app per smartphone (tastiera e notifiche che riempiono in maniera automatica le caselle) e un supporto che comunque risponde in maniera celere alle email. Ci sono poi template per carte di credito, interi form per gli indirizzi, note e così via.</p>
+<p>So che esistono altri servizi ma nessuno ha una quantità di funzioni paragonabile, o in alternativa un prezzo paragonabile. Quelli che poi sfruttano un cloud di terze parti non li ritengo all&#8217;altezza, visto che non sono indipendenti.</p>
+<p>In caso vogliate un po&#8217; di premium gratis date un&#8217;occhiata <a href="https://lastpass.com/f?13533422" target="_blank">qui</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/un-plauso-a-lastpass/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Aruba Cloud? Sorprendente! (+ voucher)</title>
+		<link>/aruba-cloud-sorprendente-voucher/</link>
+					<comments>/aruba-cloud-sorprendente-voucher/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2015 19:14:46 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=199</guid>
+
+					<description><![CDATA[Partiamo col sincero presupposto che inizialmente ero orientato verso OVH perché leggermente più economico, ma poi mi son buttato su Aruba perché offrivano una prova gratis. Il più stupido dei motivi? Forse, eppure sono rimasto piacevolmente sorpreso. Perché? Le prestazioni! Ma partiamo con ordine. L&#8217;uso che ne dovevo fare era inizialmente solo di relay smtp<p><a href="/aruba-cloud-sorprendente-voucher/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Partiamo col sincero presupposto che inizialmente ero orientato verso OVH perché leggermente più economico, ma poi mi son buttato su Aruba perché offrivano una prova gratis. Il più stupido dei motivi? Forse, eppure sono rimasto piacevolmente sorpreso. Perché? Le prestazioni!</p>
+<p><span id="more-199"></span></p>
+<p>Ma partiamo con ordine. L&#8217;uso che ne dovevo fare era inizialmente solo di relay smtp (postfix), ma vista l&#8217;estrema reattività la cosa si è estesa anche a proxy tcp (haproxy) e download client (aria2). L&#8217;IP fornitomi non era in nessuna blacklist, tranne quella di outlook. Probabilmente nella mia subnet ci sono spammer che crocifiggerei all&#8217;istante, ma pazienza.</p>
+<p>Aruba sul sito non si sbottona molto riguardo le caratteristiche tecniche ma, per quanto riguarda la fascia base (che ricordiamo va a 4,99+iva), ho rilevato (vpsbench):</p>
+<blockquote><p>CPU model:  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz<br />
+Number of cores: 1<br />
+CPU frequency:  2299.998 MHz<br />
+Total amount of RAM: 993 MB<br />
+Total amount of swap: 951 MB<br />
+System uptime:   1 day, 21:59,<br />
+I/O speed:  1.2 GB/s<br />
+Bzip 25MB: 4.83s<br />
+Download 100MB file: 79.8MB/s</p></blockquote>
+<p>Questi numeri parlano da soli, no?</p>
+<p>Ecco qui invece la comparativa con OVH, sempre base (2,99+iva), cortesia del buon Antonio:</p>
+<blockquote><p>CPU model:  Intel Xeon E312xx (Sandy Bridge)<br />
+Number of cores: 1<br />
+CPU frequency:  2394.454 MHz<br />
+Total amount of RAM: 1954 MB<br />
+Total amount of swap: 0 MB<br />
+System uptime:   10 days, 2:48,<br />
+I/O speed:  242 MB/s<br />
+Bzip 25MB: 5.12s<br />
+Download 100MB file: 11,4MB/s</p></blockquote>
+<p>Se foste interessati a provare anche voi il servizio, potete farlo tramite <a href="https://www.cloud.it/promo/tell-a-friend.aspx?FriendCode=35741LI0010&amp;lang=it-IT&amp;id_link=0ba1e06e2df27a5774e7244b14e5f113" target="_blank">questo link</a> che vi darà un voucher da 20 euro anziché 10.</p>
+<p>Infine ricordo che, acquistando 10 euro di credito e condividendo il vostro link sui vari social network, Aruba regala fino a 20 euro di credito ogni 6 mesi.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/aruba-cloud-sorprendente-voucher/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Un anno con Xperia Z3 Compact</title>
+		<link>/un-anno-con-xperia-z3-compact/</link>
+					<comments>/un-anno-con-xperia-z3-compact/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Tue, 08 Sep 2015 17:08:54 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=175</guid>
+
+					<description><![CDATA[Preso appena uscito (UK da Expansys). Pregi e difetti del miglior telefono che io abbia mai avuto. E non sto esagerando. Partiamo col presupposto che sarò del tutto onesto: al day one è difficile recensioni che non siano almeno un tantino di parte, e dopo tutto questo tempo è difficile trovare qualcuno che ne parli<p><a href="/un-anno-con-xperia-z3-compact/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Preso appena uscito (UK da Expansys).</p>
+<p>Pregi e difetti del miglior telefono che io abbia mai avuto.</p>
+<p>E non sto esagerando.<br />
+<span id="more-175"></span><a href="/wp-content/uploads/2015/09/20150908_191432.jpg"><img decoding="async" class="aligncenter wp-image-188 size-medium" src="/wp-content/uploads/2015/09/20150908_191432-300x225.jpg" alt="20150908_191432" width="300" height="225" srcset="/wp-content/uploads/2015/09/20150908_191432-300x225.jpg 300w, /wp-content/uploads/2015/09/20150908_191432.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>Partiamo col presupposto che sarò del tutto onesto: al day one è difficile recensioni che non siano almeno un tantino di parte, e dopo tutto questo tempo è difficile trovare qualcuno che ne parli del tutto. Ecco perché credo che farò un piacere a chi magari vuole prenderlo ora, con l&#8217;arrivo di Z5 Compact.</p>
+<p>Iniziamo dai difetti, perché lamentarsi fa sempre bene.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">Difetti</h2>
+<p>&nbsp;</p>
+<p><strong><em>Quella stramaledetta spinetta magnetica<span class="st">®</span></em></strong></p>
+<p>No sul serio, ci vuole coraggio a mettere non su una, ma su più serie un congegno di ricarica concepito dal demonio. Il motivo per cui me ne lamento così tanto è che, semplicemente, è scomodo. è scomodo se devi usare il telefono mentre si sta caricando (essendo la connessione &#8220;delicata&#8221;, basta un minimo movimento per farla saltare), è scomodo se devi collegarlo al pc (hello, ADB!) perché la spinetta vera è sotto un tappo. L&#8217;unica cosa buona che ho riscontrato è che ti lascia caricare il telefono mentre stai usando l&#8217;OTG, cosa che con altri telefoni ovviamente non puoi fare. Tralasciando ovviamente il mio S2 modificato!</p>
+<p>&nbsp;</p>
+<p><strong><em>La fotocamera</em></strong></p>
+<p>E già. Troppi pixel in troppo poco spazio, fanno si che questa fotocamera in situazioni buie faccia cagare veramente tanto. Se poi ci mettiamo anche un flash poco potente, abbiamo fatto la frittata. Mi spiace Sony, ma se siamo arrivati al punto che un Note 2 fa foto migliori, vuol dire proprio che hai sbagliato tutto.</p>
+<p>&nbsp;</p>
+<p><strong><em>Il vetro posteriore</em></strong></p>
+<p>Si graffia con una facilità allucinante: persino una formica sarebbe in grado di graffiarlo. Ma siamo seri?!</p>
+<p>&nbsp;</p>
+<p><strong><em>Le famigerate DRM keys</em></strong></p>
+<p>Come ogni buon utente Sony con un minimo di interesse per l&#8217;hacking sa, l&#8217;azienda fornisce un metodo ufficiale per sbloccare il boot loader. Il problema è che se messo in atto si perderanno le chiavi drm che fanno funzionare alcuni algoritmi della fotocamera e alcune funzionalità del telefono, come il miracast. Non vi dico quanto è stata dura attendere un metodo tramite exploit per il root.</p>
+<p>&nbsp;</p>
+<p><strong><em>Mancanza del manual focus</em></strong></p>
+<p>Venendo dal G2 questa cosa mi è mancata tanto. L&#8217;algoritmo di autofocus non è sempre efficace, soprattutto nei soggetti &#8220;vicini&#8221;.</p>
+<p>&nbsp;</p>
+<p>E questi erano i difetti. Tutto il resto è da considerare un pregio, ma vediamo quelli che ritengo meritevoli di sottolineatura.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">Pregi</h2>
+<p>&nbsp;</p>
+<p><strong><em>La durata della batteria</em></strong></p>
+<p>A quanto pare non è impossibile dar vita ad un telefono capace di far anche 8 ore d&#8217;uso utilizzando una batteria da 2600 mAh. Complici forse lo schermo da 720p (non ho sentito la mancanza di una risoluzione più alta, comunque) e un&#8217;alta ottimizzazione, non si poteva chiedere di meglio in questo campo.</p>
+<p>&nbsp;</p>
+<p><strong><em>Alta qualità audio</em></strong></p>
+<p>Tralasciando i discorsi audiofili, questo telefono supporta tutti gli standard possibili immaginabili, compreso il famigerato APT-X (hello, Apple?). Gli altoparlanti non sono eccezionali, ma fanno il loro sporco lavoro.</p>
+<p>&nbsp;</p>
+<p><strong><em>I tasti laterali</em></strong></p>
+<p>Sono, semplicemente, comodi. L&#8217;unico difetto è che, tenendo il telefono con la mano destra, si fa fatica ad arrivare al tasto della fotocamera senza rischiare di farlo cadere. Niente di grave comunque.</p>
+<p>&nbsp;</p>
+<p><strong><em>Ha grazia</em></strong></p>
+<p>Dai, diciamoci la verità: esteticamente è davvero bello, più del G3 e dell&#8217;S5 (lo paragono ai suoi &#8220;simili&#8221; per ovvi motivi). E se è vero che l&#8217;occhio vuole la sua parte&#8230;</p>
+<p>&nbsp;</p>
+<p><strong><em>Interfaccia personalizzata al punto giusto</em></strong></p>
+<p>Le personalizzazioni di Sony sono leggere e sempre utili, senza alcun dubbio. Avete mai dato un&#8217;occhiata a TouchWiz?</p>
+<p>&nbsp;</p>
+<p><strong><em>Aggiornamenti regolari</em></strong></p>
+<p>Sony è forse l&#8217;unica compagnia che ancora aggiorna tutta la serie, il che gli fa davvero onore. I tempi sono quelli che sono, e a volte vedere che samsung fa (ogni tanto anche molto) prima ti rode un pochino. Ma ovviamente un conto è aggiornarne due o tre, un conto dieci. A proposito, Samsung: dove cazzo sta lollipop per il mio Note 10.1 2014?</p>
+<p>&nbsp;</p>
+<p><strong><em>L&#8217;assistenza tratta i terminali esteri come se fossero italiani</em></strong></p>
+<p>Ancora una volta, questa la dedico a Samsung.</p>
+<p>&nbsp;</p>
+<p><em><strong>Essendo integrata, la batteria è garantita per due anni</strong></em></p>
+<p>E non solo 6 mesi come da prassi.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">Conclusione</h2>
+<p>&nbsp;</p>
+<p>Poiché lo Z5 Compact sembra ovviare ai difetti qui elencati (spinetta a vista, fotocamera migliorata, posteriore di metallo, e spero manual focus) appena ne avrò conferma con una vera e propria recensione farò il salto.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/un-anno-con-xperia-z3-compact/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>FTL: Faster Than Light</title>
+		<link>/ftl-faster-than-light/</link>
+					<comments>/ftl-faster-than-light/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 08 Jan 2014 16:36:00 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Cos&#8217;è FTL? FTL è un gioco indie 2d, con grafica abbastanza scarna; e anche se ammetto di non essere un grande fan degli indie questo piccolo capolavoro vale davvero la pena (soprattutto a 2€ durante i saldi) Davanti ai vostri occhi vi ritroverete una astronave. Voi ne siete il comandante, ed avete il compito di<p><a href="/ftl-faster-than-light/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Cos&#8217;è FTL?</p>
+<p>FTL è un gioco indie 2d, con grafica abbastanza scarna; e anche se ammetto di non essere un grande fan degli indie questo piccolo capolavoro vale davvero la pena (soprattutto a 2€ durante i saldi)</p>
+<p>Davanti ai vostri occhi vi ritroverete una astronave. Voi ne siete il comandante, ed avete il compito di salvare la galassia.<br />
+<span id="more-14"></span><br />
+Come? Portando un messaggio importantissimo dall&#8217;altra parte dell&#8217;universo attraverso mille peripezie.</p>
+<p>Da comandante potete decidere di:</p>
+<ul>
+<li>Aiutare o meno altre navi</li>
+<li>Attaccare o meno i pirati (non sempre potete scansarli)</li>
+<li>Aiutare o meno le stazioni</li>
+<li>Aiutare o meno i fuggitivi</li>
+<li>Comprare/Vendere armi, munizioni e estensioni della vostra nave dai mercanti</li>
+<li>Assoldare o congedare l&#8217;equipaggio</li>
+</ul>
+<p>Insomma tante tante variabili che renderanno il vostro viaggio sempre diverso (oltre al fatto che le mappe sono sempre casuali), più o meno pericoloso e più o meno redditizio.</p>
+<p>Lo ammetto: alla prima partita non sono arrivato a consegnare il messaggio. E neanche alla seconda.</p>
+<p>Alla terza ho scoperto che la nostra missione non finiva li: resta infine da distruggere una enorme nave nemica da soli (non ci sono ancora riuscito&#8230;), con l&#8217;astronave sgangherata, senza aiuti se non qualche riparazione gratis.</p>
+<p>In FTL esistono due modalità: Easy (italiano per difficile) e Normal (modalità inferno).</p>
+<p>Entrambe causeranno innumerevoli morti del vostro equipaggio, esplosioni delle vostre navi e così via.</p>
+<p>Non per questo, però, vi sentirete frustrati: ogni partita mi ha spinto a migliorare e a riprovarci e ancora dopo svariate non ho perso la voglia di riuscire finalmente a vedere in pezzi quella fottuta astronave.</p>
+<p>Provatelo.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/ftl-faster-than-light/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

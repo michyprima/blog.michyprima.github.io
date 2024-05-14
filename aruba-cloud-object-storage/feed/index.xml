@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commenti a: Aruba Cloud: Object Storage	</title>
+	<atom:link href="/aruba-cloud-object-storage/feed/" rel="self" type="application/rss+xml" />
+	<link>/aruba-cloud-object-storage/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Sun, 26 Jun 2016 13:41:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>
+		Di: Aruba Cloud: La recensione completa &#8211; Michele Primavera		</title>
+		<link>/aruba-cloud-object-storage/#comment-84</link>
+
+		<dc:creator><![CDATA[Aruba Cloud: La recensione completa &#8211; Michele Primavera]]></dc:creator>
+		<pubDate>Sun, 26 Jun 2016 13:41:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-84</guid>
+
+					<description><![CDATA[[&#8230;] caso ne aveste bisogno, l&#8217;azienda offre anche un servizio di monitoraggio, di memorizzazione e distribuzione dei contenuti e di [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] caso ne aveste bisogno, l&#8217;azienda offre anche un servizio di monitoraggio, di memorizzazione e distribuzione dei contenuti e di [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

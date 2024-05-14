@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Programmazione &#8211; Michele Primavera</title>
+	<atom:link href="/category/programmazione/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Sun, 16 Aug 2020 14:15:01 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>Riavvio TP-Link TD-W8970v1 (e simili) senza browser</title>
+		<link>/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/</link>
+					<comments>/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 05 Jun 2016 13:59:21 +0000</pubDate>
+				<category><![CDATA[Programmazione]]></category>
+		<guid isPermaLink="false">/?p=624</guid>
+
+					<description><![CDATA[Il mio 8970 sta facendo vecchio e ogni tanto, soprattutto quando sta acceso per diversi giorni, il WiFi si inceppa. Siccome sono un tirchio bastardo ho deciso che riavviarlo una volta al giorno avrebbe risolto il mio problema; peccato che la sua interfaccia web fa molti controlli sulle richieste e questo complica leggermente lo scripting.<p><a href="/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Il mio 8970 sta facendo vecchio e ogni tanto, soprattutto quando sta acceso per diversi giorni, il WiFi si inceppa. Siccome sono un tirchio bastardo ho deciso che riavviarlo una volta al giorno avrebbe risolto il mio problema; peccato che la sua interfaccia web fa molti controlli sulle richieste e questo complica leggermente lo scripting.</p>
+<p><span id="more-624"></span></p>
+<p>Niente di insuperabile comunque. Vi lascio qui sotto un breve programmino in c# in grado di far partire un reboot sui modelli della famiglia:</p>
+<pre class="brush: csharp; title: ; notranslate">using System;
+using System.IO;
+using System.Net;
+using System.Text;
+
+namespace RebootRouter2
+{
+    class Program
+    {
+        static void Main(string&#x5B;] args)
+        {
+            var address = &quot;http://192.168.2.1&quot;;/
+            var username = &quot;admin&quot;;
+            var password = &quot;admin&quot;;
+
+            var request = (HttpWebRequest)WebRequest.Create(address + &quot;/cgi?7&quot;);
+
+            request.CookieContainer = new CookieContainer();
+            request.CookieContainer.Add(new Uri(address), new Cookie(&quot;Authorization&quot;, &quot;Basic &quot; + Convert.ToBase64String(Encoding.UTF8.GetBytes(username + &quot;:&quot; + password))));
+            request.Referer = address;
+            request.Headers&#x5B;&quot;Origin&quot;] = address;
+
+            var postData = &quot;&#x5B;ACT_REBOOT#0,0,0,0,0,0#0,0,0,0,0,0]0,0\r\n&quot;;
+            var data = Encoding.ASCII.GetBytes(postData);
+
+            request.Method = &quot;POST&quot;;
+            request.ContentType = &quot;text/plain&quot;;
+            request.ContentLength = data.Length;
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+
+            var response = (HttpWebResponse)request.GetResponse();
+
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+            Console.WriteLine(responseString);
+        }
+    }
+}</pre>
+<p>E anche uno in bash:</p>
+<pre class="brush: bash; title: ; notranslate">#!/bin/bash
+
+ROUTER=&quot;http://192.168.2.1&quot;/
+AUTH=$(echo -n &quot;user:pass&quot; | base64)
+CURL=&quot;/usr/bin/curl -s -o /dev/null -w %{http_code} -H 'Referer: $ROUTER' -H 'Origin: $ROUTER' -b 'Authorization=Basic $AUTH' $ROUTER&quot;
+
+HTTP_CODE=$(eval $CURL)
+
+if &#x5B; &quot;$HTTP_CODE&quot; == &quot;200&quot; ]; then
+HTTP_CODE=$(/usr/bin/printf &quot;&#x5B;ACT_REBOOT#0,0,0,0,0,0#0,0,0,0,0,0]0,0\r\n&quot; | eval $CURL/cgi?7 --data-binary @-)
+fi
+
+if &#x5B; &quot;$HTTP_CODE&quot; == &quot;200&quot; ]; then
+echo &quot;Reboot request accepted.&quot;
+else
+echo &quot;Reboot request not accepted. ($HTTP_CODE)&quot;
+fi</pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>GZIP Statico e Multithreading</title>
+		<link>/gzip-statico-e-multithreading/</link>
+					<comments>/gzip-statico-e-multithreading/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 05 Sep 2015 18:52:08 +0000</pubDate>
+				<category><![CDATA[Programmazione]]></category>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=163</guid>
+
+					<description><![CDATA[Dopo aver scritto l&#8217;articolo sul GZIP statico, la mia indole ottimizzatrice si è messa al lavoro quando ho dovuto per vari motivi modificare il programma che in quel post avevo pubblicato. Mi sono chiesto perché l&#8217;avevo creato così, considerato che su un i7 con 4+4 core, la potenza di calcolo disponibile era più che sprecata.<p><a href="/gzip-statico-e-multithreading/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Dopo aver scritto l&#8217;articolo sul GZIP statico, la mia indole ottimizzatrice si è messa al lavoro quando ho dovuto per vari motivi modificare il programma che in quel post avevo pubblicato.</p>
+<p>Mi sono chiesto perché l&#8217;avevo creato così, considerato che su un i7 con 4+4 core, la potenza di calcolo disponibile era più che sprecata.</p>
+<p>Problema risolto.<br />
+<span id="more-163"></span></p>
+<pre class="brush: csharp; title: ; notranslate">static void Main(string&#x5B;] args)
+{
+    DirectoryInfo di = new DirectoryInfo(@&quot;root&quot;);
+
+    ConcurrentQueue&lt;FileInfo&gt; q = new ConcurrentQueue&lt;FileInfo&gt;(di.GetFiles(&quot;*&quot;, SearchOption.AllDirectories));
+
+    for (int i = 0; i &lt; Environment.ProcessorCount; i++)
+    {
+        Thread t = new Thread(new ParameterizedThreadStart(thread));
+        t.Start(q);
+    }
+}
+
+static void thread(object b)
+{
+    ConcurrentQueue&lt;FileInfo&gt; q = (ConcurrentQueue&lt;FileInfo&gt;)b;
+            
+    while(!q.IsEmpty)
+    {
+        FileInfo f;
+        if(q.TryDequeue(out f))
+            compressFile(f);
+    }
+}
+
+static void compressFile(FileInfo f)
+{
+    if (!f.Name.StartsWith(&quot;.&quot;) &amp;&amp; f.Extension != &quot;.php&quot; &amp;&amp; f.Extension != &quot;.gz&quot; &amp;&amp; f.Extension != &quot;.ini&quot;)
+    {
+        FileInfo f2 = new FileInfo(f.FullName + &quot;.gz&quot;);
+
+        if (f.LastWriteTime &gt; f2.LastWriteTime)
+        {
+            ProcessStartInfo psi = new ProcessStartInfo(&quot;gzip.exe&quot;, &quot;-9 -k -f \&quot;&quot; + f.FullName + &quot;\&quot;&quot;);
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(psi).WaitForExit();
+
+            f2.Refresh();
+        }
+
+        if (f2.Exists &amp;&amp; f2.Length &gt;= f.Length)
+            f2.Delete();
+    }
+}</pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/gzip-statico-e-multithreading/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Apache e GZIP statico</title>
+		<link>/apache-e-gzip-statico/</link>
+					<comments>/apache-e-gzip-statico/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Mon, 31 Aug 2015 00:24:16 +0000</pubDate>
+				<category><![CDATA[Programmazione]]></category>
+		<guid isPermaLink="false">http://micheleprimavera.eu/?p=56</guid>
+
+					<description><![CDATA[Se il vostro host non supporta il deflate/gzip o semplicemente volete risparmiare risorse non ricomprimendo ad ogni richiesta file sempre uguali, c&#8217;è un piccolo trucchetto che potete mettere in atto grazie alla mod_rewrite e a un po&#8217; d&#8217;astuzia. Procuratevi gzip per la vostra piattaforma (potete farlo anche direttamente sul server se avete l&#8217;accesso alla shell)<p><a href="/apache-e-gzip-statico/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Se il vostro host non supporta il deflate/gzip o semplicemente volete risparmiare risorse non ricomprimendo ad ogni richiesta file sempre uguali, c&#8217;è un piccolo trucchetto che potete mettere in atto grazie alla mod_rewrite e a un po&#8217; d&#8217;astuzia.</p>
+<p><span id="more-56"></span></p>
+<p>Procuratevi gzip per la vostra piattaforma (potete farlo anche direttamente sul server se avete l&#8217;accesso alla shell) e comprimete i file statici. Ricordate di lasciare anche il file originale in caso il browser non voglia quello compresso. Evitate inoltre di comprimere i file dinamici, tipo i .php.</p>
+<p>Una volta fatto questo, impostate questa regola di apache:</p>
+<blockquote><p>&lt;IfModule mod_rewrite.c&gt;<br />
+RewriteEngine on<br />
+RewriteBase /<br />
+RewriteOptions Inherit<br />
+ReWriteCond %{HTTP:accept-encoding} (gzip.*)<br />
+ReWriteCond %{REQUEST_FILENAME} !.+\.gz$<br />
+RewriteCond %{REQUEST_FILENAME}.gz -f<br />
+RewriteRule (.+) $1.gz [QSA,L]<br />
+&lt;/IfModule&gt;</p></blockquote>
+<p>Il significato è questo: se il browser accetta file compressi con gzip e una versione compressa esiste, invia il file che si chiama nomeoriginale.gz; altrimenti invia nomeoriginale.</p>
+<p>Se volete, potete anche comprimere l&#8217;output dei file php tramite php.ini:</p>
+<blockquote><p>zlib.output_compression = On<br />
+zlib.output_compression_level = 5</p></blockquote>
+<p>Queste due tecniche consentono di risparmiare mediamente il 50% dei dati inviati. Ovviamente il rendimento cambia da file a file, ma sicuramente un miglioramento lo vedrete.</p>
+<p><a href="/wp-content/uploads/2015/08/Cattura.png"><img fetchpriority="high" decoding="async" class="aligncenter wp-image-86 size-medium" src="/wp-content/uploads/2015/08/Cattura-300x255.png" alt="Cattura" width="300" height="255" srcset="/wp-content/uploads/2015/08/Cattura-300x255.png 300w, /wp-content/uploads/2015/08/Cattura.png 757w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Un piccolo consiglio: quando comprimete, verificate sempre che il file originale non sia più piccolo di quello compresso. La cosa non è scontata.</p>
+<p>Vi lascio il programmino che ho usato per comprimere questo sito.</p>
+<pre class="brush: csharp; title: ; notranslate">static void Main(string&#x5B;] args)
+{
+    DirectoryInfo di = new DirectoryInfo(&quot;root&quot;);
+    foreach (FileInfo f in di.GetFiles(&quot;*&quot;, SearchOption.AllDirectories))
+    {
+        if(!f.Name.StartsWith(&quot;.&quot;) &amp;&amp; f.Extension != &quot;.php&quot; &amp;&amp; f.Extension != &quot;.gz&quot;)
+        {
+            ProcessStartInfo psi = new ProcessStartInfo(&quot;gzip.exe&quot;, &quot;-9 -k -f \&quot;&quot; + f.FullName + &quot;\&quot;&quot;);
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(psi).WaitForExit();
+
+            FileInfo f2 = new FileInfo(f.FullName + &quot;.gz&quot;);
+
+            if(f2.Exists)
+                if(f2.Length &gt;= f.Length)
+                    f2.Delete();
+        }
+    }
+}</pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/apache-e-gzip-statico/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C# e IMEI</title>
+		<link>/c-e-imei/</link>
+					<comments>/c-e-imei/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Mon, 23 Dec 2013 16:31:00 +0000</pubDate>
+				<category><![CDATA[Programmazione]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Ero incuriosito da come gli imei funzionassero.Prima di informarmi, ancora non sapevo che fossero necessariamente lunghi 15 cifre e che l&#8217;ultima servisse a verificare la validità delle prime 14.Ho scritto un algoritmo per controllare la validità di un imei e/o generare la sua cifra di controllo.Tra il codice trovate anche i come e i perché.<p><a href="/c-e-imei/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Ero incuriosito da come gli imei funzionassero.<br />Prima di informarmi, ancora non sapevo che fossero necessariamente lunghi 15 cifre e che l&#8217;ultima servisse a verificare la validità delle prime 14.<br />Ho scritto un algoritmo per controllare la validità di un imei e/o generare la sua cifra di controllo.<br />Tra il codice trovate anche i come e i perché. Di solito non commento mai i programmi che scrivo, però era meglio fare un&#8217;eccezione questa volta 😉<br /><span id="more-15"></span><br /><span style="font-family: inherit;">Ammetto che avevo fatto il ciclo di <span style="background-color: white;">imeiCheckDigit</span> in Linq, poi mi sono dato dell&#8217;idiota e l&#8217;ho riscritto come si deve. 😀</span></p>
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: csharp; title: ; notranslate">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string&#x5B;] args)
+        {
+            Console.WriteLine(checkImei(Console.ReadLine()));
+            Console.ReadKey();
+        }
+        static bool checkImei(String imei)
+        {
+            int&#x5B;] digits = getDigits(imei);
+ 
+            //L'imei deve essere di 15 cifre
+            if (digits.Length != 15)
+                return false;
+ 
+            return digits&#x5B;14] == imeiCheckDigit(digits);
+        }
+        /*
+         * si moltiplica * 2 da destra una cifra si una no. i numeri &gt; 9 vengono divisi cifra per cifra
+         * tutte le cifre vengono quindi sommate a formare un unico numero
+         * esempio: 3 + 5*2 + 3 + 9*2 + 5 + 1*2 + 0 + 1*2 + 3 + 9*2 + 7 + 0*2 + 2 + 8*2 = _
+         * 3+(1+0)+3+(1+8)+5+(2)+0+(2)+3+(1+8)+7+(0)+2+(1+6)=53
+         * la cifra di controllo viene generata infine cercando il numero per rendere la somma divisibile per 10
+         * esempio: se la somma è 53, la cifra di controllo è 7
+         */
+        static int imeiCheckDigit(int&#x5B;] n)
+        {
+            int somma = 0;
+ 
+            for (int i = n.Length-2; i &gt; 0; i -= 2)
+            {
+                int a = n&#x5B;i] * 2;
+ 
+                if (a &gt; 9)
+                    a = a / 10 + a % 10;
+ 
+                somma += a + n&#x5B;i - 1];
+            }
+ 
+            somma %= 10;
+ 
+            return somma == 0 ? 0 : (10 - somma);
+        }
+        static int&#x5B;] getDigits(String s)
+        {
+            return s.Select(digit =&gt; int.Parse(digit.ToString())).ToArray();
+        }
+    }
+}
+</pre></div>]]></content:encoded>
+					
+					<wfw:commentRss>/c-e-imei/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MP3 e ConcurrentQueue</title>
+		<link>/mp3-e-concurrentqueue/</link>
+					<comments>/mp3-e-concurrentqueue/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Mon, 23 Dec 2013 14:31:00 +0000</pubDate>
+				<category><![CDATA[Programmazione]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[L&#8217;altro giorno ho realizzato che avere i propri LP (per la vecchia scuola) in flac su un telefonino è oltremodo stupido, in quanto probabilmente nessuno noterebbe mai la differenza. Decido quindi di convertire la libreria in MP3 (320k).Siccome un programmatore non è contento se non fa le cose da sé, ho scritto un piccolo wrapper per ffmpeg (che<p><a href="/mp3-e-concurrentqueue/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>L&#8217;altro giorno ho realizzato che avere i propri <i>LP</i> (per la vecchia scuola) in flac su un telefonino è oltremodo stupido, in quanto probabilmente nessuno noterebbe mai la differenza.</p>
+<p>Decido quindi di convertire la libreria in MP3 (320k).<br /><span id="more-16"></span><br />Siccome un programmatore non è contento se non fa le cose da sé, ho scritto un piccolo <i>wrapper</i> per <b>ffmpeg</b> (che a sua volta include le librerie <b>LAME</b>) avendo cura che le conversioni occupino tutta la potenza di calcolo disponibile, lanciando una istanza per core.</p>
+<p>Per evitare di incorrere in elaborazioni &#8220;doppione&#8221;, è necessario sincronizzare i <i>thread</i> affinché si eviti che più di un thread gestisca un singolo file.</p>
+<p>Ci viene in aiuto il namespace <b>System.Collections.Concurrent</b> che include delle collezioni concepite allo scopo.</p>
+<p>Nella fattispecie, ho scelto <b>ConcurrentQueue</b> per la sua logica FIFO (First In First Out).</p>
+<p>Per <i>Queue</i> si intende una coda, proprio come quella del supermercato o delle poste: chi prima arriva, prima se ne va.</p>
+<p>Per questo tipo di applicazione poteva andar bene anche uno <i>Stack</i> (pila) con logica LIFO (Last In First Out) perché l&#8217;ordine in cui vengono convertiti i file non è importante.<a name="more"></a></p>
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: csharp; title: ; notranslate">
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Diagnostics;
+using System.Collections.Concurrent;
+ 
+namespace mp320kenc
+{
+    class Program
+    {
+        static string encpath = getResourceFullPath(&quot;ffmpeg.exe&quot;);
+ 
+        static void Main(string&#x5B;] args)
+        {
+            if(args.Length &gt; 0)
+            {
+                ConcurrentQueue&lt;filetoencode&gt; q = new ConcurrentQueue&lt;filetoencode&gt;();
+                string dir = args&#x5B;0];
+                DirectoryInfo di = new DirectoryInfo(dir);
+                string newdir = di.Parent.CreateSubdirectory(di.Name + &quot; - MP3&quot;).FullName;
+ 
+                foreach(FileInfo f in di.GetFiles())
+                {
+                    string ext = f.Extension.ToLower();
+ 
+                    if(ext == &quot;.wav&quot; || ext == &quot;.flac&quot;)
+                    {
+                        q.Enqueue(new filetoencode(f.FullName, Path.Combine(newdir, Path.GetFileNameWithoutExtension(f.Name)+&quot;.mp3&quot;)));
+                    }
+                }
+ 
+                for (int i = 0; i &lt; Environment.ProcessorCount; i++)
+                {
+                    System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(encode));
+                    t.Start(q);
+                }
+            }
+        }
+        static void encode(object b)
+        {
+            ConcurrentQueue&lt;filetoencode&gt; q = (ConcurrentQueue&lt;filetoencode&gt;)b;
+ 
+            while (!q.IsEmpty)
+            {
+                filetoencode enc;
+                if(q.TryDequeue(out enc))
+                {
+                    Console.WriteLine(&quot;Encoding &quot; + Path.GetFileName(enc.path));
+                    ProcessStartInfo p = getPCI(enc.path, enc.dest);
+                    Process.Start(p).WaitForExit();
+                }
+            }
+        }
+        public static String getResourceFullPath(String name)
+        {
+            return Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase), name).Substring(6);
+        }
+        private static ProcessStartInfo getPCI(string oldpath, string newpath)
+        {
+            ProcessStartInfo p = new ProcessStartInfo();
+            p.WindowStyle = ProcessWindowStyle.Hidden;
+            p.CreateNoWindow = true;
+            p.UseShellExecute = false;
+            p.Arguments = String.Format(&quot;-i &quot;{0}&quot; -acodec mp3 -b:a 320k &quot;{1}&quot;&quot;,oldpath,newpath);
+            p.FileName = encpath;
+            return p;
+        }
+        class filetoencode
+        {
+            public string path;
+            public string dest;
+ 
+            public filetoencode(string p, string de)
+            {
+                path = p;
+                dest = de;
+            }
+        }
+    }
+}
+</pre></div>]]></content:encoded>
+					
+					<wfw:commentRss>/mp3-e-concurrentqueue/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Informazione &#8211; Michele Primavera</title>
+	<atom:link href="/category/informazione/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Tue, 14 May 2024 19:22:01 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>Blog in sola lettura</title>
+		<link>/blog-in-sola-lettura/</link>
+					<comments>/blog-in-sola-lettura/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Tue, 14 May 2024 19:21:40 +0000</pubDate>
+				<category><![CDATA[Informazione]]></category>
+		<guid isPermaLink="false">/?p=796</guid>
+
+					<description><![CDATA[Quella che state vedendo è una copia statica del blog originale. Ho deciso di dismettere questo blog ma, poiché contiene informazioni utili, ne conserverò una copia online.]]></description>
+										<content:encoded><![CDATA[<p>Quella che state vedendo è una copia statica del blog originale.</p>
+<p>Ho deciso di dismettere questo blog ma, poiché contiene informazioni utili, ne conserverò una copia online.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog-in-sola-lettura/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Non siamo padroni della nostra identità digitale</title>
+		<link>/non-siamo-padroni-della-nostra-identita-digitale/</link>
+					<comments>/non-siamo-padroni-della-nostra-identita-digitale/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 07 May 2016 19:09:01 +0000</pubDate>
+				<category><![CDATA[Informazione]]></category>
+		<guid isPermaLink="false">/?p=568</guid>
+
+					<description><![CDATA[La firma digitale accreditata è un metodo con il quale è possibile firmare i documenti (o qualsiasi altro tipo di dato) con lo stesso valore legale che avrebbe la nostra firma in calce ad un foglio. La firma avviene utilizzando un certificato RSA: L&#8217;utente utilizza la chiave privata per generare la firma univoca, e poi<p><a href="/non-siamo-padroni-della-nostra-identita-digitale/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>La firma digitale accreditata è un metodo con il quale è possibile firmare i documenti (o qualsiasi altro tipo di dato) con lo stesso valore legale che avrebbe la nostra firma in calce ad un foglio. La firma avviene utilizzando un certificato RSA: L&#8217;utente utilizza la chiave privata per generare la firma univoca, e poi chi ha bisogno di verificarla utilizza la chiave pubblica per autenticare il documento. Questi certificati sono emessi da degli enti accreditati (quali Aruba e InfoCert) che si occupano anche di identificare la persona a cui viene rilasciato.</p>
+<p><span id="more-568"></span></p>
+<p>Fin qui, niente da dire. Tutto bene, tutto bello. Le aziende offrono un servizio, tu le paghi e finisce li.</p>
+<p>Il problema è che nessuno di questi enti <strong>rilascia</strong> il certificato. Tutte vendono al massimo una smartcard col certificato già installato, mai il certificato stesso. è come se il comune ci desse la carta d&#8217;identità in una scatola sigillata che solo le forze dell&#8217;ordine possono aprire.</p>
+<p>Questo può avere un senso; un certificato è sicuramente più facile da duplicare di una C.D.I., ma il punto è un altro. La libertà di decidere cosa fare &#8220;con noi stessi&#8221;, la possibilità di decidere come, dove e quanto custodire il nostro <em>io digitale</em> dovrebbe spettare solo e soltanto a noi. Se qualcuno fa l&#8217;errore di custodirlo male dopo aver fatto esplicita richiesta di averne una copia, deve ovviamente sentirsi pronto ad affrontare le problematiche legali ed economiche del caso.</p>
+<p>Ma io, che già ho una smart card in grado di memorizzare più certificati, che già custodisco in maniera eccelsa (non la perdo mai di vista) con pin e tutto il resto, per quale diavolo di motivo devo portarmi dietro un&#8217;altra patacca?</p>
+<p>Cara Italia, delegare ad aziende terze qualcosa che dovresti gestire tu direttamente, può ritenersi accettabile se non sei in grado di farlo. Ma per favore, non dimentichiamoci della libertà personale di decidere.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/non-siamo-padroni-della-nostra-identita-digitale/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Come funziona la posta certificata</title>
+		<link>/come-funziona-la-posta-certificata/</link>
+					<comments>/come-funziona-la-posta-certificata/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 06 Dec 2015 11:14:43 +0000</pubDate>
+				<category><![CDATA[Informazione]]></category>
+		<guid isPermaLink="false">/?p=240</guid>
+
+					<description><![CDATA[Partiamo con quello che tutti si chiedono: posso diventare io stesso il gestore della mia PEC? La risposta, come è possibile intuire, è si ma no. La verità è che i mezzi ci sono quasi tutti, ma ne manca uno fondamentale. Spiego meglio: La PEC, alla fine della fiera, non è altro che una normalissima<p><a href="/come-funziona-la-posta-certificata/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Partiamo con quello che tutti si chiedono: posso diventare io stesso il gestore della mia PEC? La risposta, come è possibile intuire, è <em>si ma no</em>. La verità è che i mezzi ci sono quasi tutti, ma ne manca uno fondamentale.<br />
+<span id="more-240"></span><br />
+Spiego meglio:</p>
+<p>La PEC, alla fine della fiera, non è altro che una normalissima email. Viaggia su SMTP, rispetta gli standard RFC, ed è leggibile da qualsiasi casella di posta non abilitata. L&#8217;unica piccola grande differenza è che, essendo la variante digitale della raccomandata, per ogni operazione richiesta dall&#8217;utente, c&#8217;è un ente (organizzazione o PA) che <em>certifica</em> che tale operazione è stata richiesta da voi ed è avvenuta come voi l&#8217;avete richiesta (e fornisce le ricevute). Ora nessuno mi vieterebbe di crearmi il mio server PEC personale, vista la presenza nel panorama open di Postfix ed OpenPEC, il problema sarebbe nell&#8217;ottenere l&#8217;abilitazione ad effettuare tali certifiche che, se non avvenute in modo corretto, non avrebbero alcun valore legale, esattamente come consegnare una raccomandata a mano. Perché si, la parola del postino che dice di aver consegnato la busta vale molto più della vostra.</p>
+<p>Ora, per diventare finalmente postini e coronare il nostro sogno, bisognerebbe richiedere l&#8217;abilitazione al magnifico mondo delle poste digitali ed ottenere il rilascio da parte dell&#8217;AgID di un certificato destinato allo scopo (firma di email in uscita e delle ricevute tramite S/MIME) tipo questi:</p>
+<div style="text-align: center;">
+<div style="display: inline-block;"><a href="/wp-content/uploads/2015/12/s1.jpg"><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-241" src="/wp-content/uploads/2015/12/s1-300x200.jpg" alt="s1" width="300" height="200" srcset="/wp-content/uploads/2015/12/s1-300x200.jpg 300w, /wp-content/uploads/2015/12/s1.jpg 482w" sizes="(max-width: 300px) 100vw, 300px" /></a></div>
+<div style="display: inline-block;"><a href="/wp-content/uploads/2015/12/s2.jpg"><img decoding="async" class="alignnone size-medium wp-image-242" src="/wp-content/uploads/2015/12/s2-300x200.jpg" alt="s2" width="300" height="200" srcset="/wp-content/uploads/2015/12/s2-300x200.jpg 300w, /wp-content/uploads/2015/12/s2.jpg 482w" sizes="(max-width: 300px) 100vw, 300px" /></a></div>
+</div>
+<p></p>
+<p>Il problema è che voi non lo potete avere, perché bisogna essere una azienda grandicella, con un capitale sociale grandicello, con uno staff grandicello. Bisogna infine fornire rendiconti bimestrali ed essere controllati a vista da quando aprite a quando chiudete.</p>
+<p>Badate bene, non considero questi controlli un male. è cosa buona e giusta controllare che tutto funzioni in maniera corretta frequentemente. Quel che voglio dire è lasciate perdere perché quando ci si scontra con la PA, non c&#8217;è verso che se ne esca senza un mare di burocrazia.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/come-funziona-la-posta-certificata/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>La bellezza della musica</title>
+		<link>/la-bellezza-della-musica/</link>
+					<comments>/la-bellezza-della-musica/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 17 May 2014 15:03:00 +0000</pubDate>
+				<category><![CDATA[Informazione]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Vi siete mai chiesti perché un mp3 di dubbia provenienza non suona come un CD? Il perché è presto detto: perché non è il CD. è ovvio direte voi. Sì, ma non è questo il punto. La qualità che si percepisce aguzzando l&#8217;orecchio non viene semplicemente da un numeretto che ai fini pratici ha poco<p><a href="/la-bellezza-della-musica/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Vi siete mai chiesti perché un mp3 di dubbia provenienza non suona come un CD?</p>
+<p>Il perché è presto detto: perché non è il CD. è ovvio direte voi. Sì, ma non è questo il punto. La qualità che si percepisce aguzzando l&#8217;orecchio non viene semplicemente da un numeretto che ai fini pratici ha poco senso se non si considerano altri fattori (320k, ad esempio, da solo significa poco) ma dalla quantità di informazioni che il file porta con sé. generalmente maggiore è il cosiddetto bitrate (il 320k qui sopra), maggiore è la qualità, ma questo vale solo se si confrontano due canzoni nello stesso formato. (es mp3, aac, ogg&#8230;)<br />
+Per quantità di informazioni si intende la precisione con cui è possibile riprodurre il segnale originale (o per farla più semplice, quanto più simile sarà ciò che ascoltiamo alla registrazione originale).</p>
+<p><span id="more-11"></span>Ora tralasciando gli inutili discorsi audiofili, non c&#8217;è ragione di andare oltre gli mp3 da 320kbps, semplicemente perché il nostro orecchio non sentirebbe la differenza. Per essere precisi, un mp3 da 320kbps porta con se informazioni che vanno dai 16Hz a 20Khz. Man mano che si riduce il bitrate, diminuisce il limite alto di tale intervallo. Perché? L&#8217;orecchio umano è meno sensibile alle frequenze alte, quindi sono quelle che vengono tagliate per prime per rendere il file più piccolo.</p>
+<p>Poiché internet è pieno di burloni che oltre a pubblicare porno sotto film per bambini (o viceversa), pubblicano anche canzoni che sono una vera schifezza. Esempio:</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/05/a.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/05/a.png" alt="" width="281" height="320" border="0" /></a></div>
+<p>Come potete vedere lo spettro delle frequenze è tagliato di netto. Questa è la canzone originale:</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/05/b.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/05/b.png" alt="" width="281" height="320" border="0" /></a></div>
+<p>Notate niente?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/la-bellezza-della-musica/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Apple Magic Trackpad</title>
+		<link>/apple-magic-trackpad/</link>
+					<comments>/apple-magic-trackpad/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Fri, 10 Jan 2014 17:49:00 +0000</pubDate>
+				<category><![CDATA[Informazione]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Non è un segreto che io consideri la roba Apple troppo costosa. Nonostante questo ho sempre apprezzato il design dei suoi prodotti, dai quali però mi sono sempre tenuto lontano sia per i prezzi proibitivi, sia per le scelte hardware che, per quanto riguarda i Mac, non corrisponde alle mie esigenze. Ho sempre saputo che<p><a href="/apple-magic-trackpad/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Non è un segreto che io consideri la roba Apple troppo costosa. Nonostante questo ho sempre apprezzato il design dei suoi prodotti, dai quali però mi sono sempre tenuto lontano sia per i prezzi proibitivi, sia per le scelte hardware che, per quanto riguarda i Mac, non corrisponde alle mie esigenze.</p>
+<p>Ho sempre saputo che il touchpad dei Macbook fosse ad un livello superiore. Il sistema intelligente che avevano trovato di sfruttare tutta la mano (palmo compreso) era davvero efficiente e funzionale.</p>
+<p>Avendo avuto l&#8217;occasione di provare il suo gemello Bluetooth (quello che va a coppia con gli iMac per intenderci), subito l&#8217;ho collegato al mio PC.<br />
+<span id="more-12"></span></p>
+<p>Risultato? Un disastro&#8230; I driver per windows sono veramente uno scempio: inceppamenti del puntatore, gesture solo a due dita (per lo scroll), e la necessità di scaricare un programma di terze parti per abilitare il doppio tap.</p>
+<p>Convinto che il problema non veniva dal trackpad in se ma dal fatto che i driver per windows fossero pessimi, colgo la palla al balzo per installare OS X, che è compatibile al 100% con i miei componenti (botta di culo).</p>
+<p>Un altro mondo: non sbaglia un colpo. Preciso, ma soprattutto utile. Stanca molto di meno la mano, e la moltitudine di operazioni fattibili con un semplice gesto ha fatto si che io prendessi una decisione che mai avrei immaginato di prendere: ho accantonato il mio mouse da gioco.</p>
+<p>Tranne per giocare, ovviamente. <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/apple-magic-trackpad/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

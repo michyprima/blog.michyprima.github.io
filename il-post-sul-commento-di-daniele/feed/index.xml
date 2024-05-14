@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commenti a: Il post sul commento di Daniele	</title>
+	<atom:link href="/il-post-sul-commento-di-daniele/feed/" rel="self" type="application/rss+xml" />
+	<link>/il-post-sul-commento-di-daniele/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Fri, 20 May 2016 11:20:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>
+		Di: michele		</title>
+		<link>/il-post-sul-commento-di-daniele/#comment-40</link>
+
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Fri, 20 May 2016 11:20:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=610#comment-40</guid>
+
+					<description><![CDATA[In risposta a &lt;a href=&quot;/il-post-sul-commento-di-daniele/#comment-39&quot;&gt;Daniele&lt;/a&gt;.
+
+Obbiettivo sbloccato: &quot;il commento al commento sul post sul commento&quot;]]></description>
+			<content:encoded><![CDATA[<p>In risposta a <a href="/il-post-sul-commento-di-daniele/#comment-39">Daniele</a>.</p>
+<p>Obbiettivo sbloccato: &#8220;il commento al commento sul post sul commento&#8221;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Daniele		</title>
+		<link>/il-post-sul-commento-di-daniele/#comment-39</link>
+
+		<dc:creator><![CDATA[Daniele]]></dc:creator>
+		<pubDate>Fri, 20 May 2016 11:16:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=610#comment-39</guid>
+
+					<description><![CDATA[Miticoooooo...obbiettivo raggiunto...YUHUUUU !!!!]]></description>
+			<content:encoded><![CDATA[<p>Miticoooooo&#8230;obbiettivo raggiunto&#8230;YUHUUUU !!!!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

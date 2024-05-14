@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Guide &#8211; Michele Primavera</title>
+	<atom:link href="/category/guide/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Fri, 13 Apr 2018 16:38:13 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>Utilizzare il TPM come Smart Card</title>
+		<link>/utilizzare-il-tpm-come-smart-card/</link>
+					<comments>/utilizzare-il-tpm-come-smart-card/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 04 Jan 2017 16:02:35 +0000</pubDate>
+				<category><![CDATA[Guide]]></category>
+		<guid isPermaLink="false">/?p=685</guid>
+
+					<description><![CDATA[Lo scopo di questo articolo è mostrare come sia possibile utilizzare un TPM per conservare certificati di autenticazione senza collegare il computer ad un server AD. Innanzitutto creiamo la smartcard virtuale: tpmvscmgr.exe create /name tpmvsc /pin PROMPT /puk PROMPT /adminkey random /generate /attestation AIK_AND_CERT /pinpolicy minlen 6 Fatto ciò, apriamo certmgr.vsc e andiamo in Personale-&#62;Certificati.<p><a href="/utilizzare-il-tpm-come-smart-card/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Lo scopo di questo articolo è mostrare come sia possibile utilizzare un TPM per conservare certificati di autenticazione senza collegare il computer ad un server AD.<span id="more-685"></span></p>
+<p>Innanzitutto creiamo la smartcard virtuale:</p>
+<blockquote><p>tpmvscmgr.exe create /name tpmvsc /pin PROMPT /puk PROMPT /adminkey random /generate /attestation AIK_AND_CERT /pinpolicy minlen 6</p></blockquote>
+<p>Fatto ciò, apriamo certmgr.vsc e andiamo in Personale-&gt;Certificati. Qui tasto destro e scegliamo &#8220;Crea richiesta personalizzata&#8221;. Scegliamo Continua senza criteri-&gt;Avanti-&gt;Dettagli-&gt;Proprietà e impostiamo:</p>
+<blockquote><p>Generale-&gt;Nome = Arbitrario<br />
+Soggetto-&gt;Tipo-&gt;Nome comune = Arbitrario<br />
+Estensioni-&gt;Utilizzo Chiave = Firma digitale, Chiave concordata, Rendi critici<br />
+Estensioni-&gt;Utilizzo Chiave esteso = Autenticazione client<br />
+Chiave privata-&gt;CSP = Scegliere &#8220;RSA, Microsoft Smart Card Key Storage Provider&#8221;<br />
+Chiave privata-&gt;Resto = Personalizzare</p></blockquote>
+<p>Facciamo OK, quindi avanti e infine salviamo il file req (vi verrà chiesto il pin).</p>
+<p>Consegnamo il req alla CA o firmiamolo noi stessi con:</p>
+<blockquote><p>openssl x509 -req -days 3650 -in file.req -CA ca.pem -CAkey key.pem -out tpm.cer -set_serial 03</p></blockquote>
+<p>Se invece volete utilizzarla con OpenVPN, è possibile creare il cer con easy-rsa. Copiamo il csr nella cartella keys e diamo:</p>
+<blockquote><p>source vars</p>
+<p>./sign-req nomecsr</p></blockquote>
+<p>Nella cartella keys ora troveremo nomecsr.cer. Specifichiamo nel file ovpn togliamo &lt;cert&gt; e &lt;key&gt; e aggiungiamo la seguente direttiva:</p>
+<blockquote><p>cryptoapicert &#8220;THUMB:00 11 22 33&#8230;&#8221;</p></blockquote>
+<p>Dove i numeri rappresentano l&#8217;id sha1 del certificato.</p>
+<p>Una volta ottenuto il file cer, tasto destro, installa, sempre avanti. Il sistema chiederà il pin scelto in precedenza per installare il certificato. Se tutto è stato fatto come descritto saremo ora in grado di loggarci tramite il TPM:</p>
+<p><a href="/wp-content/uploads/2017/01/tpm.png"><img fetchpriority="high" decoding="async" class="aligncenter wp-image-689" src="/wp-content/uploads/2017/01/tpm.png" alt="tpm" width="488" height="450" srcset="/wp-content/uploads/2017/01/tpm.png 730w, /wp-content/uploads/2017/01/tpm-300x277.png 300w" sizes="(max-width: 488px) 100vw, 488px" /></a></p>
+<p>Infine è possibile eliminare la smartcard con:</p>
+<blockquote><p>tpmvscmgr destroy /instance root\smartcardreader\0000</p></blockquote>
+<p>Dove 0000 è il numero progressivo della card. I dati non sono recuperabili ne estraibili in nessun caso.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/utilizzare-il-tpm-come-smart-card/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Installare luci e tergicristalli automatici su Golf MK7</title>
+		<link>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/</link>
+					<comments>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Thu, 19 May 2016 21:44:41 +0000</pubDate>
+				<category><![CDATA[Guide]]></category>
+		<guid isPermaLink="false">/?p=577</guid>
+
+					<description><![CDATA[Dopo anni la mia memoria inizia ad essere discutibile. Questo unito al fatto che sono un amatore fa si che io non sia più in grado di fornire supporto diretto. Tutte le informazioni che ho sono su questa pagina e non farò più interventi di alcun tipo su questo argomento. Mi sono un po&#8217; pentito<p><a href="/installare-luci-e-tergicristalli-automatici-su-golf-mk7/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<blockquote><p><strong>Dopo anni la mia memoria inizia ad essere discutibile. Questo unito al fatto che sono un amatore fa si che io non sia più in grado di fornire supporto diretto. Tutte le informazioni che ho sono su questa pagina e non farò più interventi di alcun tipo su questo argomento.</strong></p></blockquote>
+<p>Mi sono un po&#8217; pentito di aver rinunciato a questo economico optional, ed ho cercato subito il modo di rimediare. Il presupposto, comunque, era di montare il tutto e farlo funzionare esattamente come se fosse stato montato alla fabbrica o da un tecnico autorizzato perché gli accrocchi proprio non mi piacciono. La spesa relativamente bassa e la mia testardaggine hanno fatto il resto.</p>
+<p><span id="more-577"></span></p>
+<p>Prima di continuare, devo avvertirvi: questo scritto vale <span style="text-decoration: underline;">solo</span> se la vostra Golf ha almeno il clima automatico. Se non l&#8217;avete le cose si complicano, ed è meglio lasciar perdere. Il motivo è che manca del tutto l&#8217;aggancio e il cablaggio per il sensore, e quindi dovreste passare i cavi ed installare il supporto (da incollare al vetro). Dove le Golf con Climatron+Luci+Tergi hanno il sensore di pioggia/luce/umidità, quelle solo col climatron hanno un semplice sensore per la sola umidità, che però condivide con quello più complesso forma e cablaggio.</p>
+<p>Per chi ha risparmiato sul clima, c&#8217;è l&#8217;opzione made in china:</p>
+<p><a href="/wp-content/uploads/2016/05/20160516_200730_1080.jpg"><img decoding="async" class="aligncenter size-large wp-image-581" src="/wp-content/uploads/2016/05/20160516_200730_1080-1024x576.jpg" alt="20160516_200730_1080" width="960" height="540" srcset="/wp-content/uploads/2016/05/20160516_200730_1080-1024x576.jpg 1024w, /wp-content/uploads/2016/05/20160516_200730_1080-300x169.jpg 300w, /wp-content/uploads/2016/05/20160516_200730_1080-768x432.jpg 768w, /wp-content/uploads/2016/05/20160516_200730_1080.jpg 1920w" sizes="(max-width: 960px) 100vw, 960px" /></a></p>
+<p>Il sensore qui in foto si attacca dietro alla manopola. Basterà poi nascondere in un angolino la testa che &#8220;riceve&#8221; la luce per far si che le luci si accendano e spengano da sole. Niente tergicristalli automatici ne coming/leaving home per voi, mi spiace. L&#8217;accrocchio, inoltre, non sarà configurabile dalla radio, però devo dire che l&#8217;ho provato e funziona abbastanza bene. (è anche regolabile)</p>
+<p>Per tutti gli altri, invece, questi sono i componenti di cui avrete bisogno:</p>
+<ul>
+<li>Manopola luci con posizione &#8220;Auto&#8221; (la stessa della foto qui sopra) &#8211; 5GG 941 431 D</li>
+<li>Sensore luce/pioggia/umidità &#8211; 8U0 955 559 B</li>
+<li>Terminale per aggiungere il filo per la funzione &#8220;Auto&#8221; (x2)* &#8211; N 907 647 01</li>
+<li>Cavo VCDS per attivare il sensore, o un elettrauto compiacente</li>
+</ul>
+<p>Innanzi tutto verificate se avete bisogno di aggiungere il filo; tirate fuori la manopola (<a href="https://www.youtube.com/watch?v=PI_We25EmGU">istruzioni</a>), poi contate i fili attaccati ad essa. Se sono meno di 9, dovete aggiungere il filo.</p>
+<p>Il sensore si trova in questa scatolina dietro lo specchio:</p>
+<p><a href="/wp-content/uploads/2016/05/20160516_194401_1080.jpg"><img decoding="async" class="aligncenter size-large wp-image-583" src="/wp-content/uploads/2016/05/20160516_194401_1080-1024x576.jpg" alt="20160516_194401_1080" width="960" height="540" srcset="/wp-content/uploads/2016/05/20160516_194401_1080-1024x576.jpg 1024w, /wp-content/uploads/2016/05/20160516_194401_1080-300x169.jpg 300w, /wp-content/uploads/2016/05/20160516_194401_1080-768x432.jpg 768w, /wp-content/uploads/2016/05/20160516_194401_1080.jpg 1920w" sizes="(max-width: 960px) 100vw, 960px" /></a></p>
+<p>Per accedervi, dobbiamo prima togliere i due pezzi di cui è composto il tappo, e infine togliere lo specchio. Per togliere il tappo, spingete verso l&#8217;alto il pezzo lungo, facendo si che si sganci da quello corto. Dopo di che, premendo delicatamente sui bordi, sganciate il pezzo corto. Seppur sia tenuto da un semplice incastro è molto saldo e ci vorrà una discreta forza per farlo venire via. Infine, sarà sufficiente girare in senso antiorario il &#8220;collo&#8221; dello specchio per sganciarlo.</p>
+<p>ATTENZIONE: non fate pressione sullo specchio mentre tentate di rimuoverlo o si spaccherà.</p>
+<p>Questo è l&#8217;aspetto del sensore nel suo alloggiamento:</p>
+<div id="attachment_596" style="width: 586px" class="wp-caption aligncenter"><a href="/wp-content/uploads/2016/05/IMG_2371_zpsflcusmrz.jpg"><img decoding="async" aria-describedby="caption-attachment-596" class="wp-image-596 size-full" src="/wp-content/uploads/2016/05/IMG_2371_zpsflcusmrz.jpg" alt="Credits: http://s944.photobucket.com/user/Nebojsan/library/ (ho dimenticato di fare la foto)" width="576" height="576" srcset="/wp-content/uploads/2016/05/IMG_2371_zpsflcusmrz.jpg 576w, /wp-content/uploads/2016/05/IMG_2371_zpsflcusmrz-150x150.jpg 150w, /wp-content/uploads/2016/05/IMG_2371_zpsflcusmrz-300x300.jpg 300w" sizes="(max-width: 576px) 100vw, 576px" /></a><p id="caption-attachment-596" class="wp-caption-text">Credits: http://s944.photobucket.com/user/Nebojsan/library/ (ho dimenticato di fare la foto)</p></div>
+<p>Sarà sufficiente sganciare delicatamente le due alette ai lati per farlo venire via. Nel mio caso, il pad di silicone che lo teneva incollato al parabrezza non è venuto via con lui; se succede anche a voi è meglio togliere quello che è preapplicato al sensore nuovo, perché sarà sicuramente più sporco del vecchio. (grazie polvere)</p>
+<p>Dopo aver sostituito il sensore rimontate tutto. Collegate il cavo VCDS, accendete il quadro ed aprite il programma. Per attivarlo andate in</p>
+<ul>
+<li>Select
+<ul>
+<li>09-Cent. Elect.
+<ul>
+<li>Coding
+<ul>
+<li>5Q0-937*
+<ul>
+<li>Long Coding Helper</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>E impostate:</p>
+<ul>
+<li>Byte 6: Light sensor installed (02)</li>
+<li>Byte 7: Light switch with ADL installed (FB)</li>
+</ul>
+<p>Chiudendo e ritornando in coding, dovrebbe apparire un nuovo elemento in terza posizione, ovvero il nostro <strong>8U0 955 559 B</strong>. Sceglietelo e codificatelo così:</p>
+<ul>
+<li>Byte 2:  Audi A3 (6C)</li>
+</ul>
+<p>Da ora il sensore è attivo. Andando ad esempio nella radio, troveremo delle nuove opzioni:</p>
+<p><a href="/wp-content/uploads/2016/05/20160516_194517_HDR_merge.jpg"><img decoding="async" class="aligncenter size-large wp-image-594" src="/wp-content/uploads/2016/05/20160516_194517_HDR_merge-1024x288.jpg" alt="20160516_194517_HDR_merge" width="960" height="270" srcset="/wp-content/uploads/2016/05/20160516_194517_HDR_merge-1024x288.jpg 1024w, /wp-content/uploads/2016/05/20160516_194517_HDR_merge-300x84.jpg 300w, /wp-content/uploads/2016/05/20160516_194517_HDR_merge-768x216.jpg 768w, /wp-content/uploads/2016/05/20160516_194517_HDR_merge.jpg 1920w" sizes="(max-width: 960px) 100vw, 960px" /></a></p>
+<p>Ora occupiamoci della manopola. Se avete il nono filo, sarà sufficiente togliere una e mettere l&#8217;altra; altrimenti armatevi di santa pazienza. Il filo in questione va collegato tra il SocketC-Pin16 della BCM e il Pin2 della manopola. Il Socket C, dei tre, è quello più vicino alla portiera (in alternativa, il terzo da sinistra). Sarà un po&#8217; scomodo arrivarci. Per farvi capire l&#8217;impresa, la BCM si trova dietro la scatola dei fusibili e dietro la lamiera che vedete in questa foto:</p>
+<p><a href="/wp-content/uploads/2016/05/20160519_210902.jpg"><img decoding="async" class="aligncenter wp-image-600" src="/wp-content/uploads/2016/05/20160519_210902-1024x1024.jpg" alt="20160519_210902" width="540" height="540" srcset="/wp-content/uploads/2016/05/20160519_210902-1024x1024.jpg 1024w, /wp-content/uploads/2016/05/20160519_210902-150x150.jpg 150w, /wp-content/uploads/2016/05/20160519_210902-300x300.jpg 300w, /wp-content/uploads/2016/05/20160519_210902-768x768.jpg 768w, /wp-content/uploads/2016/05/20160519_210902.jpg 1080w" sizes="(max-width: 540px) 100vw, 540px" /></a>Staccando il cavo dalla BCM, è possibile aprirlo ed inserire il filo col terminale nello spinotto. (Questo nella foto è lo spinotto del Socket A, ma per farvi capire che aspetto abbia va bene lo stesso)</p>
+<p><a href="/wp-content/uploads/2016/05/20160519_201610.jpg"><img decoding="async" class="aligncenter wp-image-602" src="/wp-content/uploads/2016/05/20160519_201610-1024x1024.jpg" alt="20160519_201610" width="540" height="540" srcset="/wp-content/uploads/2016/05/20160519_201610-1024x1024.jpg 1024w, /wp-content/uploads/2016/05/20160519_201610-150x150.jpg 150w, /wp-content/uploads/2016/05/20160519_201610-300x300.jpg 300w, /wp-content/uploads/2016/05/20160519_201610-768x768.jpg 768w, /wp-content/uploads/2016/05/20160519_201610.jpg 1080w" sizes="(max-width: 540px) 100vw, 540px" /></a>Possiamo finalmente richiudere tutto. Se tutto è andato bene, questo sarà l&#8217;aspetto finale:</p>
+<p><a href="/wp-content/uploads/2016/05/20160519_223754.jpg"><img decoding="async" class="aligncenter size-large wp-image-603" src="/wp-content/uploads/2016/05/20160519_223754-1024x576.jpg" alt="20160519_223754" width="960" height="540" srcset="/wp-content/uploads/2016/05/20160519_223754-1024x576.jpg 1024w, /wp-content/uploads/2016/05/20160519_223754-300x169.jpg 300w, /wp-content/uploads/2016/05/20160519_223754-768x432.jpg 768w, /wp-content/uploads/2016/05/20160519_223754.jpg 1920w" sizes="(max-width: 960px) 100vw, 960px" /></a><strong>Bonus 1:</strong> Attivare Coming &amp; Leaving Home (e relative voci nel menu dello stereo)</p>
+<p>In VCDS, a quadro acceso, andiamo ancora in 09-Cent. Elect., e abilitiamo l&#8217;accesso tramite il menu security access (codice 31347). In Adaptation, impostiamo (credits LIJetta18t @ vwvortex.com):</p>
+<ul>
+<li>(1)-Comfort illumination-Coming Home Verbaustatus:    automatic</li>
+<li>(2)-Comfort illumination-Menuesteuerung Coming Home Werkseinstellung:    active</li>
+<li>(3)-Comfort illumination-Menueeinstellung Cominghome:    10 s</li>
+<li>(4)-Comfort illumination-Coming Home Leuchten:    Low beam</li>
+<li>(5)-Comfort illumination-Coming-home Einschaltereignis:    Driver door</li>
+<li>(6)-Comfort illumination-Helligkeitsschwelle Infrarot-Messung: 12 lx</li>
+<li>(7)-Comfort illumination-Leaving-Home Verbausstatus:    Enabled</li>
+<li>(8)-Comfort illumination-Menuesteuerung Leaving-home Freischaltung per BAP:    active</li>
+<li>(9)-Comfort illumination-Menueeinstellung Leaving-home Zeit per BAP:    10 s</li>
+<li>(10)-Comfort illumination-Helligkeitsschwelle Forward-Messung:    46400 lx</li>
+</ul>
+<p><strong>Bonus 2:</strong> Chiusura dei finestrini automatica in caso di pioggia</p>
+<p>Come sopra, impostiamo (credits 3askoul @ golfmk7.com):</p>
+<ul>
+<li>(15) Access Control 2 &#8211; Regenschliessen_ein aus:    active</li>
+<li>(16) Access Control 2 &#8211; Regenschliessen_art:    permanent</li>
+<li>(28) Access Control 2 &#8211; Menuesteuerung Regenschliessen:    active</li>
+</ul>
+<p>Eventualmente potreste aver bisogno di impostare anche il terzo bit del byte 0 a 1 nel coding del sensore di pioggia.</p>
+<p><strong>Bonus 3:</strong> Far accendere i fari leggermente più tardi</p>
+<p>Se come a me vi si accendono i fari quando fuori c&#8217;è ancora sufficiente luce per guidare in sicurezza potete settare il Byte 2 a 0. Questo disabilita il filtro del sensore ed aumenta la lettura in lx di circa 1600, di fatti ritardando di un&#8217;oretta l&#8217;accensione dei fari. In galleria, comunque, sono sempre istantanei (come dovrebbero).</p>
+<p>Un abbraccio al mio papà che mi ha prestato i suoi attrezzi e la sua manualità, senza i quali avrei sicuramente distrutto qualcosa.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/installare-luci-e-tergicristalli-automatici-su-golf-mk7/feed/</wfw:commentRss>
+			<slash:comments>221</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ubuntu 15.10 su N550JV</title>
+		<link>/ubuntu-15-10-su-n550jv/</link>
+					<comments>/ubuntu-15-10-su-n550jv/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Thu, 24 Dec 2015 19:03:30 +0000</pubDate>
+				<category><![CDATA[Guide]]></category>
+		<guid isPermaLink="false">/?p=296</guid>
+
+					<description><![CDATA[Questo portatile è già supportato abbastanza bene da Ubuntu, però ci sono delle piccole cose che vanno sistemate post-install: alcune FN non funzionano, e la DGPU è perennamente accesa oltre che inutilizzabile (e scarica la batteria). Dopo aver installato Ubuntu col normalissimo procedimento fornito dall&#8217;installer e aver verificato che tutto sia OK, vi basta fare<p><a href="/ubuntu-15-10-su-n550jv/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Questo portatile è già supportato abbastanza bene da Ubuntu, però ci sono delle piccole cose che vanno sistemate post-install: alcune FN non funzionano, e la DGPU è perennamente accesa oltre che inutilizzabile (e scarica la batteria).</p>
+<p>Dopo aver installato Ubuntu col normalissimo procedimento fornito dall&#8217;installer e aver verificato che tutto sia OK, vi basta fare queste piccole modifiche che sto per elencarvi per sistemare gli ultimi problemini. Tutto ciò che sto per dire va fatto da root.</p>
+<p><span id="more-296"></span></p>
+<p>Prima aggiorniamo tutto:</p>
+<blockquote><p>apt-get update</p>
+<p>apt-get dist-upgrade</p></blockquote>
+<p>In /etc/default/grub cambiamo questa riga:</p>
+<blockquote><p>GRUB_CMDLINE_LINUX_DEFAULT=&#8221;quiet splash nogpumanager acpi_osi=&#8221;</p></blockquote>
+<p>e dal terminale:</p>
+<blockquote><p>update-grub</p>
+<p>reboot</p></blockquote>
+<p>nogpumanager serve a disabilitare un componente di Ubuntu, gpu-manager appunto, che non appena sente l&#8217;odore dei driver nvidia impazzisce e spacca tutto. acpi_osi invece serve ad aggirare un piccolo bug col bios del portatile riguardante le FN.</p>
+<p>Ora installiamo i driver nvidia e bumblebee:</p>
+<blockquote><p>apt-get install bumblebee bumblebee-nvidia nvidia-352 primus mesa-utils</p></blockquote>
+<p>Nel file /etc/bumblebee/bumblebee.conf, dovete modificare:</p>
+<blockquote><p>Driver=nvidia</p>
+<p>[&#8230;]</p>
+<p>[driver-nvidia]<br />
+KernelDriver=nvidia-352<br />
+LibraryPath=/usr/lib/nvidia-352:/usr/lib32/nvidia-352<br />
+XorgModulePath=/usr/lib/nvidia-352/xorg,/usr/lib/xorg/modules</p></blockquote>
+<p>Riavviate e verificate che l&#8217;Optimus sia apposto:</p>
+<blockquote><p>michele@test:~$ cat /proc/acpi/bbswitch; glxinfo | grep &#8220;OpenGL vendor&#8221;; primusrun glxinfo | grep &#8220;OpenGL vendor&#8221;<br />
+0000:01:00.0 OFF<br />
+OpenGL vendor string: Intel Open Source Technology Center<br />
+OpenGL vendor string: NVIDIA Corporation</p></blockquote>
+<p>Questo output è quello che dovete aspettarvi.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/ubuntu-15-10-su-n550jv/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Gateway Fastboot (ovvero: viva i DNS)</title>
+		<link>/gateway-fastboot-ovvero-viva-i-dns/</link>
+					<comments>/gateway-fastboot-ovvero-viva-i-dns/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Thu, 22 Jan 2015 23:18:00 +0000</pubDate>
+				<category><![CDATA[Guide]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Chiunque abbia avuto a che fare con i Nintendo 3DS saprà che fino a poco tempo fa l&#8217;unico modo per accedere al mondo degli homebrew (e la pirateria&#8230;) era avere il proprio firmware massimo alla versione 4.5.0-10. Il cosiddetto DS Profile Exploit richiedeva una flashcard (R4i et similia) per DS e un homebrew appositamente creato<p><a href="/gateway-fastboot-ovvero-viva-i-dns/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Chiunque abbia avuto a che fare con i Nintendo 3DS saprà che fino a poco tempo fa l&#8217;unico modo per accedere al mondo degli homebrew (e la pirateria&#8230;) era avere il proprio firmware massimo alla versione 4.5.0-10. Il cosiddetto DS Profile Exploit richiedeva una flashcard (R4i et similia) per DS e un homebrew appositamente creato che abilitava il lancio di un file forgiato ad hoc da mettere nella SD del 3DS chiamato Launcher.dat (o MsetForBoss.dat). Tale exploit è scomodo perché va riapplicato ogni volta che vogliamo giocare ad un gioco per Nintendo DS, ma siccome fino a qualche giorno fa era l&#8217;unica via, meglio così che niente.</p>
+<p><span id="more-9"></span></p>
+<p>Recentemente il team Gateway ha rilasciato un nuovo exploit riguardante il browser che, oltre a funzionare fino al firmware 9.2.0, non richiede più l&#8217;uso del DS Profile exploit, rimuovendo la necessità di usare una R4i. Il suo funzionamento è abbastanza basilare; è sufficiente andare al sito go.gateway.com dopo aver messo il file Launcher.dat nella SD. I problemi a questo punto sono due:</p>
+<ul>
+<li>Bisogna collegare il 3DS ad internet, rischiando che si scarichi gli aggiornamenti e poi rompa le palle</li>
+<li>Ogni volta bisogna cancellare la cronologia e andare al loro indirizzo</li>
+</ul>
+<div>A questo punto mi sono detto: in casa ho sempre il mio bellissimo server (un galaxy s2 modificato) che adempie egregiamente a diversi compiti. Perché non anche come launcher per il &#8220;go&#8221; exploit?</div>
+<div><a name="more"></a></div>
+<div>Lo scopo era ovviamente di isolare il 3DS da internet mentre era in SysNand, e farlo passare all&#8217;EmuNand non appena il browser fosse lanciato.</div>
+<div></div>
+<div>Come? Semplice! lighttpd e dnsmasq!</div>
+<div></div>
+<div>Partiamo con dnsmasq, in modo da ottenere come prima cosa l&#8217;isolazione del 3DS da internet. Tale risultato è ottenibile redirezionando tutte le richieste DNS al server (galaxy s2 ftw) linux. è sufficiente una sola linea da porre nel dnsmasq.conf:</div>
+<blockquote style="text-align: center;"><p>address=/#/192.168.1.107</p></blockquote>
+<div style="text-align: left;">L&#8217;effetto è ridirezionare tutti gli indirizzi all&#8217;IP del server. Ovviamente non potete ridirezionare la porta, quindi vi servirà un server HTTP su porta 80. Qui entra in gioco lighttpd. Installatelo sul vostro server con le impostazioni standard, non serve toccare nulla. Nella cartella www/favorites/ mettete questo file:</div>
+<blockquote style="text-align: center;"><p><a href="http://gbatemp.net/threads/release-static-html-javascript-gw-multilauncher.379080/">http://gbatemp.net/threads/release-static-html-javascript-gw-multilauncher.379080/</a></p></blockquote>
+<p>Chiamatelo però 3ds.php. Dovrete inoltre rimuovere la parte che cambia il nome del Launcher.dat, o non funzionerà. Il punto è che la homepage del 3DS non è modificabile, quindi dovete fargli trovare il file dove lo vuole o il browser vi darà l&#8217;errore 404.</p>
+<p>Testate il tutto sul vostro PC, impostando il DNS manualmente all&#8217;indirizzo del vostro server. Se è tutto apposto, qualsiasi indirizzo scriverete nel browser vedrete l&#8217;homepage di lighttpd. Io ho messo il file di cui sopra anche come index, in modo da poterlo richiamare facilmente in ogni caso. Il risultato dovrebbe essere questo:</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2015/01/Cattura.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2015/01/Cattura.png" alt="" width="320" height="205" border="0" /></a></div>
+<p>Ora che siamo sicuri che il 3DS non vedrà internet neanche da lontano, passiamo a configurare il WiFi:</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2015/01/DSC_0178.jpg"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2015/01/DSC_0178.jpg" alt="" width="299" height="320" border="0" /></a></div>
+<p>Bene, è tutto pronto. Gustiamoci lo spettacolo.</p>
+<div style="text-align:center; width:100%;"><iframe style="display:inline" src="https://www.youtube-nocookie.com/embed/jBQAnXflw_4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/gateway-fastboot-ovvero-viva-i-dns/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>N550JV Bios Unlock</title>
+		<link>/n550jv-bios-unlock/</link>
+					<comments>/n550jv-bios-unlock/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 04 Jun 2014 11:28:00 +0000</pubDate>
+				<category><![CDATA[Guide]]></category>
+		<category><![CDATA[Hacking]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Non sto a spiegarvi cos&#8217;è il bios unlock, ne vi fornirò la pappa pronta. Chi mi conosce sa che amo aggirare i limiti dei miei aggeggi elettronici, soprattutto se per farlo c&#8217;è bisogno di un pizzico di coraggio. Siccome su internet non ho trovato nulla di specifico per questo modello ho deciso di spendere io<p><a href="/n550jv-bios-unlock/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Non sto a spiegarvi cos&#8217;è il bios unlock, ne vi fornirò la pappa pronta. Chi mi conosce sa che amo aggirare i limiti dei miei aggeggi elettronici, soprattutto se per farlo c&#8217;è bisogno di un pizzico di coraggio.<br />
+Siccome su internet non ho trovato nulla di specifico per questo modello ho deciso di spendere io qualche minuto a spiegare il come ci sia riuscito.</p>
+<p><span id="more-10"></span></p>
+<p>Il risultato finale sarà questo:</p>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/06/20140603_204540.jpg"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/20140603_204540.jpg" alt="" width="320" height="180" border="0" /></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Voci in Advanced aggiunte e tab Chipset sbloccato</td>
+</tr>
+</tbody>
+</table>
+<p><a name="more"></a><br />
+NOTA: Queste operazioni se fatte nel modo sbagliato possono causare la morte prematura (e probabilmente anche permanente) del notebook. Non mi assumo nessuna responsabilità per quello che le vostre manacce possono combinare.</p>
+<p>Ora passiamo all&#8217;Art Attack:</p>
+<p>Partiamo dal BIOS originale. Tutte le modifiche qui descritte sono state fatte sulla versione 208 originale, ma non quella disponibile dal sito. Mi spiego: quella che si può scaricare dal sito asus è incapsulata (ha 2KB in più di dati) che noi non vogliamo; quindi se non siete già sulla 208 prima aggiornate, e poi estraete dalla memoria flash il bios senza capsula.</p>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/06/1.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/1.png" alt="" width="234" height="320" border="0" /></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">afuwinx64 dump.rom /O</td>
+</tr>
+</tbody>
+</table>
+<p>Fatevi furbi e salvate questo file; semmai dovrete mandare in garanzia il notebook infatti vi conviene rimettercelo&#8230; <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Siccome far uscire il tab chipset è un discorso a parte, preoccupiamoci prima di sbloccare le voci mancanti in advanced e boot. Questa operazione è abbastanza semplice, basta aprire il dump in amibcp e cambiare il campo &#8220;Access/Use&#8221; in &#8220;USER&#8221;. Fatelo con tutti gli elementi sotto Advanced e sotto Boot.<br />
+Quando avete finito, salvate il file e chiudete amibcp.</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/06/Cattura.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/Cattura.png" alt="" width="320" height="234" border="0" /></a></div>
+<p>Ora tocca al tab chipset. Questo tab contiene impostazioni pericolose, quali overclock e impostazioni dello schermo, ma molto utili. Il tab chipset è nascosto nel codice, quindi dovremo modificare il modulo che contiene l&#8217;interfaccia di configurazione. Sembra infatti che vi sia un array di bool che indica quali tab sono sbloccati e quali no. nel nostro bios i valori sono: {true,true,false,true,true,true}.<br />
+Si, avete capito bene: il false qui sopra è proprio il tab chipset.</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/06/Cattura1.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/Cattura1.png" alt="" width="320" height="230" border="0" /></a></div>
+<p>Il modulo in questione si chiama &#8220;Setup&#8221;, e possiamo estrarlo con MMTool. Cerchiamo questo array con un hex editor e cambiamo il false con un true, poi rimpiazziamo il modulo modificato dentro l&#8217;immagine del bios.</p>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="/wp-content/uploads/2014/06/Cattura2.png"><img decoding="async" class="aligncenter" src="/wp-content/uploads/2014/06/Cattura2.png" alt="" width="320" height="284" border="0" /></a></div>
+<p>Salviamo il nuovo file e dopo aver preso coraggio, flashiamolo con <b>afuwinx64 new.rom /gun</b>.</p>
+<p>Il flash richiederà un paio di minuti. Sebbene io l&#8217;abbia rifatto una decina di volte durante i miei esperimenti e che sia andato sempre a buon fine, non me la sento di dirvi che questa è una procedura sicura.</p>
+<p>A buon intenditor.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/n550jv-bios-unlock/feed/</wfw:commentRss>
+			<slash:comments>19</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

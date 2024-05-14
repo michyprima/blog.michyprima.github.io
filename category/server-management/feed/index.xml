@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Server Management &#8211; Michele Primavera</title>
+	<atom:link href="/category/server-management/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Mon, 11 Apr 2016 11:18:55 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>MariaDB vs MySQL</title>
+		<link>/mariadb-vs-mysql/</link>
+					<comments>/mariadb-vs-mysql/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 10 Apr 2016 14:45:24 +0000</pubDate>
+				<category><![CDATA[Server Management]]></category>
+		<guid isPermaLink="false">/?p=538</guid>
+
+					<description><![CDATA[Combattere con delle risorse limitate non è sempre semplice. Aver poi a che fare con un animale così mutevole quale è MySQL complica ulteriormente l&#8217;esistenza. Nella fattispecie MySQL 5.7 sembra non essere mai sazio di memoria, nonostante le impostazioni ultra conversative che (mio malgrado) gli ho appioppato. A nulla serve bacchettarlo più e più volte<p><a href="/mariadb-vs-mysql/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Combattere con delle risorse limitate non è sempre semplice. Aver poi a che fare con un animale così mutevole quale è MySQL complica ulteriormente l&#8217;esistenza.<br />
+Nella fattispecie MySQL 5.7 sembra non essere mai sazio di memoria, nonostante le impostazioni ultra conversative che (mio malgrado) gli ho appioppato. A nulla serve bacchettarlo più e più volte ricordandogli che quel Giga (chiamamoli alla Vodafone. Si, mi sto odiando da solo) di RAM non è tutto il suo. Pian pianino, partendo dal 4% fino ad oltre il 70, se lo consumerà tutto fino a portare il sistema a swappare, anche senza carico sul server.<span id="more-538"></span></p>
+<p>Ammetto di non essere riuscito a capire il perché, ma mi dava così tanto fastidio che ho iniziato a buttare l&#8217;occhio su MariaDB, che per qualche assurdo motivo ho sempre snobbato.<br />
+A discapito di quel che dice il sito, però, MariaDB <strong>non</strong> è un drop-in replacement per MySQL 5.7. Chiariamo meglio: alcune tabelle interne, quelle degli utenti per capirci, non sono compatibili. Il resto si.<br />
+Per sostituire MySQL con MariaDB, sarà sufficiente dunque fare un full dump, e poi aggiustare la tabella degli utenti (mancano giusto un paio di colonne) oppure riaggiungere gli utenti a mano.<br />
+Se non lo fate, il server si <strong>rifiuterà</strong> di avviarsi. Esatto, proprio non ne vuole sapere.</p>
+<p>Sembrerà incredibile che, considerato che stiamo parlando di un software che può sostituire MySQL e che quindi ha la stessa interfaccia, l&#8217;utilizzo di memoria sia così differente. Eppure è proprio vero: al momento sta &#8220;vivendo&#8221; in meno del 9% di memoria.</p>
+<p>Provare per credere.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/mariadb-vs-mysql/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>BitLocker sveglia il can che dorme</title>
+		<link>/bitlocker-sveglia-il-can-che-dorme/</link>
+					<comments>/bitlocker-sveglia-il-can-che-dorme/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Fri, 04 Mar 2016 11:23:17 +0000</pubDate>
+				<category><![CDATA[Server Management]]></category>
+		<guid isPermaLink="false">/?p=460</guid>
+
+					<description><![CDATA[Tralasciamo il perché io abbia attivato BitLocker, il percome e il perdove. Scrivo questo articolo per sottolinearne un suo difetto e proporne una soluzione. Sembra, infatti, che BitLocker proprio non sia in grado di lasciare in pace gli hard disk da esso crittografati; ogni oretta e mezza circa, quindi, sentivo il rumore del mio hard<p><a href="/bitlocker-sveglia-il-can-che-dorme/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Tralasciamo il perché io abbia attivato BitLocker, il percome e il perdove. Scrivo questo articolo per sottolinearne un suo difetto e proporne una soluzione. Sembra, infatti, che BitLocker proprio non sia in grado di lasciare in pace gli hard disk da esso crittografati; ogni oretta e mezza circa, quindi, sentivo il rumore del mio hard disk che si avviava e dopo 5 minuti, come da prassi, tornava a spegnersi. Il motivo? BitLocker, a intervalli variabili tra i 60 e i 90 minuti, &#8220;punzecchia&#8221; i suoi hard disk.<span id="more-460"></span> Non è chiaro il perché, ma non è qualcosa di risolvibile; è però possibile girarci attorno in una delle seguenti maniere:</p>
+<ul>
+<li>Decriptare l&#8217;hard disk che si vuole lasciare in pace</li>
+<li>Tenere l&#8217;hard disk offline, per poi metterlo online solo quando serve</li>
+</ul>
+<p>Nel mio caso non era possibile seguire la prima via e, siccome non avevo per niente voglia di montare e smontare a mano ogni volta, ho reso tutto automatico nella maniera che sto per spiegarvi.</p>
+<p><strong>Montare automaticamente gli hard disk in caso di backup e smontarli quando finito</strong></p>
+<p>Windows Server sfrutta l&#8217;utilità di pianificazione per avviare i backup programmati; il lavoro si trova sotto</p>
+<ul>
+<li>Libreria
+<ul>
+<li>Microsoft
+<ul>
+<li>Windows
+<ul>
+<li>Backup</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Ed è possibile aggiungere delle azioni a piacimento, in quanto modificabile. Creiamo due file txt con dentro i comandi per diskpart:</p>
+<pre class="brush: plain; title: ; notranslate">select disk 1
+online disk</pre>
+<p>e</p>
+<pre class="brush: plain; title: ; notranslate">select disk 1
+offline disk</pre>
+<p>E salviamoli dove ci pare.<br />
+Ora all&#8217;attività dobbiamo aggiungere 3 azioni, una di montaggio, attesa del completamento del backup, e una di smontaggio. Avremo quindi 4 avvii di programma in totale come questi:</p>
+<blockquote><p>diskpart.exe /s online.txt<br />
+wbadmin.exe start backup<br />
+wbadmin.exe get status<br />
+diskpart.exe /s offline.txt</p></blockquote>
+<p><strong>Montare gli hard disk all&#8217;accesso e smontarli alla disconnessione</strong></p>
+<p>Per il montaggio automatico, creiamo una nuova attività:</p>
+<ul>
+<li>Generale
+<ul>
+<li>Utilizza l&#8217;account seguente: Amministratore</li>
+<li>Esegui indipendentemente dalla connessione degli utenti</li>
+<li>Esegui con privilegi elevati</li>
+</ul>
+</li>
+<li>Attivazione
+<ul>
+<li>All&#8217;accesso</li>
+<li>Utente specifico: X</li>
+</ul>
+</li>
+<li>Azioni
+<ul>
+<li>Avvio programma: diskpart.exe /s online.txt</li>
+</ul>
+</li>
+</ul>
+<p>Per lo smontaggio premetto che ho avuto una piccola difficoltà: la modalità di attivazione predefinita &#8220;Alla disconnessione alla sessione utente&#8221; non c&#8217;è stato verso di farla funzionare. I passaggi sono gli stessi di cui sopra, l&#8217;unica differenza è la modalità di attivazione, che ora vado a spiegarvi, e il cambio del txt con quello per l&#8217;offline.</p>
+<p>Come metodo di attivazione scegliamo quindi &#8220;Al verificarsi di un evento&#8221;, &#8220;Personalizzato&#8221;, e dentro &#8220;XML&#8221; incolliamo questi dati:</p>
+<pre class="brush: xml; title: ; notranslate">&lt;QueryList&gt;
+  &lt;Query Id=&quot;0&quot; Path=&quot;Security&quot;&gt;
+    &lt;Select Path=&quot;Security&quot;&gt;*&#x5B;System&#x5B;Provider&#x5B;@Name='Microsoft-Windows-Security-Auditing'] and Task = 12545 and EventID = 4647]] and *&#x5B;EventData&#x5B;Data&#x5B;@Name='TargetUserName'] and Data = 'NOMEUTENTE']]&lt;/Select&gt;
+  &lt;/Query&gt;
+&lt;/QueryList&gt;</pre>
+<p>&nbsp;<br />
+Confermate il tutto e, da ora, avrete la certezza che il vostro hard disk si avvierà solo quando necessario.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/bitlocker-sveglia-il-can-che-dorme/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Let&#8217;s Encrypt potrebbe essere la soluzione</title>
+		<link>/lets-encrypt-potrebbe-essere-la-soluzione/</link>
+					<comments>/lets-encrypt-potrebbe-essere-la-soluzione/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 23 Dec 2015 12:21:35 +0000</pubDate>
+				<category><![CDATA[Server Management]]></category>
+		<guid isPermaLink="false">/?p=283</guid>
+
+					<description><![CDATA[Let&#8217;s Encrypt è un progetto sponsorizzato da Mozilla e da altri enti che si prefigge lo scopo di fornire certificati SSL gratuiti per tutti. Il sogno sta diventando pian piano realtà, e già da qualche settimana è possibile ottenere dei certificati da questa neonata CA. Al momento vengono accettate solo chiavi RSA, ma perlomeno è<p><a href="/lets-encrypt-potrebbe-essere-la-soluzione/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Let&#8217;s Encrypt è un progetto sponsorizzato da Mozilla e da altri enti che si prefigge lo scopo di fornire certificati SSL gratuiti per tutti.<br />
+Il sogno sta diventando pian piano realtà, e già da qualche settimana è possibile ottenere dei certificati da questa neonata CA. Al momento vengono accettate solo chiavi RSA, ma perlomeno è possibile scegliere a piacimento la lunghezza di queste, che ricordo non dovrebbero essere <strong>mai</strong> più corte di 2048bit.</p>
+<p><span id="more-283"></span></p>
+<p>Personalmente poiché uso nginx con configurazioni complesse non ho lasciato che il loro client vi mettesse mani, ed ho optato per la verifica tramite webroot. Tale tipo di verifica aggiunge un file nella root del sito, che viene poi utilizzato per verificare che voi ne siate gli effettivi amministratori. Questo è un enorme passo avanti dalle altre CA, che spesso chiedono, oltre che alla verifica dei dati personali, l&#8217;invio di un codice di conferma al dominio da verificare, presso una casella di posta a loro scelta. E se io non volessi/potessi mettere su un server di posta?</p>
+<p>Decisa la modalità, attuarla è piuttosto semplice:</p>
+<blockquote><p>letsencrypt-auto certonly &#8211;webroot -w /var/www/sites/letsencrypt.dreamcode -d letsencrypt.dreamcode.it</p></blockquote>
+<p>Dopo alcuni semplici passaggi troveremo certificato e chiave privata in /etc/letsencrypt/live, pronti per essere utilizzati e già validi.</p>
+<p>Il problema principale è che non forniscono certificati validi oltre i 3 mesi, e questo potrebbe creare dei problemi agli admin più pigri, me compreso. Personalmente preferirei che tale validità fosse estesa almeno all&#8217;anno o due, tanto coi sistemi OCSP odierni non c&#8217;è più pericolo che certificati revocati vengano utilizzati ugualmente.</p>
+<p>Il sito indicato qui sopra esiste davvero ed è attivo, raggiungibile <a href="https://letsencrypt.dreamcode.it/" target="_blank">qui</a> in caso foste curiosi. <a href="https://www.ssllabs.com/ssltest/analyze.html?d=letsencrypt.dreamcode.it" target="_blank">Qui</a> invece potete trovare un report completo di SSL Labs, giusto per.</p>
+<p><a href="/wp-content/uploads/2015/12/report.png" rel="attachment wp-att-286"><img fetchpriority="high" decoding="async" class="aligncenter wp-image-286" src="/wp-content/uploads/2015/12/report.png" alt="report" width="650" height="386" srcset="/wp-content/uploads/2015/12/report.png 852w, /wp-content/uploads/2015/12/report-300x178.png 300w, /wp-content/uploads/2015/12/report-768x456.png 768w" sizes="(max-width: 650px) 100vw, 650px" /></a>E voi, siete da A+?</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/lets-encrypt-potrebbe-essere-la-soluzione/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Limitare le email in uscita da postfix</title>
+		<link>/limitare-le-email-in-uscita-da-postfix/</link>
+					<comments>/limitare-le-email-in-uscita-da-postfix/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Tue, 15 Dec 2015 01:16:44 +0000</pubDate>
+				<category><![CDATA[Server Management]]></category>
+		<guid isPermaLink="false">/?p=275</guid>
+
+					<description><![CDATA[Sebbene al momento il mio mailserver è poco più di un esperimento personale, è funzionante a tutti gli effetti, e se le mie credenziali d&#8217;accesso fossero finite in mani sbagliate, prima di oggi avrei avuto un bel problema perché questa persona avrebbe potuto approfittarsene per inviare spam, ed io, sebbene non direttamente responsabile, avrei visto<p><a href="/limitare-le-email-in-uscita-da-postfix/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Sebbene al momento il mio mailserver è poco più di un esperimento personale, è funzionante a tutti gli effetti, e se le mie credenziali d&#8217;accesso fossero finite in mani sbagliate, prima di oggi avrei avuto un bel problema perché questa persona avrebbe potuto approfittarsene per inviare spam, ed io, sebbene non direttamente responsabile, avrei visto il mio ip finire in blacklist.<br />
+<span id="more-275"></span><br />
+Potete limitare le email in uscita, per dominio o per account, grazie a <a href="https://github.com/onlime/ratelimit-policyd">questo</a> piccolo progettino che ha cache in ram e database persistente su mysql.</p>
+<p>Non mi dilungherò più di tanto perché nel link qui sopra troverete tutte le informazioni dettagliate per farlo funzionare. In caso voi stiate su ubuntu, verificate di avere i pacchetti necessari:</p>
+<blockquote><p>sudo apt-get install perl libswitch-perl libdbi-perl</p></blockquote>
+<p>Ho anche modificato leggermente lo script per fare scaricare la cache ogni 5 minuti invece che 30 secondi:</p>
+<blockquote><p>if ($cnt % 6 == 0) &rarr; if ($cnt % 60 == 0)</p></blockquote>
+<p>Unica cosa, vi consiglio di non utilizzare l&#8217;account di postfix ma un altro a vostra scelta, o nuovo. Meglio separare le cose.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/limitare-le-email-in-uscita-da-postfix/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Firmare automaticamente le email in uscita da postfix</title>
+		<link>/firmare-automaticamente-le-email-in-uscita-da-postfix/</link>
+					<comments>/firmare-automaticamente-le-email-in-uscita-da-postfix/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 09 Dec 2015 00:42:14 +0000</pubDate>
+				<category><![CDATA[Server Management]]></category>
+		<guid isPermaLink="false">/?p=255</guid>
+
+					<description><![CDATA[Scrivo questa guida perché, trovatomi nella situazione di dover implementare questa funzione, non ho trovato nulla di veramente completo nello spiegare come. Come saprete se avete avuto a che fare con esso, postfix supporta delle estensioni, i cosiddetti &#8220;milters&#8221;. Ora ci tengo a precisare che le impostazioni che vi mostrerò sono dedicate alla mia configurazione<p><a href="/firmare-automaticamente-le-email-in-uscita-da-postfix/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Scrivo questa guida perché, trovatomi nella situazione di dover implementare questa funzione, non ho trovato nulla di veramente completo nello spiegare come. Come saprete se avete avuto a che fare con esso, postfix supporta delle estensioni, i cosiddetti &#8220;milters&#8221;. Ora ci tengo a precisare che le impostazioni che vi mostrerò sono dedicate alla mia configurazione che include opendkim e amavis-new. Il milter che consente di firmare tramite S/MIME si chiama signing-milter.</p>
+<p><span id="more-255"></span>Nella fattispecie, bisogna farli agire in quest&#8217;ordine: amavis, signing-milter e infine opendkim. Lasciare opendkim per ultimo è importante perché bisogna assicurarsi che l&#8217;email non venga più toccata dopo la firma.<br />
+Iniziamo col procurarci un certificato dedicato alla firma delle email. StartSSL e Comodo li offrono gratuitamente. Consiglio Comodo perché i certificati possono essere revocati gratuitamente, mentre StartSSL si fa pagare 25$. signing-milter richiede che certificato e chiave privata siano in formato pem senza password. Per convertirli usiamo openssl<code>:</code></p>
+<blockquote><p>openssl pkcs12 -export -in email.crt -inkey email.key -out email.pem -nodes</p></blockquote>
+<p>Ora signing-milter, per associare i certificati alle email, utilizza un database statico in formato CDB. Immaginiamo di dover associare mia@email.com al certificato /etc/signing-milter/email.pem. Per fare ciò, creiamo un file vuoto, ad esempio db.txt, e poniamo come prima riga:</p>
+<blockquote><p>+13,29:mia@email.com-&gt;/etc/signing-milter/email.pem</p></blockquote>
+<p>Creiamo ora il database:</p>
+<blockquote><p>cdb -c signingtable.cdb db.txt</p></blockquote>
+<p>Ricordo che ogni processo che gestisce dati sensibili dovrebbe utilizzare un utente diverso. Creiamone uno per signing-milter e associamo ad esso i file:</p>
+<blockquote><p>adduser &#8211;system &#8211;no-create-home &#8211;group signingmilter</p>
+<p>chown -R signingmilter:signingmilter /etc/signing-milter</p>
+<p>chmod 500 /etc/signing-milter</p>
+<p>chmod 400 /etc/signing-milter/*</p></blockquote>
+<p>Scaricate i sorgenti di signing-milter, compilateli e mettete il binario in /usr/sbin. Create uno script init.d per avviare il daemon all&#8217;avvio con questi parametri:</p>
+<blockquote><p>-g signingmilter -s inet:9991 -t 60 -u signingmilter -m /etc/signing-milter/signingtable.cdb</p></blockquote>
+<p>Questo creerà un milter sulla porta 9991. Se non usate amavis, aggiungete queste righe al main.cf:</p>
+<blockquote><p>smtpd_milters=inet:localhost:9991</p>
+<p>non_smtpd_milters=inet:localhost:9991</p></blockquote>
+<p>Se usate amavis, invece, fate queste modifiche:</p>
+<ul>
+<li>togliete smtpd_milters e non_smtpd_milters dal main.cf</li>
+<li>togliete no_milters dalla config di amavis nel master.cf</li>
+<li>abilitate i milters nel master.cf aggiungendo sotto la riga da cui avete tolto no_milters:<br />
+<blockquote><p>-o smtpd_milters=inet:localhost:9991</p>
+<p>-o non_smtpd_milters=inet:localhost:9991</p></blockquote>
+</li>
+</ul>
+<p>Riavviate postfix e provate ad inviare una email. Tutto apposto?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/firmare-automaticamente-le-email-in-uscita-da-postfix/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Storie di un sistemista in erba: da 1and1 a CloudFlare a Nginx</title>
+		<link>/storie-di-un-sistemista-in-erba-da-1and1-a-cloudflare-a-nginx/</link>
+					<comments>/storie-di-un-sistemista-in-erba-da-1and1-a-cloudflare-a-nginx/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 29 Nov 2015 17:45:22 +0000</pubDate>
+				<category><![CDATA[Server Management]]></category>
+		<guid isPermaLink="false">/?p=232</guid>
+
+					<description><![CDATA[La mia avventura inizia non molto tempo fa, quando iniziai ad appassionarmi al mondo del web, forse per merito del buon Colace e del suo bel voto. Da bravo programmatore ho sempre evitato come la peste tutto ciò che riguardasse il web: php, javascript, ruby, python (anche se questi possono essere usati anche senza un<p><a href="/storie-di-un-sistemista-in-erba-da-1and1-a-cloudflare-a-nginx/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>La mia avventura inizia non molto tempo fa, quando iniziai ad appassionarmi al mondo del web, forse per merito del buon Colace e del suo bel voto. Da bravo programmatore ho sempre evitato come la peste tutto ciò che riguardasse il web: php, javascript, ruby, python (anche se questi possono essere usati anche senza un webserver) sono linguaggi interpretati e pertanto rappresentano il male assoluto per un fissato con l&#8217;ottimizzazione come me. O meglio: rappresentavano.</p>
+<p>Quando apprendi qualcosa, volente o nolente, questa influenza inevitabilmente ciò che crei o hai creato. Te la fa guardare con occhi diversi, ed è quando trovi qualcosa di migliore che ciò che avevi creato e che consideravi buono inzia di colpo a fare schifo. Uno di questi esempi è <a href="https://play.google.com/store/apps/details?id=com.michy.HttpSMS" target="_blank">HttpSMS</a>, un client web-sms per Android, creato un po&#8217; di tempo fa da me quasi per noia. Mi sono reso conto che forse un po&#8217; di CSS qua e la poteva non essere una cattiva idea, perché anche l&#8217;occhio vuole la sua parte; così come un po&#8217; di JS qui e un po&#8217; la avrebbe reso tutto migliore, non costringendo l&#8217;utente a ricaricare la pagina e così via. Ed ecco lo schifo che arriva. L&#8217;HTML puro sa di vecchio, ormai. Siamo nel 2015 e che cazzo.</p>
+<p>Lo stesso è accaduto quando ho iniziato ad approcciarmi al mondo dell&#8217;hosting. Son partito con 1and1, un managed hosting molto diffuso, che nonostante il prezzo contenuto offre discrete possibilità. Spazio illimitato, account email, mysql e così via sembrano tutto ciò che si può desiderare; eppure&#8230;</p>
+<p><span id="more-232"></span></p>
+<p>Eppure no.</p>
+<p>Man mano che il tempo passava iniziavano a saltar fuori le magagne, ovviamente non risolvibili perché si sa, se sei managed sei nelle loro mani, che un po&#8217; come quelle del &#8220;signore&#8221; si muovono molto lentamente o non si muovono affatto. Tra queste troviamo:</p>
+<ul>
+<li>La app per Android di WordPress manda in pappa il server e bisogna aspettare qualche minuto che si riprenda (?!?)</li>
+<li>Banditi i certificati ssl custom. Con StartSSL che li regala, devo pagarli 50€ l&#8217;anno + iva l&#8217;uno&#8230; CERTO!</li>
+<li>Server tutt&#8217;altro che scattante</li>
+<li>Se avete qualche problema è colpa vostra e non faranno un beneamato cazzo se non mandarvi email in cui vi chiedono se sei soddisfatto dell&#8217;assistenza</li>
+<li>Il filtro spam è fin troppo aggressivo</li>
+<li>I cambiamenti alle impostazioni richiedono tempi che vanno dai 5 minuti alle 6 ore</li>
+<li>Le porte in uscita sono chiuse, 80 e 443 a parte. Se vuoi inviare una mail in php via smtp puoi anche scordartelo</li>
+</ul>
+<p>Ovviamente ci sono anche molti pregi, non fraintendete, ma lo scopo di questo post è spiegare perché li ho lasciati. Il fatto che ti mantengono il dominio, che comunque è managed (se sei inesperto è un pregio), che per essere shared ha prestazioni costanti eccetera sono tutti buoni motivi per sceglierli se il prezzo e la semplicità sono d&#8217;obbligo.</p>
+<p>Lasciare 1and1 significava rivolgersi al mondo unmanaged, il che a sua volta significava imparare a fare qualcosa che è tutt&#8217;altro che semplice, sia perché linux sa essere un gran bastardo, sia perché a meno che non vuoi vederti bucato 10 minuti dopo aver messo tutto online, è buona norma prendere delle precauzioni.</p>
+<p>Per avvicinarmi a questo mondo ho ben deciso di installare il necessario sul mio Desktop ormai in disuso da un bel po&#8217; (spoiler: non lo è più!). Il problema è che seppur avendo una linea stabile e costante, come la maggior parte delle linee domestiche è asincrona, con solamente 512k di upload: decisamente troppo poco per soddisfare la grande esigenza di un webserver.</p>
+<p>Dopo un po&#8217; inizio a stufarmi ma ecco che ci viene in aiuto CloudFlare. Cos&#8217;è? CloudFlare è una azienda che tra i servizi più rinomati offre gestione DNS, SSL (parziale o totale) e <strong>Caching</strong> di uno o più siti web, gratis. Bene mi dico, hanno tutto ciò che serve. Il Caching poi è disponibile sia per le pagine statiche che dinamiche. Avviene nei loro server sparsi per il mondo ed è veloce. O almeno dovrebbe.</p>
+<p>La verità è che fin quando non ho attivato CF, i miei siti di test non hanno mai avuto problemi di funzionamento. Dopo qualche giorno con CF invece ho iniziato ad avere strani problemi di connessione, con la loro pagina di errore che mi informava che l&#8217;host era offline. Problema: non era vero. La loro assistenza ovviamente ha detto che era colpa del mio server, un i7 sgombro e dedicato, ma che soprattutto senza CF in mezzo funzionava perfettamente.</p>
+<p>Bene mi son detto, qui è ora di cambiare. La loro gestione DNS è eccellente, tra le più veloci che io abbia mai visto, ma il proxy è a dir poco mediocre e non supporta protocolli diversi dall&#8217;HTTP. Investigando infine ho scoperto un&#8217;altra cosa poco carina: a dispetto delle vostre impostazioni se un file non viene richiesto per qualche ora viene cancellato dalla cache, vanificando completamente gli effetti per i siti poco frequentati.</p>
+<p>Le aziende alternative poi sono poco interessanti per i prezzi decisamente esagerati (Incapsula: 60$/mese per sito&#8230;) o per la mancanza di funzioni che ritengo indispensabili.</p>
+<p>La mia soluzione? Una VPS! Sembra scontato ma non lo è. Nginx permette di creare un reverse proxy con supporto SSL e cache locale pienamente configurabile come vi pare e supporta cose tipo il WAF (mod_security) che su wordpress son quasi d&#8217;obbligo. Postfix (archivio temporaneo e smistamento posta) e haproxy poi completano l&#8217;opera.</p>
+<p>Indovinate un po&#8217;? I rallentamenti sono spariti.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/storie-di-un-sistemista-in-erba-da-1and1-a-cloudflare-a-nginx/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

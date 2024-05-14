@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commenti a: N550JV Bios Unlock	</title>
+	<atom:link href="/n550jv-bios-unlock/feed/" rel="self" type="application/rss+xml" />
+	<link>/n550jv-bios-unlock/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Sun, 03 Apr 2016 10:48:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>
+		Di: AMI Aptio BIOS DSDT Editing &#124; Michele Primavera		</title>
+		<link>/n550jv-bios-unlock/#comment-23</link>
+
+		<dc:creator><![CDATA[AMI Aptio BIOS DSDT Editing &#124; Michele Primavera]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2015 14:12:42 +0000</pubDate>
+		<guid isPermaLink="false">#comment-23</guid>
+
+					<description><![CDATA[[&#8230;] Normalmente non si può disabilitare l&#8217;optimus, ma col bios unlock (maggiori informazioni qui) è possibile. In questo bios il modulo giusto ha indice 0x30, e non ha [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Normalmente non si può disabilitare l&#8217;optimus, ma col bios unlock (maggiori informazioni qui) è possibile. In questo bios il modulo giusto ha indice 0x30, e non ha [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: xyz		</title>
+		<link>/n550jv-bios-unlock/#comment-3</link>
+
+		<dc:creator><![CDATA[xyz]]></dc:creator>
+		<pubDate>Mon, 16 Mar 2015 22:25:14 +0000</pubDate>
+		<guid isPermaLink="false">#comment-3</guid>
+
+					<description><![CDATA[Thanks for your answer, that method was easier and worked like a charm. ;)]]></description>
+			<content:encoded><![CDATA[<p>Thanks for your answer, that method was easier and worked like a charm. 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: shedar		</title>
+		<link>/n550jv-bios-unlock/#comment-4</link>
+
+		<dc:creator><![CDATA[shedar]]></dc:creator>
+		<pubDate>Sun, 15 Mar 2015 17:37:55 +0000</pubDate>
+		<guid isPermaLink="false">#comment-4</guid>
+
+					<description><![CDATA[Hey,&lt;br /&gt;&lt;br /&gt;1) It&#039;s almost an year since I&#039;ve done this mod but as far as I remember the other options are just duplicated entries of the ones under avanced and boot&lt;br /&gt;2) That&#039;s because modules have a checksum which needs to be fixed once you edit it. You can find how on the internet (there are open source softwares doing this). Sadly I can&#039;t recall the exact algorithm. You could also use phoenixtool (the one used for slic mods) instead of mmtool as it fixes the checksum by itself&lt;br /&gt;3) Yes, pretty sure. it&#039;s /gun tho, without space&lt;br /&gt;&lt;br /&gt;Let me know how it goes ;)]]></description>
+			<content:encoded><![CDATA[<p>Hey,</p>
+<p>1) It&#39;s almost an year since I&#39;ve done this mod but as far as I remember the other options are just duplicated entries of the ones under avanced and boot<br />2) That&#39;s because modules have a checksum which needs to be fixed once you edit it. You can find how on the internet (there are open source softwares doing this). Sadly I can&#39;t recall the exact algorithm. You could also use phoenixtool (the one used for slic mods) instead of mmtool as it fixes the checksum by itself<br />3) Yes, pretty sure. it&#39;s /gun tho, without space</p>
+<p>Let me know how it goes 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: AR80		</title>
+		<link>/n550jv-bios-unlock/#comment-5</link>
+
+		<dc:creator><![CDATA[AR80]]></dc:creator>
+		<pubDate>Sun, 15 Mar 2015 17:28:22 +0000</pubDate>
+		<guid isPermaLink="false">#comment-5</guid>
+
+					<description><![CDATA[Thanks for this guide, I have some unsolved question:&lt;br /&gt;1) Why it&#039;s not necessary to change &#034;Access/Use&#034; in the other tabs? It seems there are hidden options even there.&lt;br /&gt;2) I can&#039;t complete the chipset tab mod because as I try to replace the &#034;Setup&#034; module MMTool complains with an &#034;invalid ffs file&#034;, any ideas?&lt;br /&gt;3) It doesn&#039;t seem that &#034;/ gun&#034; is a valid sequence of commands for afuwinx64.exe, are you sure about that?&lt;br /&gt;&lt;br /&gt;Thank You!]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this guide, I have some unsolved question:<br />1) Why it&#39;s not necessary to change &quot;Access/Use&quot; in the other tabs? It seems there are hidden options even there.<br />2) I can&#39;t complete the chipset tab mod because as I try to replace the &quot;Setup&quot; module MMTool complains with an &quot;invalid ffs file&quot;, any ideas?<br />3) It doesn&#39;t seem that &quot;/ gun&quot; is a valid sequence of commands for afuwinx64.exe, are you sure about that?</p>
+<p>Thank You!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: shedar		</title>
+		<link>/n550jv-bios-unlock/#comment-6</link>
+
+		<dc:creator><![CDATA[shedar]]></dc:creator>
+		<pubDate>Mon, 22 Dec 2014 18:08:01 +0000</pubDate>
+		<guid isPermaLink="false">#comment-6</guid>
+
+					<description><![CDATA[you should try in my opinion. I&#039;ve never used the recovery function (I was lucky enough to never brick) but it shouldn&#039;t hurt.&lt;br /&gt;&lt;br /&gt;or you could still open it and try resetting cmos]]></description>
+			<content:encoded><![CDATA[<p>you should try in my opinion. I&#39;ve never used the recovery function (I was lucky enough to never brick) but it shouldn&#39;t hurt.</p>
+<p>or you could still open it and try resetting cmos</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Rostyslav Y.		</title>
+		<link>/n550jv-bios-unlock/#comment-7</link>
+
+		<dc:creator><![CDATA[Rostyslav Y.]]></dc:creator>
+		<pubDate>Mon, 22 Dec 2014 00:44:26 +0000</pubDate>
+		<guid isPermaLink="false">#comment-7</guid>
+
+					<description><![CDATA[From the site. I&#039;ve also tried different versions: 203, 206, 207, 208.&lt;br /&gt;&lt;br /&gt;I haven&#039;t tried my dump.]]></description>
+			<content:encoded><![CDATA[<p>From the site. I&#39;ve also tried different versions: 203, 206, 207, 208.</p>
+<p>I haven&#39;t tried my dump.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: shedar		</title>
+		<link>/n550jv-bios-unlock/#comment-8</link>
+
+		<dc:creator><![CDATA[shedar]]></dc:creator>
+		<pubDate>Sun, 21 Dec 2014 23:07:01 +0000</pubDate>
+		<guid isPermaLink="false">#comment-8</guid>
+
+					<description><![CDATA[are you trying to flash your dump or the file from the site?]]></description>
+			<content:encoded><![CDATA[<p>are you trying to flash your dump or the file from the site?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Rostyslav Y.		</title>
+		<link>/n550jv-bios-unlock/#comment-9</link>
+
+		<dc:creator><![CDATA[Rostyslav Y.]]></dc:creator>
+		<pubDate>Sun, 21 Dec 2014 20:44:26 +0000</pubDate>
+		<guid isPermaLink="false">#comment-9</guid>
+
+					<description><![CDATA[N550JV.bin and N550JV.208 didn&#039;t work. I&#039;ve tried multiple times, different ports, with different flash drives (1G, 2G, 8G, FAT16, FAT32). It looks like N550JV.bin is indeed the right filename, there are several reports confirming this, but for some reason it doesn&#039;t work for me.&lt;br /&gt;&lt;br /&gt;The result is always the same: after pressing ctrl+home+power the led on flash drive starts blinking, this lasts for 5-8 seconds (I wonder what is it looking for), then the notebook reboots, keyboard blinks and there is no more activity on flash drive.]]></description>
+			<content:encoded><![CDATA[<p>N550JV.bin and N550JV.208 didn&#39;t work. I&#39;ve tried multiple times, different ports, with different flash drives (1G, 2G, 8G, FAT16, FAT32). It looks like N550JV.bin is indeed the right filename, there are several reports confirming this, but for some reason it doesn&#39;t work for me.</p>
+<p>The result is always the same: after pressing ctrl+home+power the led on flash drive starts blinking, this lasts for 5-8 seconds (I wonder what is it looking for), then the notebook reboots, keyboard blinks and there is no more activity on flash drive.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: shedar		</title>
+		<link>/n550jv-bios-unlock/#comment-10</link>
+
+		<dc:creator><![CDATA[shedar]]></dc:creator>
+		<pubDate>Sun, 21 Dec 2014 17:42:48 +0000</pubDate>
+		<guid isPermaLink="false">#comment-10</guid>
+
+					<description><![CDATA[Recovery file names for this bios should be N550JV.bin and N550JV.208&lt;br /&gt;these are your best bet.&lt;br /&gt;&lt;br /&gt;let me know!]]></description>
+			<content:encoded><![CDATA[<p>Recovery file names for this bios should be N550JV.bin and N550JV.208<br />these are your best bet.</p>
+<p>let me know!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Di: Rostyslav Y.		</title>
+		<link>/n550jv-bios-unlock/#comment-11</link>
+
+		<dc:creator><![CDATA[Rostyslav Y.]]></dc:creator>
+		<pubDate>Sat, 20 Dec 2014 19:30:02 +0000</pubDate>
+		<guid isPermaLink="false">#comment-11</guid>
+
+					<description><![CDATA[Yes, it was a stock BIOS v208 from Asus. Pretty unfair to fail after changing an option which is available by default :)&lt;br /&gt;&lt;br /&gt;It looks like my only hope is getting the AMI recovery to work. CTRL+HOME combination does work, but it seems like either the filename is wrong (I&#039;ve tried AMIBOOT.ROM, N550JVAS.208, N550JVAS.bin and N550JVAS.rom) or it refuses to flash the same version or the checksum fails. If only there was some way of debugging like internal speaker...]]></description>
+			<content:encoded><![CDATA[<p>Yes, it was a stock BIOS v208 from Asus. Pretty unfair to fail after changing an option which is available by default 🙂</p>
+<p>It looks like my only hope is getting the AMI recovery to work. CTRL+HOME combination does work, but it seems like either the filename is wrong (I&#39;ve tried AMIBOOT.ROM, N550JVAS.208, N550JVAS.bin and N550JVAS.rom) or it refuses to flash the same version or the checksum fails. If only there was some way of debugging like internal speaker&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

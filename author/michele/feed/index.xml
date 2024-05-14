@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>michele &#8211; Michele Primavera</title>
+	<atom:link href="/author/michele/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Tecnologia, programmazione, pensieri.</description>
+	<lastBuildDate>Tue, 14 May 2024 19:22:01 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<item>
+		<title>Blog in sola lettura</title>
+		<link>/blog-in-sola-lettura/</link>
+					<comments>/blog-in-sola-lettura/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Tue, 14 May 2024 19:21:40 +0000</pubDate>
+				<category><![CDATA[Informazione]]></category>
+		<guid isPermaLink="false">/?p=796</guid>
+
+					<description><![CDATA[Quella che state vedendo è una copia statica del blog originale. Ho deciso di dismettere questo blog ma, poiché contiene informazioni utili, ne conserverò una copia online.]]></description>
+										<content:encoded><![CDATA[<p>Quella che state vedendo è una copia statica del blog originale.</p>
+<p>Ho deciso di dismettere questo blog ma, poiché contiene informazioni utili, ne conserverò una copia online.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog-in-sola-lettura/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Seedr porta i torrent nel cloud</title>
+		<link>/seedr-porta-i-torrent-nel-cloud/</link>
+					<comments>/seedr-porta-i-torrent-nel-cloud/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Thu, 08 Jun 2017 17:07:09 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=718</guid>
+
+					<description><![CDATA[Se come me siete spesso e volentieri costretti a scendere a patti con una connessione mobile saprete sicuramente cosa questa comporti. Gli operatori cellulari implementano filtri, spesso pesantucci, per impedire ai propri utenti di saturare le proprie reti che, considerata la loro natura, sono particolarmente inclini ad &#8220;affondare&#8221;. Alle varie regole canoniche come il traffico<p><a href="/seedr-porta-i-torrent-nel-cloud/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Se come me siete spesso e volentieri costretti a scendere a patti con una connessione mobile saprete sicuramente cosa questa comporti. Gli operatori cellulari implementano filtri, spesso pesantucci, per impedire ai propri utenti di saturare le proprie reti che, considerata la loro natura, sono particolarmente inclini ad &#8220;affondare&#8221;.</p>
+<p>Alle varie regole canoniche come il traffico limitato a monte, si aggiunge praticamente sempre la questione dell&#8217;IP privato, che volente o nolente uccide praticamente ogni forma di P2P.<span id="more-718"></span></p>
+<p>Nota: P2P e pirateria, sebbene oggi giorno vadano quasi sempre a braccetto, NON sono la stessa cosa. Questo articolo infatti non vuole promuovere tale pratica, astenersi bacchettoni. <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Torniamo a <a href="https://www.seedr.cc/?r=650751">Seedr</a>. Cos&#8217;è? Immaginate di aver bisogno di recuperare un torrent. Immaginate di non volerlo o poterlo fare, magari per via del traffico limitato o dell&#8217;IP privato. Ora immaginate che esista un servizio che, dato un torrent, vi restituisce un link diretto al file completo. Questo è <a href="https://www.seedr.cc/?r=650751">Seedr</a>.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr3.png"><img fetchpriority="high" decoding="async" class="aligncenter wp-image-719" src="/wp-content/uploads/2017/06/seedr3-300x163.png" alt="" width="600" height="325" srcset="/wp-content/uploads/2017/06/seedr3-300x163.png 300w, /wp-content/uploads/2017/06/seedr3-768x416.png 768w, /wp-content/uploads/2017/06/seedr3-1024x555.png 1024w, /wp-content/uploads/2017/06/seedr3.png 1920w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>Il principio di funzionamento è molto semplice. Dopo essersi registrati (anche in maniera anonima fornendo solo un indirizzo email) il servizio ci fornirà 2GB (per il piano gratuito) di spazio per archiviare i nostri torrent. Ovviamente non sarà possibile scaricare torrent più grandi di 2GB, ma è possibile aumentare lo spazio a disposizione o pagando una quota mensile o facendo un po&#8217; di pubblicità al servizio.</p>
+<p>L&#8217;interfaccia utente è molto semplice e sarà sufficiente fornire a quest&#8217;ultima un riferimento al proprio torrent (magnet, http .torrent che sia) nella casellina apposita.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr1.png"><img decoding="async" class="aligncenter wp-image-721" src="/wp-content/uploads/2017/06/seedr1-300x163.png" alt="" width="600" height="325" srcset="/wp-content/uploads/2017/06/seedr1-300x163.png 300w, /wp-content/uploads/2017/06/seedr1-768x416.png 768w, /wp-content/uploads/2017/06/seedr1-1024x555.png 1024w, /wp-content/uploads/2017/06/seedr1.png 1920w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>Le linee su cui si appoggia <a href="https://www.seedr.cc/?r=650751">Seedr</a> sono decisamente di qualità. Il download del torrent di Ubuntu ha richiesto giusto una manciata di secondi e il download in locale non molti di più. La loro larghezza di banda è riuscita a saturare una 100 mega senza difficoltà.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr2.png"><img decoding="async" class="aligncenter wp-image-722 size-full" src="/wp-content/uploads/2017/06/seedr2.png" alt="" width="543" height="445" srcset="/wp-content/uploads/2017/06/seedr2.png 543w, /wp-content/uploads/2017/06/seedr2-300x246.png 300w" sizes="(max-width: 543px) 100vw, 543px" /></a></p>
+<p>Un&#8217;altra funzionalità interessante di <a href="https://www.seedr.cc/?r=650751">Seedr</a> è la possibilità di fare streaming del contenuto senza doverlo scaricare preventivamente. Se il nostro torrent contiene uno dei formati supportati (tra cui svariati formati video, immagini e testo) sarà possibile visionarlo direttamente dall&#8217;interfaccia utente.</p>
+<p><a href="/wp-content/uploads/2017/06/seedr6.png"><img decoding="async" class="aligncenter wp-image-729" src="/wp-content/uploads/2017/06/seedr6-300x163.png" alt="" width="600" height="325" srcset="/wp-content/uploads/2017/06/seedr6-300x163.png 300w, /wp-content/uploads/2017/06/seedr6-768x416.png 768w, /wp-content/uploads/2017/06/seedr6-1024x555.png 1024w, /wp-content/uploads/2017/06/seedr6.png 1920w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>In definitiva: <a href="https://www.seedr.cc/?r=650751">Seedr</a> è un servizio che merita senz&#8217;altro di essere provato, soprattutto considerando la natura free del tier base, e che può fare davvero la differenza su connessioni limitanti o limitate.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/seedr-porta-i-torrent-nel-cloud/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Uncharted ha spodestato Mass Effect</title>
+		<link>/uncharted-ha-spodestato-mass-effect/</link>
+					<comments>/uncharted-ha-spodestato-mass-effect/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2017 19:54:21 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=703</guid>
+
+					<description><![CDATA[Ho sempre guardato a Mass Effect come il gioco. Ispirato, bello da vedere e con una storia longeva. L&#8217;unico titolo che è riuscito a farmi apprezzare gli RPG che fino alla sua scoperta ritenevo piuttosto noiosi. L&#8217;unico titolo che era davvero riuscito a commuovermi con alcune sequenze di un toccante veramente fuori dagli schemi. Ecco cosa<p><a href="/uncharted-ha-spodestato-mass-effect/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Ho sempre guardato a Mass Effect come <em>il</em> gioco. Ispirato, bello da vedere e con una storia longeva. L&#8217;unico titolo che è riuscito a farmi apprezzare gli RPG che fino alla sua scoperta ritenevo piuttosto noiosi. L&#8217;unico titolo che era davvero riuscito a commuovermi con alcune sequenze di un toccante veramente fuori dagli schemi.<span id="more-703"></span></p>
+<p>Ecco cosa è ME. Unico, inimitabile, bello. Ha solo un&#8217;unica cosa che manca all&#8217;appello: quella sottile linea d&#8217;ironia che rende memorabile una scena, magari con una battuta ad effetto ben pensata. In ME manca un protagonista cazzone al punto giusto. E si sente.</p>
+<p>Ovviamente il background di Shepard non permette il discostarsi troppo dalla sua linea caratteriale senza scadere nel ridicolo alla Saints Row, cosa che ovviamente non appartiene alla tipologia di gioco.</p>
+<p>Drake è invece il suo opposto: irresponsabile e scapestrato può permettersi uscite decisamente più imbecilli senza sembrare fuori posto, che se fatte nel modo giusto strappano un sorriso una volta si e l&#8217;altra pure rendendo tutta l&#8217;esperienza più coinvolgente e divertente.</p>
+<p>Unite questo a una trama avvincente e a un tempo di gioco più che sufficiente (ho finito la quadrilogia in circa 42 ore) e avrete uno dei giochi meglio pensati, scritti e realizzati di un&#8217;era.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/uncharted-ha-spodestato-mass-effect/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Il PC gamer con una PS4</title>
+		<link>/il-pc-gamer-con-una-ps4/</link>
+					<comments>/il-pc-gamer-con-una-ps4/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 21 Jan 2017 13:02:25 +0000</pubDate>
+				<category><![CDATA[Personale]]></category>
+		<guid isPermaLink="false">/?p=699</guid>
+
+					<description><![CDATA[Dicono che crescere chiude la mente. A me, da qualche mese a questa parte, sta succedendo l&#8217;opposto. Tutti abbiamo dei pregiudizi, no? A volte non ce ne accorgiamo neanche, non ce ne rendiamo conto. Eppure sono li, ci condizionano e ci guidano. Finalmente, dopo tanto tempo, inizio a notare i miei e a chiedermi le motivazioni<p><a href="/il-pc-gamer-con-una-ps4/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Dicono che crescere chiude la mente. A me, da qualche mese a questa parte, sta succedendo l&#8217;opposto.</p>
+<p>Tutti abbiamo dei pregiudizi, no? A volte non ce ne accorgiamo neanche, non ce ne rendiamo conto. Eppure sono li, ci condizionano e ci guidano. Finalmente, dopo tanto tempo, inizio a notare i miei e a chiedermi le motivazioni che mi hanno sempre spinto a dare per buone alcune &#8220;verità&#8221; mai verificate.</p>
+<p>Qualche settimana fa è stata la volta delle console. La mia ultima console fu la gloriosa PS1, ma non mi ci sono mai attaccato più di tanto considerato che nessuno mi ci comprava mai i giochi. Da allora ho sempre giocato su PC perché tanto questi &#8220;sono superiori, i giochi ci sono e i controller sono scomodi&#8221;.<span id="more-699"></span></p>
+<p>Che sono superiori questo non ci piove. Che i giochi ci sono, neanche. Che i controller sono scomodi&#8230; No. (tranne se devi giocare a un fps ovviamente)</p>
+<p>Questo primo no mi ha fatto traballare, lasciando cadere un pezzo importante della mia &#8220;teoria delle console&#8221;. I miei gusti stanno cambiando e, ormai, non gioco più così tanto agli FPS. L&#8217;unico è Overwatch in questo periodo e potete immaginare perché (è unico).</p>
+<p>La seconda botta l&#8217;hanno data le esclusive. Certo, non ricchissime come un tempo, ma infondo infondo ho sempre voluto giocarmi i 4 Uncharted. Infondo infondo ho sempre voluto provare i vari GoW per Xbox e PS, cosa che ovviamente su PC non puoi fare.</p>
+<p>La terza è venuta dalle offerte post natalizie, perché la PS4 da 1TB con 3 giochi e le cuffiette stereo a 350 non è proprio regalata, ma se consideriamo che i 3 giochi sono Uncharted 4, NMS e Bloodborne un pochino ci sta.</p>
+<p>Ovviamente tutti dicono che Bloodborne è bellissimo e NMS è una palla tremenda. Quando l&#8217;ho ordinata mi sono detto: massì, vendo NMS e mi tengo bloodborne che deve essere davvero un bel gioco. Eppure sapete che c&#8217;è? Passo 40 minuti davanti a bloodborne, muoio più e più volte nello stesso punto perché quelli di from sono dei sadici figli di puttana e alla fine spengo la PS perché altrimenti potrei pure tirare il controller nella TV. Vado a passeggiare a cazzo cercando roba su NMS, guardo l&#8217;orologio e mi dico &#8220;ma porca, sono passate già due ore?&#8221;.</p>
+<p>Al PC gamer più convinto consiglio ora di provare le console per una settimana e godersi la semplicità del divano, potrebbe stupirvi.</p>
+<p>Non sono pentito di aver speso quella cifra, così come non sono pentito di aver smentito un mio pregiudizio. Beh, tranne per Bloodborne ovviamente.</p>
+<p>Vaffanculo From.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/il-pc-gamer-con-una-ps4/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Utilizzare il TPM come Smart Card</title>
+		<link>/utilizzare-il-tpm-come-smart-card/</link>
+					<comments>/utilizzare-il-tpm-come-smart-card/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Wed, 04 Jan 2017 16:02:35 +0000</pubDate>
+				<category><![CDATA[Guide]]></category>
+		<guid isPermaLink="false">/?p=685</guid>
+
+					<description><![CDATA[Lo scopo di questo articolo è mostrare come sia possibile utilizzare un TPM per conservare certificati di autenticazione senza collegare il computer ad un server AD. Innanzitutto creiamo la smartcard virtuale: tpmvscmgr.exe create /name tpmvsc /pin PROMPT /puk PROMPT /adminkey random /generate /attestation AIK_AND_CERT /pinpolicy minlen 6 Fatto ciò, apriamo certmgr.vsc e andiamo in Personale-&#62;Certificati.<p><a href="/utilizzare-il-tpm-come-smart-card/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Lo scopo di questo articolo è mostrare come sia possibile utilizzare un TPM per conservare certificati di autenticazione senza collegare il computer ad un server AD.<span id="more-685"></span></p>
+<p>Innanzitutto creiamo la smartcard virtuale:</p>
+<blockquote><p>tpmvscmgr.exe create /name tpmvsc /pin PROMPT /puk PROMPT /adminkey random /generate /attestation AIK_AND_CERT /pinpolicy minlen 6</p></blockquote>
+<p>Fatto ciò, apriamo certmgr.vsc e andiamo in Personale-&gt;Certificati. Qui tasto destro e scegliamo &#8220;Crea richiesta personalizzata&#8221;. Scegliamo Continua senza criteri-&gt;Avanti-&gt;Dettagli-&gt;Proprietà e impostiamo:</p>
+<blockquote><p>Generale-&gt;Nome = Arbitrario<br />
+Soggetto-&gt;Tipo-&gt;Nome comune = Arbitrario<br />
+Estensioni-&gt;Utilizzo Chiave = Firma digitale, Chiave concordata, Rendi critici<br />
+Estensioni-&gt;Utilizzo Chiave esteso = Autenticazione client<br />
+Chiave privata-&gt;CSP = Scegliere &#8220;RSA, Microsoft Smart Card Key Storage Provider&#8221;<br />
+Chiave privata-&gt;Resto = Personalizzare</p></blockquote>
+<p>Facciamo OK, quindi avanti e infine salviamo il file req (vi verrà chiesto il pin).</p>
+<p>Consegnamo il req alla CA o firmiamolo noi stessi con:</p>
+<blockquote><p>openssl x509 -req -days 3650 -in file.req -CA ca.pem -CAkey key.pem -out tpm.cer -set_serial 03</p></blockquote>
+<p>Se invece volete utilizzarla con OpenVPN, è possibile creare il cer con easy-rsa. Copiamo il csr nella cartella keys e diamo:</p>
+<blockquote><p>source vars</p>
+<p>./sign-req nomecsr</p></blockquote>
+<p>Nella cartella keys ora troveremo nomecsr.cer. Specifichiamo nel file ovpn togliamo &lt;cert&gt; e &lt;key&gt; e aggiungiamo la seguente direttiva:</p>
+<blockquote><p>cryptoapicert &#8220;THUMB:00 11 22 33&#8230;&#8221;</p></blockquote>
+<p>Dove i numeri rappresentano l&#8217;id sha1 del certificato.</p>
+<p>Una volta ottenuto il file cer, tasto destro, installa, sempre avanti. Il sistema chiederà il pin scelto in precedenza per installare il certificato. Se tutto è stato fatto come descritto saremo ora in grado di loggarci tramite il TPM:</p>
+<p><a href="/wp-content/uploads/2017/01/tpm.png"><img decoding="async" class="aligncenter wp-image-689" src="/wp-content/uploads/2017/01/tpm.png" alt="tpm" width="488" height="450" srcset="/wp-content/uploads/2017/01/tpm.png 730w, /wp-content/uploads/2017/01/tpm-300x277.png 300w" sizes="(max-width: 488px) 100vw, 488px" /></a></p>
+<p>Infine è possibile eliminare la smartcard con:</p>
+<blockquote><p>tpmvscmgr destroy /instance root\smartcardreader\0000</p></blockquote>
+<p>Dove 0000 è il numero progressivo della card. I dati non sono recuperabili ne estraibili in nessun caso.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/utilizzare-il-tpm-come-smart-card/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Pebble chiude baracca</title>
+		<link>/pebble-chiude-baracca/</link>
+					<comments>/pebble-chiude-baracca/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Thu, 08 Dec 2016 19:49:46 +0000</pubDate>
+				<category><![CDATA[Personale]]></category>
+		<guid isPermaLink="false">/?p=679</guid>
+
+					<description><![CDATA[Ammetto di essere incazzato. Nero. Negli ultimi giorni c&#8217;è stata un&#8217;aria, una puzza strana, ma tutti o quasi abbiamo voluto ignorare il sentore di merda che stava salendo dal cadavere di quel che già era Pebble. Pebble chiude per fallimento. I core assets sono stati invece acquistati da Fitbit per due spicci. è così, quindi,<p><a href="/pebble-chiude-baracca/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Ammetto di essere incazzato. Nero. Negli ultimi giorni c&#8217;è stata un&#8217;aria, una puzza strana, ma tutti o quasi abbiamo voluto ignorare il sentore di merda che stava salendo dal cadavere di quel che già era Pebble.</p>
+<p>Pebble chiude per fallimento. I core assets sono stati invece acquistati da Fitbit per due spicci. è così, quindi, che finisce un&#8217;azienda nata su Kickstarter e morta per Kickstarter.<span id="more-679"></span></p>
+<p>Loro sapevano. Sapevano e hanno taciuto. Sapevano e ci hanno rifilato prodotti condannati a morte, ora senza garanzia ne futuro. Ora come ora tutto continua a funzionare come al solito, ma come ha detto il buon Eric, &#8220;functionalities may be reduced down the road&#8221;. &#8220;May&#8221; un cazzo, considerato che molte funzioni dipendono dai loro server (che prima o poi verranno spenti): dettatura vocale, calendario, meteo, app store&#8230;</p>
+<p>Se ciò non fosse sufficiente, l&#8217;app è closed source, il protocollo pure e il firmware non ne parliamo.  è la fine di tanto impegno, tanto amore che una volta c&#8217;è stato per creare qualcosa di diverso, qualcosa di unico. E se c&#8217;è qualcosa che mi fa incazzare più della loro inculata con la sabbia, è magari vedere tanta gente passiva, neanche arrabbiata, che li saluta e ringrazia &#8220;per il percorso insieme&#8221;.</p>
+<p>Cosa siamo, fratelli? Ve li hanno regalati? Hanno fatto carità? Non mi risulta. Siamo vittime di una truffa: aprite gli occhi.</p>
+<p>E ora andassero a fanculo loro e quelli che li difendono.</p>
+<p>Io resterò qui a rodermi il fegato consapevole che prodotti simili non li vedremo per un po&#8217;, sicuramente non grazie a Fitbit.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/pebble-chiude-baracca/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Vi prego attivate la 2FA adesso</title>
+		<link>/vi-prego-attivate-la-2fa-adesso/</link>
+					<comments>/vi-prego-attivate-la-2fa-adesso/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sat, 22 Oct 2016 22:14:33 +0000</pubDate>
+				<category><![CDATA[Personale]]></category>
+		<guid isPermaLink="false">/?p=672</guid>
+
+					<description><![CDATA[Non è più questione di paranoia. Le intrusioni informatiche avvengono sempre più spesso, sempre più alla luce del sole, perché si sa: se sei un pezzo di merda hai davvero bisogno di farlo sapere al mondo mostrando le foto intime di questa o quella celebrità. Non ne puoi fare a meno. Ormai, però, vengono prese<p><a href="/vi-prego-attivate-la-2fa-adesso/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Non è più questione di paranoia. Le intrusioni informatiche avvengono sempre più spesso, sempre più alla luce del sole, perché si sa: se sei un pezzo di merda hai davvero bisogno di farlo sapere al mondo mostrando le foto intime di questa o quella celebrità. Non ne puoi fare a meno.</p>
+<p>Ormai, però, vengono prese di mira persone di tutti i tipi. Incluso <strong>te</strong>. Non credere di essere immune solo perché &#8220;tanto sono nessuno chi vuoi che si prenda la briga di hackerarmi&#8221;. Credimi, può accadere. E le probabilità sono molto più alte di quello che pensi.</p>
+<p><span id="more-672"></span></p>
+<p>Oggi ho avuto bisogno di accedere ad un mio vecchio account Google di test. Benissimo, non mi ricordo la password. Yuppi. Solitamente conservo tutte le password, ma quello specifico account mancava all&#8217;appello. Oh cazzo, ho pensato. Avrò messo il mio account principale come recupero, no? No. Avrò messo il numero di telefono? Neanche. Domanda segreta? Nisba.</p>
+<p>Su tutti gli altri miei account ho 2FA + codici di recupero, ma proprio su quello, per pigrizia, non avevo impostato niente. Solo la password. Vabbè, penso. Premo su &#8220;Ho dimenticato la mia password&#8221; e faccio l&#8217;intervista:</p>
+<ul>
+<li>Ti mandiamo una mail di recupero all&#8217;indirizzo preposto? No, non l&#8217;ho impostato.</li>
+<li>Un messaggio sul cellulare su cui devi premere &#8220;Si&#8221;? No, l&#8217;account non è impostato su nessun telefono.</li>
+<li>Quando hai aperto l&#8217;account? Ecco, questo lo ricordo! Un po&#8217; scettico, inserisco mese ed anno e premo invio.</li>
+</ul>
+<p>&#8220;Impossibile verificare la tua identità&#8221; mi risponde. Aeh. Provo un paio di volte, sempre con lo stesso risultato. Sarà che la mia memoria fa più schifo del solito.</p>
+<p>Più tardi mi dico vabbè, basterà scrivere a Google e chessò, fargli vedere la mia CDI o dargli il numero di serie di uno dei telefoni su cui era configurato quell&#8217;account. Però sai che c&#8217;è? Fammi fare un&#8217;altro tentativo. &#8220;Ho dimenticato la mia password&#8221;. Si. Ancora.</p>
+<p>Stesso iter, stavolta con una conclusione ben diversa: inserire la nuova password, avendo cura che sia unica e complessa. Salto sulla sedia. OK. Momento, momento, momento. Il mio caso era particolare, essendo un account senza nessun metodo di recupero, ma Google, checcazzo dai. Mi fai cambiare password chiedendo soltanto mese ed anno di creazione dell&#8217;account?</p>
+<p>Attivate la 2FA. Adesso. Gestite i codici responsabilmente e utilizzate token offline. No, gli SMS non sono sicuri (PayPal? Pronto? Che è sta storia che posso utilizzare solo sti cazzo di SMS?!). Fatevi questo favore, mi ringrazierete più tardi.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/vi-prego-attivate-la-2fa-adesso/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Il Pebble 2 è un&#8217;altro piccolo capolavoro</title>
+		<link>/il-pebble-2-e-unaltro-piccolo-capolavoro/</link>
+					<comments>/il-pebble-2-e-unaltro-piccolo-capolavoro/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Fri, 21 Oct 2016 19:12:26 +0000</pubDate>
+				<category><![CDATA[Recensioni]]></category>
+		<guid isPermaLink="false">/?p=659</guid>
+
+					<description><![CDATA[Venerdì finalmente UPS si è fatto vedere alla mia porta. Certo, un pochino in ritardo rispetto al preannunciato termine di settembre, ma non ci lamentiamo troppo: In fondo, anche se dietro c&#8217;era Pebble, parliamo comunque di Kickstarter. Quattro anni fa, quando Pebble si affacciò finalmente al mondo tramite Kickstarter, non mi sarei neanche sognato di dire<p><a href="/il-pebble-2-e-unaltro-piccolo-capolavoro/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Venerdì finalmente UPS si è fatto vedere alla mia porta. Certo, un pochino in ritardo rispetto al preannunciato termine di settembre, ma non ci lamentiamo troppo: In fondo, anche se dietro c&#8217;era Pebble, parliamo comunque di Kickstarter.</p>
+<p>Quattro anni fa, quando Pebble si affacciò finalmente al mondo tramite Kickstarter, non mi sarei neanche sognato di dire una cosa del genere considerato il modo in cui mi approccio alla piattaforma, ma ad oggi è inutile essere ciechi: parliamo ormai di una startup che pian pianino sta diventando un colosso, dando vita ad oggetti che sempre più escono dall&#8217;ottica del cliente di nicchia e si affacciano al grande e variegato mondo del mainstream.</p>
+<p><span id="more-659"></span></p>
+<p>Il mio approccio con gli Smartwatch è stato quello di molti che non hanno mai avuto al polso un Pebble per una settimana: &#8220;Meh, paccottiglia inutile&#8221;. Non fate questo errore. Non c&#8217;è nulla di inutile in qualcosa che vi semplifica la vita, considerato che comunque state sostituendo una patacca al polso con un&#8217;altra più intelligente, che costa in maniera simile a quella che già avete e che magari a differenza del vostro corrente orologio classico si può leggere anche al buio. Già se consideriamo questa piccolezza, ci rendiamo conto che non c&#8217;è nessun motivo per preferire un orologio tradizionale che il massimo che può offrire è un&#8217;accozzaglia di ingranaggi che magari alla prima botta iniziano a portare male il tempo.</p>
+<p>Non a caso ho parlato di &#8220;semplificare&#8221;, perché aggiungere un altro aggeggio da ricaricare ogni sera <strong>non</strong> è una semplificazione, assolutamente. Lo scopo di uno smartwatch non dovrebbe essere quello di sostituirsi allo smartphone, bensì di integrarlo. Non capisco più chi dice che sono inutili, e chi argomenta con un &#8220;faccio prima a prendere il telefono&#8221; non ha capito un cazzo della filosofia che c&#8217;è dietro. Forse farai anche prima, ma non sempre. Senza considerare che ci sono occasioni in cui non puoi o non vuoi prenderlo il telefono. Aprite gli occhi, lo smartwatch è una comodità. Se ne può fare a meno come tutte le comodità, in effetti: perché andare in macchina quando la maggior parte di noi ha delle gambe che funzionano benissimo?</p>
+<p>Molto carina la scatola, che rispetto al cartone del primo Pebble devo dire fa tutto un altro effetto:</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0638_1024.jpg"><img decoding="async" class="aligncenter wp-image-660" src="/wp-content/uploads/2016/10/IMG_0638_1024-300x215.jpg" alt="img_0638_1024" width="400" height="287" srcset="/wp-content/uploads/2016/10/IMG_0638_1024-300x215.jpg 300w, /wp-content/uploads/2016/10/IMG_0638_1024-768x551.jpg 768w, /wp-content/uploads/2016/10/IMG_0638_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Questo invece è il suo contenuto:</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0619_1024.jpg"><img decoding="async" class="aligncenter wp-image-663" src="/wp-content/uploads/2016/10/IMG_0619_1024-300x272.jpg" alt="img_0619_1024" width="400" height="362" srcset="/wp-content/uploads/2016/10/IMG_0619_1024-300x272.jpg 300w, /wp-content/uploads/2016/10/IMG_0619_1024-768x695.jpg 768w, /wp-content/uploads/2016/10/IMG_0619_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Rispetto al Pebble originale notiamo innanzitutto un miglioramento dell&#8217;estetica, che a questo giro punta più al &#8220;piccolo e carino&#8221; che a sembrare una patacca artigianale.</p>
+<p>Io avendo visto in foto il modello bianco ho subito pensato &#8220;è davvero bello&#8221;, ma dal vivo rende meno. A me piace ugualmente, ma se vi importa del giudizio altrui prendete il nero visto che tutti continuano a dirmi che sarebbe stato meglio di quel colore.</p>
+<p>A questo giro troviamo quindi dimensioni più contenute, più risorse di sistema, un sensore per il battito cardiaco oltre al resto della compartistica &#8220;fitness&#8221;, uno schermo e una batteria leggermente migliorate. L&#8217;orologio, infatti, si vede benissimo in ogni occasione e non fatica a superare i sei giorni di autonomia con un uso medio-intenso.</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0629_1024.jpg"><img decoding="async" class="aligncenter wp-image-665" src="/wp-content/uploads/2016/10/IMG_0629_1024-300x225.jpg" alt="img_0629_1024" width="400" height="300" srcset="/wp-content/uploads/2016/10/IMG_0629_1024-300x225.jpg 300w, /wp-content/uploads/2016/10/IMG_0629_1024-768x576.jpg 768w, /wp-content/uploads/2016/10/IMG_0629_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Ho particolarmente apprezzato il nuovo connettore per la ricarica, più stabile, ma onestamente lo avrei lasciato sul lato per questioni pratiche.</p>
+<p>Molto buone le funzioni volte al controllo della propria salute che mostrano una precisione più che sufficiente. I passi sono in linea con quelli contati da iPhone, il battito cardiaco è molto vicino a quello rilevato col &#8220;metodo del dito&#8221; (con uno scarto sotto i 5 bpm) e il sonno effettivamente corrisponde agli orari in cui credo di essermi addormentato e svegliato. Tutti i dati sono consultabili anche dall&#8217;orologio stesso, oltre che tramite app, in modo da sapere al volo quanto è durato il proprio pisolino, quanto/per quanto abbiamo camminato o il proprio battito durante o dopo una corsa (al momento, la schermata del cuore mostra solo il battito in tempo reale e non lo storico). Precisa anche la sveglia smart che becca davvero il momento più adeguato in cui rompervi la mattina.</p>
+<p><a href="/wp-content/uploads/2016/10/timeline.png"><img decoding="async" class="aligncenter wp-image-666" src="/wp-content/uploads/2016/10/timeline-300x233.png" alt="timeline" width="400" height="311" srcset="/wp-content/uploads/2016/10/timeline-300x233.png 300w, /wp-content/uploads/2016/10/timeline.png 432w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Questi sono alcuni esempi della timeline del pebble che mostrano il mio personale stato. Il tipico per venerdì è ovviamente vuoto perché ho l&#8217;orologio al polso da sabato scorso.</p>
+<p><a href="/wp-content/uploads/2016/10/salute.png"><img decoding="async" class="aligncenter wp-image-668" src="/wp-content/uploads/2016/10/salute-300x178.png" alt="salute" width="400" height="237" srcset="/wp-content/uploads/2016/10/salute-300x178.png 300w, /wp-content/uploads/2016/10/salute-768x455.png 768w, /wp-content/uploads/2016/10/salute.png 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Buone anche le notifiche che, come al solito, sono puntuali. Non ho provato la dettatura vocale perché su iPhone non è supportata.</p>
+<p>Concludendo: un ottimo giocattolino sul centinaio di euro. è bello, pieno di funzionalità, leggero, piccolo, ha una batteria di lunga durata, uno schermo e-ink e un&#8217;app di gestione fatta come si deve. E se siete sviluppatori adorerete CloudPebble, un esempio da seguire per tutti i &#8220;rivali&#8221;.</p>
+<p><a href="/wp-content/uploads/2016/10/IMG_0620_1024.jpg"><img decoding="async" class="aligncenter wp-image-669" src="/wp-content/uploads/2016/10/IMG_0620_1024-300x225.jpg" alt="img_0620_1024" width="400" height="300" srcset="/wp-content/uploads/2016/10/IMG_0620_1024-300x225.jpg 300w, /wp-content/uploads/2016/10/IMG_0620_1024-768x576.jpg 768w, /wp-content/uploads/2016/10/IMG_0620_1024.jpg 1024w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/il-pebble-2-e-unaltro-piccolo-capolavoro/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sono passato al lato oscuro (più o meno)</title>
+		<link>/sono-passato-al-lato-oscuro-piu-o-meno/</link>
+					<comments>/sono-passato-al-lato-oscuro-piu-o-meno/#comments</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 16 Oct 2016 16:12:26 +0000</pubDate>
+				<category><![CDATA[Personale]]></category>
+		<guid isPermaLink="false">/?p=630</guid>
+
+					<description><![CDATA[I cambiamenti raramente sono stati in grado di spaventarmi e, con una riflessione preventiva adeguata, non sono quasi mai motivo di pentimento. Non ho mai criticato aspramente l&#8217;iPhone, anzi. Ho sempre pensato fosse un ottimo telefono e il mio essere un androidiano convinto non ha modificato questa opinione: essere un fanboy non fa parte delle<p><a href="/sono-passato-al-lato-oscuro-piu-o-meno/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>I cambiamenti raramente sono stati in grado di spaventarmi e, con una riflessione preventiva adeguata, non sono quasi mai motivo di pentimento.<br />
+Non ho mai criticato aspramente l&#8217;iPhone, anzi. Ho sempre pensato fosse un ottimo telefono e il mio essere un androidiano convinto non ha modificato questa opinione: essere un fanboy non fa parte delle mie prerogative.<br />
+Quel che mi ha trattenuto, fino a qualche giorno fa [questa era una bozza di giugno, non fateci caso], era semplicemente ciò che <em>credevo</em> di aver bisogno.</p>
+<p><span id="more-630"></span></p>
+<p>Sarà l&#8217;età che avanza, sarà il mondo che cambia, ma ormai ho visto più volte me cambiare idea su o modo di vedere una data cosa. La cosa non mi stupisce più. Sto invecchiando, anche se una cosa del genere detta da un ventenne forse non fa il migliore degli effetti.</p>
+<p>Tornando ad iPhone: la convinzione dell&#8217;androidiano medio è che sia un dispositivo limitato e che sia un qualcosa di esageramente costoso. Limitato? Un po&#8217;. Costoso? Anche. Sottolineo <em>un po&#8217;</em>, e non troppo, perché comunque ormai il suo prezzo non si allontana poi così tanto da quelli della concorrenza. Perché comunque fatico a credere che ci siano limitazioni così pesanti da tenere lontani i poweruser.</p>
+<p>Client SSH? Check. RDP? Check. VPN? Check. VNC? Check. Spotify? Check. Office? Check. GApps? Check.</p>
+<p>Sarò un utente atipico, ma a questo punto io ho tutto ciò che mi serve. Non mando file via bluetooth da mesi, non uso i widget da anni, non cambio mai lo sfondo, non uso l&#8217;OTG ne le SD. A chi importa della customizzazione quando accendi il tuo telefono e puoi usarlo senza perdere mezz&#8217;ora a decidere se un&#8217;icona è meglio su questa pagina o quell&#8217;altra?</p>
+<p>Un piccolo prezzo da pagare per avere a che fare con una piattaforma nettamente più semplice, con una qualità media delle app e del software in generale più alta (e dei prezzi anche, meh..). La libertà non è sempre tutto, considerato che messa in mano agli sviluppatori può si produrre cose bellissime, ma anche cose aberranti qualora questi fossero dei cani incompetenti. Ad esempio, una app su iPhone non può rimanere aperta in background più di tot secondi se non ha un buon motivo (es. navigatore gps o player musicale), stroncando di fatto tutti i problemi generanti da un abuso di tale sistema che su android è più che frequente (wakelocks). Di esempi simili ve ne sono a bizzeffe, ma di fatto, nella maggior parte dei casi, più che vere e proprie limitazioni sono modi di costringere i programmatori a fare qualcosa di efficiente. (Un eccezione è il fatto che il sottosistema delle notifiche su iOS è accessibile solo dai dispositivi BT4LE, mentre dalle app no, o l&#8217;assenza di API NFC). E se proprio c&#8217;è un dettaglio che vi sta stretto, c&#8217;è sempre il jailbreak ad aprirvi un mondo nuovo di possibilità.</p>
+<p>Ciò che gli androidiani sembrano dimenticare è che android non è tutta questa perfezione, alla fin fine: per sua natura è un sistema operativo pesante, che fa un uso blando del codice nativo in un settore in cui l&#8217;efficienza è tutto, pieno di porcherie inutili che Google e i vari produttori gli rifilano a forza e a cui, neanche loro, senza root, possono mettervi una pezza. Si, una pezza. Perché di quel blob informe che ormai è diventato il pacchetto Google Play Services, avido di batteria e risorse, non possono sbarazzarvisi, pena tramutare il loro gioiellino in un fermacarte che telefona e poco più.</p>
+<p>Il senso di questo post è semplicemente &#8220;date spazio alle diversità&#8221;, sperimentate senza pregiudizi, cercate sempre un&#8217;altra via perché l&#8217;unica che avete tra le mani molto spesso è tutt&#8217;altro che la migliore. Fatelo sempre, anche se questo vi porta ad essere considerati &#8220;malvagi&#8221; (cit).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/sono-passato-al-lato-oscuro-piu-o-meno/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Riavvio TP-Link TD-W8970v1 (e simili) senza browser</title>
+		<link>/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/</link>
+					<comments>/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/#respond</comments>
+		
+		<dc:creator><![CDATA[michele]]></dc:creator>
+		<pubDate>Sun, 05 Jun 2016 13:59:21 +0000</pubDate>
+				<category><![CDATA[Programmazione]]></category>
+		<guid isPermaLink="false">/?p=624</guid>
+
+					<description><![CDATA[Il mio 8970 sta facendo vecchio e ogni tanto, soprattutto quando sta acceso per diversi giorni, il WiFi si inceppa. Siccome sono un tirchio bastardo ho deciso che riavviarlo una volta al giorno avrebbe risolto il mio problema; peccato che la sua interfaccia web fa molti controlli sulle richieste e questo complica leggermente lo scripting.<p><a href="/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/" class="more-link themebutton">Continua</a></p>]]></description>
+										<content:encoded><![CDATA[<p>Il mio 8970 sta facendo vecchio e ogni tanto, soprattutto quando sta acceso per diversi giorni, il WiFi si inceppa. Siccome sono un tirchio bastardo ho deciso che riavviarlo una volta al giorno avrebbe risolto il mio problema; peccato che la sua interfaccia web fa molti controlli sulle richieste e questo complica leggermente lo scripting.</p>
+<p><span id="more-624"></span></p>
+<p>Niente di insuperabile comunque. Vi lascio qui sotto un breve programmino in c# in grado di far partire un reboot sui modelli della famiglia:</p>
+<pre class="brush: csharp; title: ; notranslate">using System;
+using System.IO;
+using System.Net;
+using System.Text;
+
+namespace RebootRouter2
+{
+    class Program
+    {
+        static void Main(string&#x5B;] args)
+        {
+            var address = &quot;http://192.168.2.1&quot;;/
+            var username = &quot;admin&quot;;
+            var password = &quot;admin&quot;;
+
+            var request = (HttpWebRequest)WebRequest.Create(address + &quot;/cgi?7&quot;);
+
+            request.CookieContainer = new CookieContainer();
+            request.CookieContainer.Add(new Uri(address), new Cookie(&quot;Authorization&quot;, &quot;Basic &quot; + Convert.ToBase64String(Encoding.UTF8.GetBytes(username + &quot;:&quot; + password))));
+            request.Referer = address;
+            request.Headers&#x5B;&quot;Origin&quot;] = address;
+
+            var postData = &quot;&#x5B;ACT_REBOOT#0,0,0,0,0,0#0,0,0,0,0,0]0,0\r\n&quot;;
+            var data = Encoding.ASCII.GetBytes(postData);
+
+            request.Method = &quot;POST&quot;;
+            request.ContentType = &quot;text/plain&quot;;
+            request.ContentLength = data.Length;
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+
+            var response = (HttpWebResponse)request.GetResponse();
+
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+            Console.WriteLine(responseString);
+        }
+    }
+}</pre>
+<p>E anche uno in bash:</p>
+<pre class="brush: bash; title: ; notranslate">#!/bin/bash
+
+ROUTER=&quot;http://192.168.2.1&quot;/
+AUTH=$(echo -n &quot;user:pass&quot; | base64)
+CURL=&quot;/usr/bin/curl -s -o /dev/null -w %{http_code} -H 'Referer: $ROUTER' -H 'Origin: $ROUTER' -b 'Authorization=Basic $AUTH' $ROUTER&quot;
+
+HTTP_CODE=$(eval $CURL)
+
+if &#x5B; &quot;$HTTP_CODE&quot; == &quot;200&quot; ]; then
+HTTP_CODE=$(/usr/bin/printf &quot;&#x5B;ACT_REBOOT#0,0,0,0,0,0#0,0,0,0,0,0]0,0\r\n&quot; | eval $CURL/cgi?7 --data-binary @-)
+fi
+
+if &#x5B; &quot;$HTTP_CODE&quot; == &quot;200&quot; ]; then
+echo &quot;Reboot request accepted.&quot;
+else
+echo &quot;Reboot request not accepted. ($HTTP_CODE)&quot;
+fi</pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/riavvio-tp-link-td-w8970v1-e-simili-senza-browser/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
